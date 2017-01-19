@@ -1,0 +1,9 @@
+#config_version=4
+
+switches:
+  s_left_flipper:
+    number:
+    tags: left_flipper
+  s_right_fliper:
+    number:
+    tags: right_flipper
