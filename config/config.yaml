@@ -1,4 +1,6 @@
 #config_version=4
+hardware:
+    platform: smart_virtual
 
 switches:
   s_left_flipper:
