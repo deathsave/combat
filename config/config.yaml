@@ -29,3 +29,21 @@ switches:
     number:
   s_rollover_north_7:
     number:
+  s_stationary_1_northwest:
+    number:
+  s_stationary_2_special:
+    number:
+  s_stationary_3_bombs_1:
+    number:
+  s_stationary_4_bombs_2:
+    number:
+  s_stationary_5_bombs_3:
+    number:
+  s_stationary_6_bombs_4:
+    number:
+  s_stationary_7_bombs_5:
+    number:
+  s_stationary_8_northwest_southeast_1:
+    number:
+  s_stationary_9_northwest_southeast_2:
+    number:

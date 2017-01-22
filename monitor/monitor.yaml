@@ -38,3 +38,30 @@ switch:
   s_spinner_1:
     x: 0.2972972972972973
     y: 0.4769847972972973
+  s_stationary_1_northwest:
+    x: 0.24662162162162163
+    y: 0.35916385135135137
+  s_stationary_2_special:
+    x: 0.5709459459459459
+    y: 0.48458614864864863
+  s_stationary_3_bombs_1:
+    x: 0.7601351351351351
+    y: 0.34016047297297297
+  s_stationary_4_bombs_2:
+    x: 0.777027027027027
+    y: 0.3686655405405405
+  s_stationary_5_bombs_3:
+    x: 0.7905405405405405
+    y: 0.3971706081081081
+  s_stationary_6_bombs_4:
+    x: 0.7972972972972973
+    y: 0.42567567567567566
+  s_stationary_7_bombs_5:
+    x: 0.8074324324324325
+    y: 0.45418074324324326
+  s_stationary_8_northwest_southeast_1:
+    x: 0.8310810810810811
+    y: 0.4921875
+  s_stationary_9_northwest_southeast_2:
+    x: 0.8445945945945946
+    y: 0.5206925675675675
