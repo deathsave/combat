@@ -3,9 +3,13 @@ hardware:
     platform: smart_virtual
 
 switches:
-  s_left_flipper:
+  s_bumper_1_left:
     number:
-    tags: left_flipper
-  s_right_fliper:
+  s_bumper_2_center:
     number:
-    tags: right_flipper
+  s_bumper_3_right:
+    number:
+  s_flipper_1_left:
+    number:
+  s_flipper_2_right:
+    number:
