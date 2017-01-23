@@ -1,4 +1,5 @@
 #config_version=4
 config:
 - hardware.yaml
+- keyboard.yaml
 - display.yaml

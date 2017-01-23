@@ -4,6 +4,10 @@ displays:
     width: 800
     height: 600
 slides:
+  loading:
+    widgets:
+      - text: Loading...
+        type: text
   ready:
     widgets:
       - type: text
@@ -18,10 +22,11 @@ slides:
       - type: rectangle
         width: 480
         height: 100
-  loading:
+  started:
     widgets:
-      - text: Loading...
-        type: text
+      type: text
+      text: Ball in play
 slide_player:
   init_done: loading
   mode_attract_started: ready
+  ball_started: started

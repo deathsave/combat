@@ -1,0 +1,9 @@
+#config_version=4
+keyboard:
+  # External control (not a machine itself)
+  s:
+    switch: s_start
+  z:
+    switch: s_flipper_1
+  "/":
+    switch: s_flipper_2
