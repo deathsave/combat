@@ -1,0 +1,27 @@
+#config_version=4
+displays:
+  window:
+    width: 800
+    height: 600
+slides:
+  ready:
+    widgets:
+      - type: text
+        text: Ready to play
+        font_size: 50
+        color: red
+        y: 80
+      - type: text
+        text: Combat by Zaccaria
+        font_size: 50
+        color: red
+      - type: rectangle
+        width: 480
+        height: 100
+  loading:
+    widgets:
+      - text: Loading...
+        type: text
+slide_player:
+  init_done: loading
+  mode_attract_started: ready
