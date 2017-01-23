@@ -1,17 +1,23 @@
 switch:
-  s_bumper_1_left:
+  s_bumper_north_1:
     x: 0.38175675675675674
     y: 0.37436655405405406
-  s_bumper_2_center:
+  s_bumper_north_2:
     x: 0.5202702702702703
     y: 0.31355574324324326
-  s_bumper_3_right:
+  s_bumper_north_3:
     x: 0.5675675675675677
     y: 0.4161739864864865
-  s_flipper_1_left:
+  s_bumper_south_1:
+    x: 0.26013513513513514
+    y: 0.7088260135135136
+  s_bumper_south_2:
+    x: 0.6689189189189189
+    y: 0.7088260135135136
+  s_flipper_1:
     x: 0.3581081081081081
     y: 0.7943412162162162
-  s_flipper_2_right:
+  s_flipper_2:
     x: 0.5810810810810811
     y: 0.7943412162162162
   s_rollover_north_1:
@@ -35,33 +41,45 @@ switch:
   s_rollover_north_7:
     x: 0.6689189189189189
     y: 0.12542229729729729
+  s_rollover_south_1:
+    x: 0.10135135135135136
+    y: 0.7487331081081081
+  s_rollover_south_2:
+    x: 0.20270270270270271
+    y: 0.7506334459459459
+  s_rollover_south_3:
+    x: 0.7398648648648649
+    y: 0.7525337837837838
+  s_rollover_south_4:
+    x: 0.8412162162162162
+    y: 0.7525337837837838
   s_spinner_1:
     x: 0.2972972972972973
     y: 0.4769847972972973
-  s_stationary_1_northwest:
-    x: 0.24662162162162163
-    y: 0.35916385135135137
-  s_stationary_2_special:
-    x: 0.5709459459459459
-    y: 0.48458614864864863
-  s_stationary_3_bombs_1:
+  s_stationary_bombs_1:
     x: 0.7601351351351351
     y: 0.34016047297297297
-  s_stationary_4_bombs_2:
+  s_stationary_bombs_2:
     x: 0.777027027027027
     y: 0.3686655405405405
-  s_stationary_5_bombs_3:
+  s_stationary_bombs_3:
     x: 0.7905405405405405
     y: 0.3971706081081081
-  s_stationary_6_bombs_4:
+  s_stationary_bombs_4:
     x: 0.7972972972972973
     y: 0.42567567567567566
-  s_stationary_7_bombs_5:
+  s_stationary_bombs_5:
     x: 0.8074324324324325
     y: 0.45418074324324326
-  s_stationary_8_northwest_southeast_1:
+  s_stationary_northwest:
+    x: 0.24662162162162163
+    y: 0.35916385135135137
+  s_stationary_southeast_1:
     x: 0.8310810810810811
     y: 0.4921875
-  s_stationary_9_northwest_southeast_2:
+  s_stationary_southeast_2:
     x: 0.8445945945945946
     y: 0.5206925675675675
+  s_stationary_special:
+    x: 0.5709459459459459
+    y: 0.48458614864864863

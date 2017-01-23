@@ -1,17 +1,21 @@
 #config_version=4
 hardware:
-    platform: smart_virtual
-
+  platform: smart_virtual
+# all switches left to right
 switches:
-  s_bumper_1_left:
+  s_bumper_north_1:
     number:
-  s_bumper_2_center:
+  s_bumper_north_2:
     number:
-  s_bumper_3_right:
+  s_bumper_north_3:
     number:
-  s_flipper_1_left:
+  s_bumper_south_1:
     number:
-  s_flipper_2_right:
+  s_bumper_south_2:
+    number:
+  s_flipper_1:
+    number:
+  s_flipper_2:
     number:
   s_spinner_1:
     number:
@@ -29,21 +33,29 @@ switches:
     number:
   s_rollover_north_7:
     number:
-  s_stationary_1_northwest:
+  s_rollover_south_1:
     number:
-  s_stationary_2_special:
+  s_rollover_south_2:
     number:
-  s_stationary_3_bombs_1:
+  s_rollover_south_3:
     number:
-  s_stationary_4_bombs_2:
+  s_rollover_south_4:
     number:
-  s_stationary_5_bombs_3:
+  s_stationary_northwest:
     number:
-  s_stationary_6_bombs_4:
+  s_stationary_special:
     number:
-  s_stationary_7_bombs_5:
+  s_stationary_bombs_1:
     number:
-  s_stationary_8_northwest_southeast_1:
+  s_stationary_bombs_2:
     number:
-  s_stationary_9_northwest_southeast_2:
+  s_stationary_bombs_3:
+    number:
+  s_stationary_bombs_4:
+    number:
+  s_stationary_bombs_5:
+    number:
+  s_stationary_southeast_1:
+    number:
+  s_stationary_southeast_2:
     number:
