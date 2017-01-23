@@ -59,3 +59,7 @@ switches:
     number:
   s_stationary_southeast_2:
     number:
+  s_start:
+    number:
+    # 'start' tag is important
+    tags: start
