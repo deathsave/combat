@@ -1,0 +1,18 @@
+#config_version=4
+ball_devices:
+  bd_trough:
+    ball_switches:
+      s_trough_1
+      s_trough_2
+      s_trough_3
+    eject_coil: c_trough_eject
+    tags:
+      trough
+      home
+      drain
+    # jam_switch: s_trough_jam - will ours have?
+    #e ject_coil_jam_pulse: 15ms - ^^
+    eject_targets: bd_plunger
+  bd_plunger:
+    tags: ball_add_live
+    mechanical_eject: true

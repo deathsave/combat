@@ -3,5 +3,7 @@ config:
 - devices/controller.yaml
 - devices/displays.yaml
 - devices/switches.yaml
+- devices/coils.yaml
+- devices/ball_devices.yaml
 - views/slides.yaml
 - keyboard.yaml

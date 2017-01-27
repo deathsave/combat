@@ -1,17 +1,17 @@
 switch:
-  s_bumper_north_1:
+  s_bumper_1:
     x: 0.38175675675675674
     y: 0.37436655405405406
-  s_bumper_north_2:
+  s_bumper_2:
     x: 0.5202702702702703
     y: 0.31355574324324326
-  s_bumper_north_3:
+  s_bumper_3:
     x: 0.5675675675675677
     y: 0.4161739864864865
-  s_bumper_south_1:
+  s_slingshot_1:
     x: 0.26013513513513514
     y: 0.7088260135135136
-  s_bumper_south_2:
+  s_slingshot_2:
     x: 0.6689189189189189
     y: 0.7088260135135136
   s_flipper_1:

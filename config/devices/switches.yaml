@@ -1,15 +1,24 @@
 #config_version=4
 # all switches left to right
 switches:
-  s_bumper_north_1:
+  # Trough Switches (max 3 balls, "duo-multi" and "extra")
+  s_trough_1:
     number:
-  s_bumper_north_2:
+  s_trough_2:
     number:
-  s_bumper_north_3:
+  s_trough_3:
     number:
-  s_bumper_south_1:
+  # s_trough_jam - will ours have?
+  # Pop Bumpers
+  s_bumper_1:
     number:
-  s_bumper_south_2:
+  s_bumper_2:
+    number:
+  s_bumper_3:
+    number:
+  s_slingshot_1:
+    number:
+  s_slingshot_2:
     number:
   s_flipper_1:
     number:

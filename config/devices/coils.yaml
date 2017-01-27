@@ -1,0 +1,15 @@
+#config_version=4
+coils:
+  c_trough_eject:
+    number:
+    pulse_ms: 20
+  c_flipper_left_main:
+    number:
+  c_flipper_left_hold:
+    number:
+    allow_enable: true
+  c_flipper_right_main:
+    number:
+  c_flipper_right_hold:
+    number:
+    allow_enable: yes
