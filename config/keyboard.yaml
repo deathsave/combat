@@ -1,9 +1,15 @@
 #config_version=4
+# For external control / debugging
 keyboard:
-  # External control (not a machine itself)
+  # Start Button
   s:
     switch: s_start
+  # Left Flipper
   z:
     switch: s_flipper_1
+  # Right Flipper
   "/":
     switch: s_flipper_2
+  # Draining a ball
+  d:
+    switch: s_trough_1

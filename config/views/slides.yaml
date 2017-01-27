@@ -21,7 +21,7 @@ slides:
   started:
     widgets:
       type: text
-      text: Ball in play
+      text: PLAYER (number) BALL (ball)
 slide_player:
   init_done: loading
   mode_attract_started: ready

@@ -1,6 +1,9 @@
 #config_version=4
 # all switches left to right
 switches:
+  s_playfield:
+    number:
+    tags: playfield_active
   # Trough Switches (max 3 balls, "duo-multi" and "extra")
   s_trough_1:
     number:
@@ -12,60 +15,86 @@ switches:
   # Pop Bumpers
   s_bumper_1:
     number:
+    tags: playfield_active
   s_bumper_2:
     number:
+    tags: playfield_active
   s_bumper_3:
     number:
+    tags: playfield_active
   s_slingshot_1:
     number:
+    tags: playfield_active
   s_slingshot_2:
     number:
+    tags: playfield_active
   s_flipper_1:
     number:
   s_flipper_2:
     number:
   s_spinner_1:
     number:
+    tags: playfield_active
   s_rollover_north_1:
     number:
+    tags: playfield_active
   s_rollover_north_2:
     number:
+    tags: playfield_active
   s_rollover_north_3:
     number:
+    tags: playfield_active
   s_rollover_north_4:
     number:
+    tags: playfield_active
   s_rollover_north_5:
     number:
+    tags: playfield_active
   s_rollover_north_6:
     number:
+    tags: playfield_active
   s_rollover_north_7:
     number:
+    tags: playfield_active
   s_rollover_south_1:
     number:
+    tags: playfield_active
   s_rollover_south_2:
     number:
+    tags: playfield_active
   s_rollover_south_3:
     number:
+    tags: playfield_active
   s_rollover_south_4:
     number:
+    tags: playfield_active
   s_stationary_northwest:
     number:
+    tags: playfield_active
   s_stationary_special:
     number:
+    tags: playfield_active
   s_stationary_bombs_1:
     number:
+    tags: playfield_active
   s_stationary_bombs_2:
     number:
+    tags: playfield_active
   s_stationary_bombs_3:
     number:
+    tags: playfield_active
   s_stationary_bombs_4:
     number:
+    tags: playfield_active
   s_stationary_bombs_5:
     number:
+    tags: playfield_active
   s_stationary_southeast_1:
     number:
+    tags: playfield_active
   s_stationary_southeast_2:
     number:
+    tags: playfield_active
   s_start:
     number:
     # 'start' tag is important

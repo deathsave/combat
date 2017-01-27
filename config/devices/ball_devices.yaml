@@ -10,9 +10,7 @@ ball_devices:
       trough
       home
       drain
+      ball_add_live
     # jam_switch: s_trough_jam - will ours have?
-    #e ject_coil_jam_pulse: 15ms - ^^
-    eject_targets: bd_plunger
-  bd_plunger:
-    tags: ball_add_live
-    mechanical_eject: true
+    # eject_coil_jam_pulse: 15ms - ^^
+    eject_targets: playfield
