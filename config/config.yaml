@@ -1,5 +1,7 @@
 #config_version=4
 config:
-- hardware.yaml
+- devices/controller.yaml
+- devices/displays.yaml
+- devices/switches.yaml
+- views/slides.yaml
 - keyboard.yaml
-- display.yaml

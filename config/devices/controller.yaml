@@ -1,5 +1,3 @@
 #config_version=4
 hardware:
   platform: smart_virtual
-switches:
-  - hardware/switches.yaml

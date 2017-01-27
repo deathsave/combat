@@ -1,8 +1,4 @@
 #config_version=4
-displays:
-  window:
-    width: 800
-    height: 600
 slides:
   loading:
     widgets:
