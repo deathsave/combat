@@ -1,0 +1,18 @@
+#config_version=4
+animations:
+  scroll_right:
+    - property: x
+      value: -128
+      duration: 1ms
+    - property: x
+      value: 128
+      duration: 5s
+      repeat: true
+  pulsate:
+    - property: opacity
+      value: 0.0
+      duration: 250ms
+    - property: opacity
+      value: 1.0
+      duration: 250ms
+      repeat: true

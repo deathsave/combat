@@ -1,0 +1,34 @@
+#config_version=4
+widget_player:
+  init_done: background
+  mode_attract_started:
+    title:
+      action: add
+      target: dmd
+    credit:
+      action: add
+      target: window
+      widget_settings:
+        anchor_y: top
+    company:
+      action: add
+      target: window
+    background:
+      action: add # hacky, but required for multi-widget
+  ball_started:
+    idle:
+      action: remove
+      target: dmd
+    player_state:
+      action: add
+      target: dmd
+    background:
+      action: add
+slide_player:
+  mode_attract_started:
+    ready:
+      target: window
+# init_done: loading
+#  ball_started:
+#    started:
+#      target: window
