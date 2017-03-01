@@ -1,9 +1,8 @@
 #config_version=4
 # all switches left to right
 switches:
-  s_playfield:
+  s_plunger_lane:
     number:
-    tags: playfield_active
   # Trough Switches (max 3 balls, "duo-multi" and "extra")
   s_trough_1:
     number:

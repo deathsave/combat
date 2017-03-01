@@ -4,6 +4,12 @@ keyboard:
   # Start Button
   s:
     switch: s_start
+  # shoot a ball (assumes plunger lane switch)
+  l:
+    switch: s_plunger_lane
+  # hit a switch (make the playfield active)
+  a:
+    switch: s_rollover_north_1
   # Left Flipper
   z:
     switch: s_flipper_1
