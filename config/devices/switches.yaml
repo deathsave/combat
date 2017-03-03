@@ -42,7 +42,7 @@ switches:
     number:
   s_flipper_2:
     number:
-  s_spinner_1:
+  s_spinner:
     number:
     tags: playfield_active
   s_rollover_top_1:
@@ -60,10 +60,10 @@ switches:
   s_rollover_top_5:
     number:
     tags: playfield_active
-  s_rollover_north_6:
+  s_rollover_top_6:
     number:
     tags: playfield_active
-  s_rollover_north_7:
+  s_rollover_top_7:
     number:
     tags: playfield_active
   s_rollover_bonus_ball_1:
@@ -78,7 +78,7 @@ switches:
   s_rollover_advance_hole_2:
     number:
     tags: playfield_active
-  s_stationary_northwest:
+  s_stationary_thousand:
     number:
     tags: playfield_active
   s_stationary_special:
