@@ -12,6 +12,15 @@ switches:
     number:
   # s_trough_jam - will ours have?
   # Pop Bumpers
+  s_kicker_saucer:
+    number:
+    tags: playfield_active
+  s_kicker_gun:
+    number:
+    tags: playfield_active
+  s_knocker:
+    number:
+    tags: playfield_active
   s_bumper_1:
     number:
     tags: playfield_active
@@ -34,19 +43,19 @@ switches:
   s_spinner_1:
     number:
     tags: playfield_active
-  s_rollover_north_1:
+  s_rollover_top_1:
     number:
     tags: playfield_active
-  s_rollover_north_2:
+  s_rollover_top_2:
     number:
     tags: playfield_active
-  s_rollover_north_3:
+  s_rollover_top_3:
     number:
     tags: playfield_active
-  s_rollover_north_4:
+  s_rollover_top_4:
     number:
     tags: playfield_active
-  s_rollover_north_5:
+  s_rollover_top_5:
     number:
     tags: playfield_active
   s_rollover_north_6:
@@ -55,16 +64,16 @@ switches:
   s_rollover_north_7:
     number:
     tags: playfield_active
-  s_rollover_south_1:
+  s_rollover_bonus_ball_1:
     number:
     tags: playfield_active
-  s_rollover_south_2:
+  s_rollover_bonus_ball_2:
     number:
     tags: playfield_active
-  s_rollover_south_3:
+  s_rollover_advance_hole_1:
     number:
     tags: playfield_active
-  s_rollover_south_4:
+  s_rollover_advance_hole_2:
     number:
     tags: playfield_active
   s_stationary_northwest:
@@ -73,25 +82,25 @@ switches:
   s_stationary_special:
     number:
     tags: playfield_active
-  s_stationary_bombs_1:
+  s_drop_target_1:
     number:
     tags: playfield_active
-  s_stationary_bombs_2:
+  s_drop_target_2:
     number:
     tags: playfield_active
-  s_stationary_bombs_3:
+  s_drop_target_3:
     number:
     tags: playfield_active
-  s_stationary_bombs_4:
+  s_drop_target_4:
     number:
     tags: playfield_active
-  s_stationary_bombs_5:
+  s_drop_target_5:
     number:
     tags: playfield_active
-  s_stationary_southeast_1:
+  s_stationary_advance_bonus:
     number:
     tags: playfield_active
-  s_stationary_southeast_2:
+  s_stationary_advance_hole_score:
     number:
     tags: playfield_active
   s_start:
