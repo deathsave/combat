@@ -3,6 +3,7 @@
 switches:
   s_plunger_lane:
     number:
+    tags: launch
   # Trough Switches (max 3 balls, "duo-multi" and "extra")
   s_trough_1:
     number:
@@ -10,7 +11,8 @@ switches:
     number:
   s_trough_3:
     number:
-  # s_trough_jam - will ours have?
+  s_trough_jam:
+    number:
   # Pop Bumpers
   s_kicker_saucer:
     number:

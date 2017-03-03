@@ -1,21 +1,32 @@
 #config_version=4
 # For external control / debugging
 keyboard:
-  # Start Button
-  s:
-    switch: s_start
-  # shoot a ball (assumes plunger lane switch)
-  l:
-    switch: s_plunger_lane
-  # hit a switch (make the playfield active)
-  a:
-    switch: s_rollover_north_1
   # Left Flipper
   z:
     switch: s_flipper_1
   # Right Flipper
   "/":
     switch: s_flipper_2
-  # Draining a ball
-  d:
+  # Start Button
+  s:
+    switch: s_start
+  # shoot a ball (assumes plunger lane switch)
+  l:
+    switch: s_plunger_lane
+    toggle: true
+  # hit a switch (make the playfield active)
+  a:
+    switch: s_rollover_top_1
+  # Trough switches (simulate Draining a ball)
+  1:
     switch: s_trough_1
+    toggle: true
+  2:
+    switch: s_trough_2
+    toggle: true
+  3:
+    switch: s_trough_3
+    toggle: true
+  4:
+    switch: s_trough_jam
+    toggle: true

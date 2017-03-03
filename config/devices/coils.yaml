@@ -3,34 +3,46 @@ coils:
   c_trough_eject:
     number:
     pulse_ms: 20
+  # auto kicker for multi-ball
+  c_plunger_eject:
+    number:
+    pulse_ms: 20
   c_flipper_1_main:
     number:
+    pulse_ms: 20
   c_flipper_1_hold:
     number:
     allow_enable: true
   c_flipper_2_main:
     number:
+    pulse_ms: 20
   c_flipper_2_hold:
     number:
     allow_enable: true
   c_bumper_1:
     number:
+    pulse_ms: 20
   c_bumper_2:
     number:
+    pulse_ms: 20
   c_bumper_3:
     number:
+    pulse_ms: 20
   c_slingshot_1:
     number:
+    pulse_ms: 20
   c_slingshot_2:
     number:
+    pulse_ms: 20
   c_kicker_saucer:
     number:
+    pulse_ms: 20
   c_kicker_gun:
     number:
+    pulse_ms: 20
   c_knocker:
     number:
+    pulse_ms: 20
   c_drop_target:
     number:
-  # auto kicker for multi-ball
-  c_plunger_lane_kicker:
-    number:
+    pulse_ms: 20
