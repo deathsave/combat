@@ -5,5 +5,8 @@ config:
 - devices/switches.yaml
 - devices/coils.yaml
 - devices/ball_devices.yaml
+- views/animations.yaml
+- views/widgets.yaml
 - views/slides.yaml
+- views/players.yaml
 - keyboard.yaml

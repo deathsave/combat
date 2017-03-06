@@ -1,28 +1,18 @@
 #config_version=4
 slides:
-  loading:
-    widgets:
-      - text: Loading...
-        type: text
+#  # 'Attract mode (game loaded / not started)
   ready:
-    widgets:
-      - type: text
-        text: Ready to play
-        font_size: 50
-        color: red
-        y: 80
-      - type: text
-        text: Combat by Zaccaria
-        font_size: 50
-        color: red
-      - type: rectangle
-        width: 480
-        height: 100
-  started:
-    widgets:
-      type: text
-      text: PLAYER (number) BALL (ball)
-slide_player:
-  init_done: loading
-  mode_attract_started: ready
-  ball_started: started
+    - type: color_dmd
+      width: 512
+      height: 128
+      y: top-85%
+#  # Start button has been pressed
+#  started:
+#    widgets:
+#      # show temp virtual DMD bottom-center
+#      background
+#  # Game is loading up
+#  loading:
+#    widgets:
+#      - type: text
+#        text: Loading...

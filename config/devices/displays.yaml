@@ -1,5 +1,10 @@
 #config_version=4
 displays:
+  # window needed without physical DMD
   window:
+    # seems bound to 16x10ish aspect
     width: 800
-    height: 600
+  dmd:
+    width: 128
+    height: 32
+    default: false # not where widgets go by default (yet)
