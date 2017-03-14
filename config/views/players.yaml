@@ -5,17 +5,24 @@ widget_player:
     title:
       action: add
       target: dmd
+      widget_settings:
+        y: bottom # TODO: get positioning working on fake DMD (DMD-POS)
     credit:
       action: add
-      target: window
+      target: dmd
       widget_settings:
-        anchor_y: top
+        y: top+1 # DMD-POS
     company:
       action: add
-      target: window
+      target: dmd
+      widget_settings:
+        y: middle+2 # DMD-POS
     background:
-      action: add # hacky, but required for multi-widget
-  ball_started:
+      action: add
+      #target: window - actually breaks even though seems to be default
+    player_state:
+      action: remove # when a game ends...
+  mode_base_started:
     idle:
       action: remove
       target: dmd
@@ -24,6 +31,13 @@ widget_player:
       target: dmd
     background:
       action: add
+    title:
+      action: remove
+    credit:
+      action: remove
+    company:
+      action: remove
+
 slide_player:
   mode_attract_started:
     ready:

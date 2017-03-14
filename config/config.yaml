@@ -9,4 +9,5 @@ config:
 - views/widgets.yaml
 - views/slides.yaml
 - views/players.yaml
+- modes.yaml
 - keyboard.yaml
