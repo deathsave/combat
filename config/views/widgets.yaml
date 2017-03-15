@@ -3,35 +3,48 @@ widgets:
   background:
     - type: image
       image: backglass
-  player_state:
+  player_up:
     - type: text
-      text: PLAYER (number) BALL (ball)
-      color: F9ED32
+      text: "PLAYER (number)"
+      # water blue from backglass
+      color: 99CCFF
       style: dmd_med
+      halign: left
+  ball_count:
+    - type: text
+      text: "BALL (ball)"
+      # water blue from backglass
+      color: 99CCFF
+      style: dmd_med
+      halign: right
+  player_score:
+    - type: text
+      text: "(score)"
+      number_grouping: true # adds commas to integer value display
+      min_digits: 7
+      color: F9ED32
+      font_size: 16
+      style: dmd_med
+      y: top-25%
   title:
     - type: text
-      text: Zaccaria “Combat”
-      color: F9ED32
+      text: "Zaccaria “Combat”"
       style: dmd_big
-      animations:
-        add_to_slide: scroll_right
+      color: F9ED32
+      #animations:
+      #  add_to_slide: scroll_right
   credit:
     - type: text
-      text: 'Reimagined by:'
-      color: F9ED32
+      text: "Reimagined by"
       style: dmd_small
-      y: 25%
-      anchor_y: top
-      anchor_x: left
-      animations:
-        add_to_slide: pulsate
+      color: F9ED32
+      #animations:
+      #  add_to_slide: pulsate
   company:
     - type: text
-      y: 75%
-      anchor_y: top
-      anchor_x: left
-      text: Pinball Plaid
+      text: "Pinball Plaid"
       color: F9ED32
-      style: dmd_small
-      animations:
-        add_to_slide: pulsate
+      font_size: 14
+      style: dmd_med
+      #animations:
+      #  add_to_slide: pulsate

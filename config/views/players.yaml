@@ -1,32 +1,41 @@
 #config_version=4
 widget_player:
-  init_done: background
+  init_done:
+    background:
+      action: add
   mode_attract_started:
     title:
       action: add
       target: dmd
-      widget_settings:
-        y: bottom # TODO: get positioning working on fake DMD (DMD-POS)
+      #widget_settings:
+      #  y: bottom # TODO: get positioning working on fake DMD (DMD-POS)
     credit:
       action: add
       target: dmd
-      widget_settings:
-        y: top+1 # DMD-POS
+      #widget_settings:
+      #  y: top+1 # DMD-POS
     company:
       action: add
       target: dmd
-      widget_settings:
-        y: middle+2 # DMD-POS
+      #widget_settings:
+      #  y: middle+2 # DMD-POS
     background:
       action: add
       #target: window - actually breaks even though seems to be default
-    player_state:
+    player_score:
+      action: remove # when a game ends...
+    player_up:
+      action: remove # when a game ends...
+    ball_count:
       action: remove # when a game ends...
   mode_base_started:
-    idle:
-      action: remove
+    player_score:
+      action: add
       target: dmd
-    player_state:
+    player_up:
+      action: add
+      target: dmd
+    ball_count:
       action: add
       target: dmd
     background:
@@ -38,6 +47,7 @@ widget_player:
     company:
       action: remove
 
+# Adds the virtual DMD, see slides.yaml
 slide_player:
   mode_attract_started:
     ready:
