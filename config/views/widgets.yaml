@@ -9,14 +9,12 @@ widgets:
       # water blue from backglass
       color: 99CCFF
       style: dmd_med
-      halign: left
   ball_count:
     - type: text
       text: "BALL (ball)"
       # water blue from backglass
       color: 99CCFF
       style: dmd_med
-      halign: right
   player_score:
     - type: text
       text: "(score)"
@@ -25,7 +23,6 @@ widgets:
       color: F9ED32
       font_size: 16
       style: dmd_med
-      y: top-25%
   title:
     - type: text
       text: "Zaccaria “Combat”"

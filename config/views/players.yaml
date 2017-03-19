@@ -7,8 +7,8 @@ widget_player:
     title:
       action: add
       target: dmd
-      #widget_settings:
-      #  y: bottom # TODO: get positioning working on fake DMD (DMD-POS)
+      widget_settings:
+        y: bottom # TODO: get positioning working on fake DMD (DMD-POS)
     credit:
       action: add
       target: dmd
