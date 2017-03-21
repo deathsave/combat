@@ -5,43 +5,97 @@ widgets:
       image: backglass
   player_up:
     - type: text
-      text: "PLAYER (number)"
+      text: "Player: (number)"
       # water blue from backglass
       color: 99CCFF
-      style: dmd_med
+      style: dmd_small
   ball_count:
     - type: text
-      text: "BALL (ball)"
+      text: "Ball: (ball)"
       # water blue from backglass
       color: 99CCFF
-      style: dmd_med
-  player_score:
+      style: dmd_small
+  current_score:
     - type: text
       text: "(score)"
       number_grouping: true # adds commas to integer value display
       min_digits: 7
       color: F9ED32
-      font_size: 16
-      style: dmd_med
+      style: dmd_small
+  player_scores:
+    # position the P1 separately to line up the scores
+    - type: text
+      text: "P1:"
+      color: F9ED32
+      style: dmd_small
+      font_size: 9 # DMD does not look good any smaller
+      anchor_y: top
+      anchor_x: left
+      y: top-4%
+      x: left+2%
+    - type: text
+      text: "(machine|player1_score)"
+      number_grouping: true # adds commas to integer value display
+      min_digits: 2
+      color: F9ED32
+      style: dmd_small
+      font_size: 9
+      anchor_y: top
+      anchor_x: left
+      y: top-4%
+      x: left+15%
+    - type: text
+      text: "P2: (machine|player2_score)"
+      number_grouping: true # adds commas to integer value display
+      min_digits: 2
+      color: F9ED32
+      style: dmd_small
+      font_size: 9
+      anchor_y: top
+      anchor_x: left
+      y: top-22% # 18 + 2+2 margin
+      x: left+2%
+    - type: text
+      text: "P3: (machine|player3_score)"
+      number_grouping: true # adds commas to integer value display
+      min_digits: 2
+      color: F9ED32
+      style: dmd_small
+      font_size: 9
+      anchor_y: top
+      anchor_x: left
+      y: top-41%
+      x: left+2%
+    - type: text
+      text: "P4: (machine|player4_score)"
+      number_grouping: true # adds commas to integer value display
+      min_digits: 2
+      color: F9ED32
+      style: dmd_small
+      font_size: 9
+      anchor_y: top
+      anchor_x: left
+      y: top-62%
+      x: left+2%
   title:
     - type: text
       text: "Zaccaria “Combat”"
       style: dmd_big
       color: F9ED32
-      #animations:
-      #  add_to_slide: scroll_right
+      animations:
+        add_to_slide: scroll_right
   credit:
     - type: text
-      text: "Reimagined by"
+      text: "Reimagined by:"
       style: dmd_small
       color: F9ED32
-      #animations:
-      #  add_to_slide: pulsate
+      font_size: 9
+      animations:
+        add_to_slide: pulsate
   company:
     - type: text
       text: "Pinball Plaid"
       color: F9ED32
-      font_size: 14
       style: dmd_med
-      #animations:
-      #  add_to_slide: pulsate
+      animations:
+        add_to_slide: pulsate

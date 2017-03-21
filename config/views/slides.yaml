@@ -2,7 +2,7 @@
 slides:
 # only using slides for the fake DMD currently, see players.yaml
   ready:
-    - type: dmd
+    - type: color_dmd
       width: 512
       height: 128
       y: top-85%
