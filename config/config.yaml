@@ -2,8 +2,10 @@
 config:
 - devices/controller.yaml
 - devices/displays.yaml
+- devices/ball_devices.yaml
 - devices/switches.yaml
 - devices/coils.yaml
+- devices/leds.yaml
 - devices/ball_devices.yaml
 - views/animations.yaml
 - views/widgets.yaml

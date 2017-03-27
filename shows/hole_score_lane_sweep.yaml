@@ -1,0 +1,62 @@
+# show_version=4
+- time: 0
+  leds:
+    l_hole_score_lane_1: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_2: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_3: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_4: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_5: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_6: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_7: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_8: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_9: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_10: 99CCFF
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_1: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_2: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_3: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_4: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_5: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_6: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_7: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_8: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_9: F9ED32
+- time: '+0.2'
+  leds:
+    l_hole_score_lane_10: F9ED32
+- time: '+0.2'

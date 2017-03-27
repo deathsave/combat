@@ -1,0 +1,22 @@
+#config_version=4
+leds:
+  l_hole_score_lane_1:
+    number:
+  l_hole_score_lane_2:
+    number:
+  l_hole_score_lane_3:
+    number:
+  l_hole_score_lane_4:
+    number:
+  l_hole_score_lane_5:
+    number:
+  l_hole_score_lane_6:
+    number:
+  l_hole_score_lane_7:
+    number:
+  l_hole_score_lane_8:
+    number:
+  l_hole_score_lane_9:
+    number:
+  l_hole_score_lane_10:
+    number:
