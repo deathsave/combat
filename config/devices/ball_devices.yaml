@@ -4,7 +4,6 @@ ball_devices:
     ball_switches:
       s_trough_1
       s_trough_2
-      s_trough_3
     tags:
       trough
       home

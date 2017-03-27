@@ -9,8 +9,6 @@ switches:
     number:
   s_trough_2:
     number:
-  s_trough_3:
-    number:
   s_trough_jam:
     number:
   # Pop Bumpers
@@ -109,3 +107,10 @@ switches:
     number:
     # 'start' tag is important
     tags: start
+  s_coin_1:
+    number:
+  s_coin_2:
+    number:
+  # switch inside coin door to activate Config Menu
+  s_menu:
+    number:

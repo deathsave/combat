@@ -25,8 +25,5 @@ keyboard:
     switch: s_trough_2
     toggle: true
   3:
-    switch: s_trough_3
-    toggle: true
-  4:
     switch: s_trough_jam
     toggle: true
