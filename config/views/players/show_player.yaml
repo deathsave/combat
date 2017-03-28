@@ -3,6 +3,10 @@ show_player:
   mode_attract_started:
     hole_score_lane_sweep:
       action: play
+    explosion_sweep:
+      action: play
   mode_base_started:
     hole_score_lane_sweep:
+      action: stop
+    explosion_sweep:
       action: stop
