@@ -1,0 +1,3 @@
+#config_version=4
+show_player:
+  mode_attract_started: hole_score_lane_sweep

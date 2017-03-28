@@ -10,6 +10,8 @@ config:
 - views/animations.yaml
 - views/widgets.yaml
 - views/slides.yaml
-- views/players.yaml
+- views/players/slide_player.yaml
+- views/players/widget_player.yaml
+- views/players/show_player.yaml
 - modes.yaml
 - keyboard.yaml
