@@ -1,5 +1,11 @@
 #config_version=4
 leds:
+  l_bumper_1:
+    number:
+  l_bumper_2:
+    number:
+  l_bumper_3:
+    number:
   l_hole_score_lane_1:
     number:
   l_hole_score_lane_2:

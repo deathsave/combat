@@ -1,11 +1,15 @@
 #config_version=4
 show_player:
   mode_attract_started:
+    bumper_flash:
+      action: play
     hole_score_lane_sweep:
       action: play
     explosion_sweep:
       action: play
   mode_base_started:
+    bumper_flash:
+      action: stop
     hole_score_lane_sweep:
       action: stop
     explosion_sweep:

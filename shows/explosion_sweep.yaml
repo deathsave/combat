@@ -46,17 +46,17 @@
     l_explosion_5: FF8000
 - time: '+0.1'
   leds:
-    l_explosion_6: BBBBBB
+    l_explosion_6: FFFF00
 - time: '+0.1'
   leds:
-    l_explosion_7: BBBBBB
+    l_explosion_7: FFFF00
 - time: '+0.1'
   leds:
-    l_explosion_8: BBBBBB
+    l_explosion_8: FFFF00
 - time: '+0.1'
   leds:
-    l_explosion_9: BBBBBB
+    l_explosion_9: ffffff
 - time: '+0.1'
   leds:
-    l_explosion_10: BBBBBB
+    l_explosion_10: ffffff
 - time: '+0.1'
