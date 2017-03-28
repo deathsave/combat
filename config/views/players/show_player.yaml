@@ -1,3 +1,8 @@
 #config_version=4
 show_player:
-  mode_attract_started: hole_score_lane_sweep
+  mode_attract_started:
+    hole_score_lane_sweep:
+      action: play
+  mode_base_started:
+    hole_score_lane_sweep:
+      action: stop
