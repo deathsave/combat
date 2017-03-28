@@ -1,5 +1,31 @@
 #config_version=4
 leds:
+  l_gi_top_1:
+    number:
+  l_gi_top_2:
+    number:
+  l_gi_saucer:
+    number:
+  l_gi_gun_top:
+    number:
+  l_gi_spinner:
+    number:
+  l_gi_gun:
+    number:
+  l_gi_hole_score_lane:
+    number:
+  l_gi_advance_bonus:
+    number:
+  l_gi_advance_hole_score:
+    number:
+  l_gi_inlane_1:
+    number:
+  l_gi_inlane_2:
+    number:
+  l_gi_slingshot_1:
+    number:
+  l_gi_slingshot_2:
+    number:
   l_bumper_1:
     number:
   l_bumper_2:
@@ -45,4 +71,6 @@ leds:
   l_explosion_9:
     number:
   l_explosion_10:
+    number:
+  l_credit_in:
     number:

@@ -1,0 +1,16 @@
+# show_version=4
+- time: 0
+  leds:
+    l_gi_top_1: ffffff
+    l_gi_top_2: ffffff
+    l_gi_saucer: ffffff
+    l_gi_gun_top: ffffff
+    l_gi_spinner: ffffff
+    l_gi_gun: ffffff
+    l_gi_hole_score_lane: ffffff
+    l_gi_advance_bonus: ffffff
+    l_gi_advance_hole_score: ffffff
+    l_gi_inlane_1: ffffff
+    l_gi_inlane_2: ffffff
+    l_gi_slingshot_1: ffffff
+    l_gi_slingshot_2: ffffff

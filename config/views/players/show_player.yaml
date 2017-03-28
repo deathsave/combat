@@ -1,5 +1,8 @@
 #config_version=4
 show_player:
+  init_done:
+    general_illumination_fade:
+      action: play
   mode_attract_started:
     bumper_flash:
       action: play
@@ -14,3 +17,7 @@ show_player:
       action: stop
     explosion_sweep:
       action: stop
+    general_illumination_fade:
+      action: stop
+    general_illumination:
+      action: play
