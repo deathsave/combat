@@ -25,6 +25,7 @@ will launch the MPF engine and the media controller. In the other, run
 debugging experience. There is also a virtual keyboard for simulating the
 switches. Here is what we have mapped thus far:
 
+* Use the keys `z and /` for left and right flipper respectively
 * The key `s` will start a game
 * The key `l` will launch a ball
 * The key `a` will simulate a playfield switch (top rollover)

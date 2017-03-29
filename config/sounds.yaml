@@ -1,0 +1,28 @@
+#config_version=4
+sound_system:
+  buffer: 2048
+  frequency: 44100
+  channels: 2
+  master_volume: 0.9
+  tracks:
+    music:
+      volume: 0.5
+      simultaneous_sounds: 1
+      events_when_stopped: music_track_stopped
+      events_when_played: music_track_played, keep_going
+      events_when_paused: music_track_paused
+    sfx:
+      volume: 0.4
+      simultaneous_sounds: 8
+      preload: yes
+    voice:
+      volume: 0.6
+      simultaneous_sounds: 1
+      preload: yes
+
+sounds:
+  base_bgm:
+    file: base_bgm.ogg
+    track: music
+    volume: 0.5
+    loops: -1 # repeat until shut off

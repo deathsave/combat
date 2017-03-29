@@ -1,0 +1,5 @@
+#config_version=4
+sound_player:
+  mode_base_started:
+    base_bgm:
+      action: play
