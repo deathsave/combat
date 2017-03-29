@@ -6,17 +6,7 @@
     l_bumper_3: 000000
 - time: '+0.25'
   leds:
-    l_bumper_1: ffffff
-    l_bumper_2: ffffff
-    l_bumper_3: ffffff
-- time: '+0.25'
-  leds:
-    l_bumper_1: 000000
-    l_bumper_2: 000000
-    l_bumper_3: 000000
-- time: '+0.25'
-  leds:
-    l_bumper_1: ffffff
-    l_bumper_2: ffffff
-    l_bumper_3: ffffff
+    l_bumper_1: ffff00
+    l_bumper_2: ffff00
+    l_bumper_3: ffff00
 - time: '+0.25'

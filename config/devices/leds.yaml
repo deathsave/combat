@@ -26,6 +26,18 @@ leds:
     number:
   l_gi_slingshot_2:
     number:
+  l_spinner:
+    number:
+  l_special:
+    number:
+  l_bonus_ball_1:
+    number:
+  l_bonus_ball_2:
+    number:
+  l_shoots_again:
+    number:
+  l_bonus_score:
+    number:
   l_bumper_1:
     number:
   l_bumper_2:

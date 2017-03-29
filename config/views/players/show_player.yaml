@@ -10,12 +10,16 @@ show_player:
       action: play
     explosion_sweep:
       action: play
+    target_triplet:
+      action: play
   mode_base_started:
     bumper_flash:
       action: stop
     hole_score_lane_sweep:
       action: stop
     explosion_sweep:
+      action: stop
+    target_triplet:
       action: stop
     general_illumination_fade:
       action: stop

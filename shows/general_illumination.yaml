@@ -1,16 +1,16 @@
 # show_version=4
 - time: 0
   leds:
-    l_gi_top_1: ffffff
-    l_gi_top_2: ffffff
-    l_gi_saucer: ffffff
-    l_gi_gun_top: ffffff
-    l_gi_spinner: ffffff
-    l_gi_gun: ffffff
-    l_gi_hole_score_lane: ffffff
-    l_gi_advance_bonus: ffffff
-    l_gi_advance_hole_score: ffffff
-    l_gi_inlane_1: ffffff
-    l_gi_inlane_2: ffffff
-    l_gi_slingshot_1: ffffff
-    l_gi_slingshot_2: ffffff
+    l_gi_top_1: ffff00
+    l_gi_top_2: ffff00
+    l_gi_saucer: ffff00
+    l_gi_gun_top: ffff00
+    l_gi_spinner: ffff00
+    l_gi_gun: ffff00
+    l_gi_hole_score_lane: ffff00
+    l_gi_advance_bonus: ffff00
+    l_gi_advance_hole_score: ffff00
+    l_gi_inlane_1: ffff00
+    l_gi_inlane_2: ffff00
+    l_gi_slingshot_1: ffff00
+    l_gi_slingshot_2: ffff00
