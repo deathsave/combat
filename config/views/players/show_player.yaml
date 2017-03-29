@@ -12,6 +12,8 @@ show_player:
       action: play
     target_triplet:
       action: play
+    rollover_top_swap:
+      action: play
   mode_base_started:
     bumper_flash:
       action: stop
@@ -20,6 +22,8 @@ show_player:
     explosion_sweep:
       action: stop
     target_triplet:
+      action: stop
+    rollover_top_swap:
       action: stop
     general_illumination_fade:
       action: stop
