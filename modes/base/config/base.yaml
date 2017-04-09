@@ -49,7 +49,7 @@ scoring:
   s_stationary_thousand_active:
     score: 1000 # i assume this was the 'left standup'?
   s_stationary_special_active:
-    score: 20000
+    score: 100
   s_drop_target_1_active:
     score: 1000 # in ask app, these were 5000
   s_drop_target_2_active:
