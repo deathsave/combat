@@ -3,6 +3,10 @@ mode:
   start_events: ball_starting
   priority: 100
 
+led_player:
+  mode_base_started:
+    l_hole_score_lane_1: FF0000 # red
+
 scoring:
   s_kicker_saucer_active:
     score: 50
@@ -15,9 +19,9 @@ scoring:
   s_bumper_3_active:
     score: 100
   s_slingshot_1_active:
-    score: 100
+    score: 10
   s_slingshot_2_active:
-    score: 100
+    score: 10
   s_spinner_active:
     score: 100
   s_rollover_top_1_active:
