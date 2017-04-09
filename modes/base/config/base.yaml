@@ -5,7 +5,7 @@ mode:
 
 scoring:
   s_kicker_saucer_active:
-    score: 0
+    score: 50
   s_kicker_gun_active:
     score: 5000
   s_bumper_1_active:
