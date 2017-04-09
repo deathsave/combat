@@ -19,6 +19,8 @@ is much more easily divisible than 1 second.
 Testing Locally
 ---------------
 
+Run the automated tests with `python -m unittest tests/test_modes.py`.
+
 You need to run 2 terminal sessions. In the first, run `mpf both -X` which
 will launch the MPF engine and the media controller. In the other, run
 `mpf monitor` which will launch the virtual monitor for a more "sane"
