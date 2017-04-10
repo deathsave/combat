@@ -1,31 +1,6 @@
 #config_version=4
+# ONLY INFINITE, ALWAYS DISPLAYED SHOWS GO HERE
 show_player:
   init_done:
     general_illumination_fade:
-      action: play
-  mode_attract_started:
-    bumper_flash:
-      action: play
-    hole_score_lane_sweep:
-      action: play
-    explosion_sweep:
-      action: play
-    target_triplet:
-      action: play
-    rollover_top_swap:
-      action: play
-  mode_base_started:
-    bumper_flash:
-      action: stop
-    hole_score_lane_sweep:
-      action: stop
-    explosion_sweep:
-      action: stop
-    target_triplet:
-      action: stop
-    rollover_top_swap:
-      action: stop
-    general_illumination_fade:
-      action: stop
-    general_illumination:
       action: play

@@ -14,6 +14,5 @@ config:
 - players/slide_player.yaml
 - players/widget_player.yaml
 - players/show_player.yaml
-- players/sound_player.yaml
 - modes.yaml
 - keyboard.yaml

@@ -7,6 +7,14 @@ led_player:
   mode_base_started:
     l_hole_score_lane_1: FF0000 # red
 
+sound_player:
+  mode_base_started:
+    plunging_bgm:
+      action: play
+  balldevice_playfield_ball_enter:
+    plunging_bgm:
+      action: stop
+
 scoring:
   s_kicker_saucer_active:
     score: 50
