@@ -7,9 +7,19 @@ class TestGame(FullMachineTestCase):
     def getMachinePath(self):
         return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
+    def test_attract_mode(self):
+        # verify widget is on the DMD
+        current_widgets = self.get_dmd_text_widgets()
+        self.assertIn('Pinball Plaid', [x.text for x in current_widgets])
+        # stop the mode and verify the widget has been removed
+        self.hit_and_release_switch("s_start")
+        self.advance_time_and_run()
+        current_widgets = self.get_dmd_text_widgets()
+        self.assertNotIn('Pinball Plaid', [x.text for x in current_widgets])
+
     def test_begin_gameplay(self):
         self.hit_and_release_switch("s_start")
-        self.advance_time_and_run(1)
+        self.advance_time_and_run()
         ## game should be running
         self.assertIsNotNone(self.machine.game)
         self.assertEqual(1, self.machine.game.player.ball)
@@ -22,7 +32,7 @@ class TestGame(FullMachineTestCase):
         ## player launches ball
         self.hit_and_release_switch("s_plunger_lane")
         ## not immediately "on the playfield", though
-        self.advance_time_and_run(1)
+        self.advance_time_and_run()
         self.assertEqual(0, self.machine.playfield.balls)
         ## after a brief delay, the ball is now on the playfield...
         ## if this errors, could be system-specific so increase it
@@ -103,8 +113,20 @@ class TestGame(FullMachineTestCase):
         current_score += 100 # more when 'lit'
         self.assertEqual(current_score, self.machine.game.player.score)
 
+    #############
+    ## Helpers ##
+    #############
+
     def begin_gameplay(self):
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(1)
         self.hit_and_release_switch("s_plunger_lane")
         self.advance_time_and_run(4) # 3+1
+
+    def get_dmd_text_widgets(self):
+        current_widgets = []
+        virtual_dmd = self.mc.displays['dmd'].\
+            children[0].children[0]
+        for widget in virtual_dmd.children:
+            if hasattr(widget, 'text'): current_widgets.append(widget)
+        return current_widgets
