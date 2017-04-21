@@ -5,7 +5,7 @@ widgets:
       image: backglass
   player_up:
     - type: text
-      text: "Player: (number)"
+      text: "Player (number) Up"
       # water blue from backglass
       color: 99CCFF
       style: dmd_small
@@ -21,18 +21,9 @@ widgets:
       number_grouping: true # adds commas to integer value display
       min_digits: 7
       color: F9ED32
-      style: dmd_small
+      style: dmd_big
+      font_size: 12
   player_scores:
-    # position the P1 separately to line up the scores
-    - type: text
-      text: "P1:"
-      color: F9ED32
-      style: dmd_small
-      font_size: 9 # DMD does not look good any smaller
-      anchor_y: top
-      anchor_x: left
-      y: top-4%
-      x: left+2%
     - type: text
       text: "(machine|player1_score)"
       number_grouping: true # adds commas to integer value display
@@ -43,40 +34,18 @@ widgets:
       anchor_y: top
       anchor_x: left
       y: top-4%
-      x: left+15%
+      x: left+2%
     - type: text
-      text: "P2: (machine|player2_score)"
+      text: "(machine|player2_score)"
       number_grouping: true # adds commas to integer value display
       min_digits: 2
       color: F9ED32
       style: dmd_small
       font_size: 9
       anchor_y: top
-      anchor_x: left
-      y: top-22% # 18 + 2+2 margin
-      x: left+2%
-    - type: text
-      text: "P3: (machine|player3_score)"
-      number_grouping: true # adds commas to integer value display
-      min_digits: 2
-      color: F9ED32
-      style: dmd_small
-      font_size: 9
-      anchor_y: top
-      anchor_x: left
-      y: top-41%
-      x: left+2%
-    - type: text
-      text: "P4: (machine|player4_score)"
-      number_grouping: true # adds commas to integer value display
-      min_digits: 2
-      color: F9ED32
-      style: dmd_small
-      font_size: 9
-      anchor_y: top
-      anchor_x: left
-      y: top-62%
-      x: left+2%
+      anchor_x: right
+      y: top-4% # 18 + 2+2 margin
+      x: right-1%
   title:
     - type: text
       text: "Zaccaria “Combat”"

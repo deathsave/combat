@@ -38,10 +38,9 @@ widget_player:
       action: add
       target: dmd
       widget_settings:
-        anchor_y: top
-        anchor_x: right
-        y: top-4%
-        x: right-1%
+        anchor_y: middle
+        anchor_x: center
+        y: middle+6%
     player_scores:
       action: add
       target: dmd
@@ -49,15 +48,15 @@ widget_player:
       action: add
       target: dmd
       widget_settings:
-        anchor_y: bottom
-        anchor_x: right
-        y: bottom+26%
-        x: right-1%
+        anchor_y: bottom+1%
+        anchor_x: left
+        y: bottom+4%
+        x: left+3%
     ball_count:
       action: add
       target: dmd
       widget_settings:
-        anchor_y: bottom
+        anchor_y: bottom+1%
         anchor_x: right
         y: bottom+4%
         x: right-1%

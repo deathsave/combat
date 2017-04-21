@@ -7,6 +7,7 @@ config:
 - devices/coils.yaml
 - devices/leds.yaml
 - devices/ball_devices.yaml
+- game.yaml
 - animations.yaml
 - widgets.yaml
 - slides.yaml

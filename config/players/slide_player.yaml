@@ -2,5 +2,5 @@
 # Adds the virtual dmd, see slides.yaml
 slide_player:
   mode_attract_started:
-    ready:
+    dmd_slide:
       target: window
