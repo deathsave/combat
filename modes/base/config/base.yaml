@@ -2,6 +2,7 @@
 mode:
   start_events: ball_starting
   priority: 100
+  code: base.BaseMode
 
 led_player:
   mode_base_started:
