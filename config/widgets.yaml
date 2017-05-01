@@ -1,8 +1,5 @@
 #config_version=4
 widgets:
-  background:
-    - type: image
-      image: backglass
   player_up:
     - type: text
       text: "Player (number) Up"
@@ -23,6 +20,8 @@ widgets:
       color: F9ED32
       style: dmd_big
       font_size: 12
+      animations:
+        add_to_slide: pulsate
   player_scores:
     - type: text
       text: "(machine|player1_score)"

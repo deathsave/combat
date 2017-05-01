@@ -1,18 +1,19 @@
 #config_version=4
 slides:
 # only using slides for the fake DMD currently, see players.yaml
-  dmd_slide:
-    - type: color_dmd
-      width: 1024
-      height: 256
-      y: top-85%
-#  # Start button has been pressed
-#  started:
-#    widgets:
-#      # show temp virtual DMD bottom-center
-#      background
-#  # Game is loading up
-#  loading:
-#    widgets:
-#      - type: text
-#        text: Loading...
+  default_slide:
+    widgets:
+      - type: image
+        image: backglass
+        z: 1
+      - type: color_dmd
+        # source_display: dmd (default)
+        width: 1024
+        height: 256
+        y: top-85%
+        z: 2
+  loading_slide:
+    widgets:
+      - type: text
+        text: Loading...
+        z: 0

@@ -1,18 +1,18 @@
 #config_version=4
 displays:
   # window needed without physical DMD
+  dmd:
+    width: 128
+    height: 32
+    default: true
   window:
     # seems bound to 16x10ish aspect
     width: 1920
     height: 1080
-  dmd:
-    width: 128
-    height: 32
-    default: false # not where widgets go by default (yet)
 
 window:
-  width: 1280
-  height: 720
+  width: 1920
+  height: 1080
   title: Immortal Combat
   resizable: true
   fullscreen: false

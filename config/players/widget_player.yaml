@@ -1,30 +1,21 @@
 #config_version=4
 widget_player:
-  init_done:
-    background:
-      action: add
   mode_attract_started:
     title:
       action: add
-      target: dmd
       widget_settings:
         anchor_y: top
         y: top-4%
     credit:
       action: add
-      target: dmd
       widget_settings:
         anchor_y: top
         y: top-50%
     company:
       action: add
-      target: dmd
       widget_settings:
         anchor_y: top
         y: top-74%
-    background:
-      action: add
-      #target: window - actually breaks even though seems to be default
     current_score:
       action: remove # when a game ends...
     player_scores:
@@ -36,17 +27,14 @@ widget_player:
   mode_base_started:
     current_score:
       action: add
-      target: dmd
       widget_settings:
         anchor_y: middle
         anchor_x: center
         y: middle+6%
     player_scores:
       action: add
-      target: dmd
     player_up:
       action: add
-      target: dmd
       widget_settings:
         anchor_y: bottom+1%
         anchor_x: left
@@ -54,14 +42,11 @@ widget_player:
         x: left+3%
     ball_count:
       action: add
-      target: dmd
       widget_settings:
         anchor_y: bottom+1%
         anchor_x: right
         y: bottom+4%
         x: right-1%
-    background:
-      action: add
     title:
       action: remove
     credit:

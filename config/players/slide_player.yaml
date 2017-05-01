@@ -1,6 +1,9 @@
 #config_version=4
-# Adds the virtual dmd, see slides.yaml
 slide_player:
   mode_attract_started:
-    dmd_slide:
+    default_slide:
+      target: window
+      priority: 1000
+  init_start:
+    loading_slide:
       target: window
