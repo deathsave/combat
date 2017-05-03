@@ -13,7 +13,6 @@ keyboard:
   # shoot a ball (assumes plunger lane switch)
   l:
     switch: s_plunger_lane
-    toggle: true
   # hit a switch (make the playfield active)
   a:
     switch: s_rollover_top_1

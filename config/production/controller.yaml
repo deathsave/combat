@@ -1,0 +1,7 @@
+#config_version=4
+hardware:
+  platform: smart_virtual # change to 'fast' after wiring
+# remove after wiring
+virtual_platform_start_active_switches:
+  s_trough_1
+  s_trough_2
