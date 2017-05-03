@@ -1,4 +1,8 @@
 #config_version=4
+physical_rgb_dmd:
+  brightness: 0.6
+  gamma: 2.0
+  fps: 24
 window:
   width: 1920
   height: 1080
