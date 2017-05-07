@@ -16,7 +16,7 @@ widgets:
     - type: text
       text: "(score)"
       number_grouping: true # adds commas to integer value display
-      min_digits: 7
+      min_digits: 2
       color: F9ED32
       style: dmd_big
       font_size: 12

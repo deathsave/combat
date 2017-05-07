@@ -1,0 +1,16 @@
+#config_version=4
+shots:
+  shared_drop:
+    switch: s_drop_target
+
+# move this to logic_blocks.yaml if we need
+# custom logic for something else later
+logic_blocks:
+  counters:
+    init_bombs:
+      count_events: s_drop_target_active
+      starting_count: 5
+      count_complete_value: 0
+      direction: down
+      events_when_complete: bombs_complete
+      reset_events: s_drop_target_reset_active

@@ -22,4 +22,3 @@ ball_devices:
     eject_timeouts: 3s
     player_controlled_eject_event: sw_launch
     debug: true
-

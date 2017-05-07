@@ -1,0 +1,19 @@
+#config_version=4
+# actived when all 5 drop targets have dropped
+# user wants to continue hitting those
+# hitting the special kills the mode
+mode:
+  start_events: bombs_complete # from logic_block
+  priority: 110
+  code: bombs_dropped.Custom
+  stop_events: s_stationary_special_active
+
+led_player:
+  mode_bombs_dropped_started:
+    l_special: FF0000 # red
+
+scoring:
+  s_stationary_special_active:
+    score: 20000|block
+  s_drop_target_active:
+    score: 10000|block # in ask app, these were 5000

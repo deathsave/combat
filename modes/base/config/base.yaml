@@ -2,7 +2,7 @@
 mode:
   start_events: ball_starting
   priority: 100
-  code: base.BaseMode
+  code: base.Custom
 
 led_player:
   mode_base_started:
@@ -58,17 +58,9 @@ scoring:
   s_stationary_thousand_active:
     score: 1000 # i assume this was the 'left standup'?
   s_stationary_special_active:
-    score: 100
-  s_drop_target_1_active:
+    score: 500 # 5k once drop target complete...
+  s_drop_target_active:
     score: 1000 # in ask app, these were 5000
-  s_drop_target_2_active:
-    score: 1000
-  s_drop_target_3_active:
-    score: 1000
-  s_drop_target_4_active:
-    score: 1000
-  s_drop_target_5_active:
-    score: 1000
   s_stationary_advance_bonus_active:
     score: 0
   s_stationary_advance_hole_score_active:
