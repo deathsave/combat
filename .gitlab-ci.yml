@@ -2,14 +2,6 @@
 # Official docker image.
 image: unrared/mission_pinball_deps
 
-build:
-  stage: build
-  script:
-    - export IMAGE_TAG=$(echo -en $CI_COMMIT_REF_NAME | tr -c '[:alnum:]_.-' '-')
-    - docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
-    - docker build --pull -t "$CI_REGISTRY_IMAGE:$IMAGE_TAG" .
-    - docker push "$CI_REGISTRY_IMAGE:$IMAGE_TAG"
-
 test:
   script:
     - python -m unittest tests/*.py
