@@ -16,6 +16,13 @@ sound_player:
     plunging_bgm:
       action: stop
 
+# cause the drop target to reset
+# when mode ends event if only
+# partially activated
+event_player:
+  mode_bombs_dropped_stopped:
+    s_drop_target_reset_active
+
 scoring:
   s_kicker_saucer_active:
     score: 50

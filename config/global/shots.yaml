@@ -13,4 +13,4 @@ logic_blocks:
       count_complete_value: 0
       direction: down
       events_when_complete: bombs_complete
-      reset_events: s_drop_target_reset_active
+      restart_events: s_drop_target_reset_active

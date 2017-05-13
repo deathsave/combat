@@ -28,10 +28,22 @@ class TestBombsDroppedMode(FullMachineTestCase):
         self.assertModeRunning('base')
         print('mode no longer running, should NOT block')
         # hitting special ends mode
-        # assert our return to base mode scoring
-        self.hit_and_release_switch("s_drop_target")
-        current_score += 1000
+        # special scores 500 again
+        self.hit_and_release_switch("s_stationary_special")
+        current_score += 500
         self.assertEqual(current_score, self.machine.game.player.score)
+        # assert our return to base mode scoring
+        # and confirm we can trigger the mode again
+        self.trigger_mode()
+        current_score += 5000
+        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertModeRunning('bombs_dropped')
+        # and end it once more
+        self.hit_and_release_switch("s_stationary_special")
+        current_score += 20000
+        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertModeNotRunning('bombs_dropped')
+        self.assertModeRunning('base')
 
 
     def test_lighting(self):
