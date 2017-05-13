@@ -1,102 +1,102 @@
 #config_version=4
 leds:
   l_gi_top_1:
-    number:
+    number: 0-0
   l_gi_top_2:
-    number:
+    number: 0-0
   l_gi_saucer:
-    number:
+    number: 0-0
   l_gi_gun_top:
-    number:
+    number: 0-0
   l_gi_spinner:
-    number:
+    number: 0-0
   l_gi_gun:
-    number:
+    number: 0-0
   l_gi_hole_score_lane:
-    number:
+    number: 0-0
   l_gi_advance_bonus:
-    number:
+    number: 0-0
   l_gi_advance_hole_score:
-    number:
+    number: 0-0
   l_gi_inlane_1:
-    number:
+    number: 0-0
   l_gi_inlane_2:
-    number:
+    number: 0-0
   l_gi_slingshot_1:
-    number:
+    number: 0-0
   l_gi_slingshot_2:
-    number:
+    number: 0-0
   l_spinner:
-    number:
+    number: 0-0
   l_special:
-    number:
+    number: 0-0
   l_bonus_ball_1:
-    number:
+    number: 0-0
   l_bonus_ball_2:
-    number:
+    number: 0-0
   l_shoots_again:
-    number:
+    number: 0-0
   l_bonus_score:
-    number:
+    number: 0-0
   l_bumper_1:
-    number:
+    number: 0-0
   l_bumper_2:
-    number:
+    number: 0-0
   l_bumper_3:
-    number:
+    number: 0-0
   l_rollover_top_1:
-    number:
+    number: 0-0
   l_rollover_top_2:
-    number:
+    number: 0-0
   l_rollover_top_3:
-    number:
+    number: 0-0
   l_rollover_top_4:
-    number:
+    number: 0-0
   l_rollover_top_5:
-    number:
+    number: 0-0
   l_rollover_top_6:
-    number:
+    number: 0-0
   l_rollover_top_7:
-    number:
+    number: 0-0
   l_hole_score_lane_1:
-    number:
+    number: 0-0
   l_hole_score_lane_2:
-    number:
+    number: 0-0
   l_hole_score_lane_3:
-    number:
+    number: 0-0
   l_hole_score_lane_4:
-    number:
+    number: 0-0
   l_hole_score_lane_5:
-    number:
+    number: 0-0
   l_hole_score_lane_6:
-    number:
+    number: 0-0
   l_hole_score_lane_7:
-    number:
+    number: 0-0
   l_hole_score_lane_8:
-    number:
+    number: 0-0
   l_hole_score_lane_9:
-    number:
+    number: 0-0
   l_hole_score_lane_10:
-    number:
+    number: 0-0
   l_explosion_1:
-    number:
+    number: 0-0
   l_explosion_2:
-    number:
+    number: 0-0
   l_explosion_3:
-    number:
+    number: 0-0
   l_explosion_4:
-    number:
+    number: 0-0
   l_explosion_5:
-    number:
+    number: 0-0
   l_explosion_6:
-    number:
+    number: 0-0
   l_explosion_7:
-    number:
+    number: 0-0
   l_explosion_8:
-    number:
+    number: 0-0
   l_explosion_9:
-    number:
+    number: 0-0
   l_explosion_10:
-    number:
+    number: 0-0
   l_credit_in:
-    number:
+    number: 0-0

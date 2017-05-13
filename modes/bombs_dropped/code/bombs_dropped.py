@@ -10,7 +10,6 @@
 
 from mpf.core.mode import Mode as m
 
-
 class Custom(m):
     def mode_init(self):
         """This code that will run once mode when MPF boots."""
@@ -18,14 +17,8 @@ class Custom(m):
 
     def mode_start(self, **kwargs):
         """This code will run every time this mode starts."""
-        print('base mode started')
         del kwargs
-
-        # call seek(self.player.bgm_position) to resume OR start music
 
     def mode_stop(self, **kwargs):
         """This code will run every time this mode stops."""
-        # call get_pos() on sound and save
-        # to self.player.bgm_position
-        print('base mode ended')
         pass

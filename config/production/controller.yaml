@@ -1,7 +1,27 @@
 #config_version=4
 hardware:
-  platform: smart_virtual # change to 'fast' after wiring
-# remove after wiring
-virtual_platform_start_active_switches:
-  s_trough_1
-  s_trough_2
+  platform: fast
+  driverboards: fast
+  rgb_dmd: smartmatrix
+
+fast:
+  watchdog: 5000
+  ports:
+    # A = DMD /dev/tty.usbserial-142A
+    # B = MAIN
+    # C = RBG LED
+    # D = Custom (unused)
+    /dev/tty.usbserial-142B,
+    /dev/tty.usbserial-142C
+
+smartmatrix:
+  port: /dev/tty.usbmodem1519291
+  baud: 2500000
+  old_cookie: true
+
+physical_rgb_dmds:
+  ppp_dmd::
+    platform: smartmatrix
+    brightness: 0.6
+    gamma: 2.0
+    fps: 24

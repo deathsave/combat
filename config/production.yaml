@@ -5,17 +5,19 @@
 config:
 - global/devices/displays.yaml
 - production/controller.yaml
-- production/window.yaml
+- production/display.yaml
 - global/devices/ball_devices.yaml
 - global/devices/switches.yaml
 - global/devices/coils.yaml
 - global/devices/leds.yaml
 - global/devices/ball_devices.yaml
 - global/game.yaml
+- global/shots.yaml
 - global/animations.yaml
 - global/widgets.yaml
 - global/slides.yaml
 - global/sounds.yaml
+- global/players/coil_player.yaml
 - global/players/slide_player.yaml
 - global/players/widget_player.yaml
 - global/players/show_player.yaml

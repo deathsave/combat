@@ -2,115 +2,102 @@
 # all switches left to right
 switches:
   s_plunger_lane:
-    number:
+    number: 0-0
     tags: launch
   # Trough Switches (max 3 balls, "duo-multi" and "extra")
   s_trough_1:
-    number:
+    number: 0-1
   s_trough_2:
-    number:
+    number: 0-2
   s_trough_jam:
-    number:
+    number: 0-3
   # Pop Bumpers
   s_kicker_saucer:
-    number:
+    number: 0-4
     tags: playfield_active
   s_kicker_gun:
-    number:
+    number: 0-5
     tags: playfield_active
   s_knocker:
-    number:
+    number: 0-6
     tags: playfield_active
   s_bumper_1:
-    number:
+    number: 0-7
     tags: playfield_active
   s_bumper_2:
-    number:
+    number: 0-8
     tags: playfield_active
   s_bumper_3:
-    number:
+    number: 0-9
     tags: playfield_active
   s_slingshot_1:
-    number:
+    number: 0-10
     tags: playfield_active
   s_slingshot_2:
-    number:
+    number: 0-11
     tags: playfield_active
   s_flipper_1:
-    number:
+    number: 0-12
   s_flipper_2:
-    number:
+    number: 0-13
   s_spinner:
-    number:
+    number: 0-14
     tags: playfield_active
   s_rollover_top_1:
-    number:
+    number: 0-15
     tags: playfield_active
   s_rollover_top_2:
-    number:
+    number: 0-16
     tags: playfield_active
   s_rollover_top_3:
-    number:
+    number: 1-0
     tags: playfield_active
   s_rollover_top_4:
-    number:
+    number: 1-1
     tags: playfield_active
   s_rollover_top_5:
-    number:
+    number: 1-2
     tags: playfield_active
   s_rollover_top_6:
-    number:
+    number: 1-3
     tags: playfield_active
   s_rollover_top_7:
-    number:
+    number: 1-4
     tags: playfield_active
   s_rollover_bonus_ball_1:
-    number:
+    number: 1-5
     tags: playfield_active
   s_rollover_bonus_ball_2:
-    number:
+    number: 1-6
     tags: playfield_active
   s_rollover_advance_hole_1:
-    number:
+    number: 1-7
     tags: playfield_active
   s_rollover_advance_hole_2:
-    number:
+    number: 1-8
     tags: playfield_active
   s_stationary_thousand:
-    number:
+    number: 1-9
     tags: playfield_active
   s_stationary_special:
-    number:
+    number: 1-10
     tags: playfield_active
-  s_drop_target_1:
-    number:
+  # same switch hit for each of the "B O M B S" targets
+  s_drop_target:
+    number: 1-11
     tags: playfield_active
-  s_drop_target_2:
-    number:
-    tags: playfield_active
-  s_drop_target_3:
-    number:
-    tags: playfield_active
-  s_drop_target_4:
-    number:
-    tags: playfield_active
-  s_drop_target_5:
-    number:
-    tags: playfield_active
+  s_drop_target_reset:
+    number: 1-12
   s_stationary_advance_bonus:
-    number:
+    number: 1-13
     tags: playfield_active
   s_stationary_advance_hole_score:
-    number:
+    number: 1-14
     tags: playfield_active
   s_start:
-    number:
+    number: 1-15
     # 'start' tag is important
     tags: start
-  s_coin_1:
-    number:
-  s_coin_2:
-    number:
   # switch inside coin door to activate Config Menu
   s_menu:
-    number:
+    number: 1-16
