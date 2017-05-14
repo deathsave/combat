@@ -1,103 +1,103 @@
 #config_version=4
 leds:
-  l_gi_top_1:
-    number:
-  l_gi_top_2:
-    number:
-  l_gi_saucer:
-    number:
-  l_gi_gun_top:
-    number:
-  l_gi_spinner:
-    number:
-  l_gi_gun:
-    number:
-  l_gi_hole_score_lane:
-    number:
-  l_gi_advance_bonus:
-    number:
-  l_gi_advance_hole_score:
-    number:
-  l_gi_inlane_1:
-    number:
-  l_gi_inlane_2:
-    number:
-  l_gi_slingshot_1:
-    number:
-  l_gi_slingshot_2:
-    number:
+  #l_gi_top_1:
+  #  number:
+  #l_gi_top_2:
+  #  number:
+  #l_gi_saucer:
+  #  number:
+  #l_gi_gun_top:
+  #  number:
+  #l_gi_spinner:
+  #  number:
+  #l_gi_gun:
+  #  number:
+  #l_gi_hole_score_lane:
+  #  number:
+  #l_gi_advance_bonus:
+  #  number:
+  #l_gi_advance_hole_score:
+  #  number:
+  #l_gi_inlane_1:
+  #  number:
+  #l_gi_inlane_2:
+  #  number:
+  #l_gi_slingshot_1:
+  #  number:
+  #l_gi_slingshot_2:
+  #  number:
   l_saucer:
-    number: 1-34
+    number: 0-33
   # rename per Steve
   l_spinner:
-    number: 1-15
+    number: 0-14
   l_special:
-    number: 1-16
+    number: 0-15
   l_bonus_ball_1:
-    number: 1-3
+    number: 0-2
   l_bonus_ball_2:
-    number: 1-4
+    number: 0-3
   l_shoots_again:
-    number: 1-2
+    number: 0-1
   l_bonus_score:
-    number: 1-1
+    number: 0-0
   l_bumper_1:
-    number: 1-35
+    number: 0-34
   l_bumper_2:
-    number: 1-36
+    number: 0-35
   l_bumper_3:
-    number: 1-37
+    number: 0-36
   l_rollover_top_1:
-    number: 1-30
+    number: 0-29
   l_rollover_top_2:
-    number: 1-27
+    number: 0-26
   l_rollover_top_3:
-    number: 1-31
+    number: 0-30
   l_rollover_top_4:
-    number: 1-28
+    number: 0-27
   l_rollover_top_5:
-    number: 1-32
+    number: 0-31
   l_rollover_top_6:
-    number: 1-29
+    number: 0-28
   l_rollover_top_7:
-    number: 1-33
+    number: 0-32
   l_hole_score_lane_1:
-    number: 1-17
+    number: 0-16
   l_hole_score_lane_2:
-    number: 1-18
+    number: 0-17
   l_hole_score_lane_3:
-    number: 1-19
+    number: 0-18
   l_hole_score_lane_4:
-    number: 1-20
+    number: 0-19
   l_hole_score_lane_5:
-    number: 1-21
+    number: 0-20
   l_hole_score_lane_6:
-    number: 1-22
+    number: 0-21
   l_hole_score_lane_7:
-    number: 1-23
+    number: 0-22
   l_hole_score_lane_8:
-    number: 1-24
+    number: 0-23
   l_hole_score_lane_9:
-    number: 1-25
+    number: 0-24
   l_hole_score_lane_10:
-    number: 1-26
+    number: 0-25
   l_explosion_1:
-    number: 1-11
+    number: 0-10
   l_explosion_2:
-    number: 1-10
+    number: 0-9
   l_explosion_3:
-    number: 1-12
+    number: 0-11
   l_explosion_4:
-    number: 1-7
+    number: 0-6
   l_explosion_5:
-    number: 1-6
+    number: 0-5
   l_explosion_6:
-    number: 1-8
+    number: 0-7
   l_explosion_7:
-    number: 1-5
+    number: 0-4
   l_explosion_8:
-    number: 1-9
+    number: 0-8
   l_explosion_9:
-    number: 1-13
+    number: 0-12
   l_explosion_10:
-    number: 1-14
+    number: 0-13
