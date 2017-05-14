@@ -11,11 +11,11 @@ fast:
     # B = MAIN
     # C = RBG LED
     # D = Custom (unused)
-    /dev/tty.usbserial-142B,
-    /dev/tty.usbserial-142C
+    /dev/ttyUSB1
+    /dev/ttyUSB2
 
 smartmatrix:
-  port: /dev/tty.usbmodem1519291
+  port: /dev/ttyACM0
   baud: 2500000
   old_cookie: true
 
