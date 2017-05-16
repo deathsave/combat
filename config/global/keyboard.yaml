@@ -10,13 +10,9 @@ keyboard:
   # Start Button
   s:
     switch: s_start
-  # shoot a ball (assumes plunger lane switch)
-  l:
-    switch: s_plunger_lane
   # hit a switch (make the playfield active)
-  a:
+  l:
     switch: s_rollover_top_1
-  # Trough switches (simulate Draining a ball)
   1:
     switch: s_trough_1
     toggle: true

@@ -15,16 +15,13 @@ class TestGameStart(FullMachineTestCase):
         ## playfield expects a ball
         self.assertEqual(1, self.machine.playfield.available_balls)
         ## ball is ejected to plunger
-        self.assertEqual(1, self.machine.ball_devices.bd_plunger.balls)
-        ## no balls on playfield yet
         self.assertEqual(0, self.machine.playfield.balls)
-        ## player launches ball
-        self.hit_and_release_switch("s_plunger_lane")
+        ## player launches a ball
+        ## and it hits a playfield switch
+        self.hit_and_release_switch("s_rollover_top_1")
         ## not immediately "on the playfield", though
-        self.advance_time_and_run()
         self.assertEqual(0, self.machine.playfield.balls)
         ## after a brief delay, the ball is now on the playfield...
-        ## if this errors, could be system-specific so increase it
-        self.advance_time_and_run(3)
+        self.advance_time_and_run()
         self.assertEqual(1, self.machine.playfield.balls)
 

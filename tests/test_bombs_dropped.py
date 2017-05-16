@@ -7,9 +7,17 @@ class TestBombsDroppedMode(FullMachineTestCase):
         return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
     def test_scoring(self):
-        # before mode
         current_score = 0
-        self.begin_gameplay()
+        self.hit_and_release_switch("s_start")
+        self.advance_time_and_run(1)
+
+        # activate base mode
+        self.hit_and_release_switch("s_rollover_top_1")
+        self.advance_time_and_run(4) # 3+1
+        current_score += 500
+        self.assertEqual(1, self.machine.playfield.balls)
+        self.assertEqual(current_score, self.machine.game.player.score)
+
         self.hit_and_release_switch("s_stationary_special")
         current_score += 500
         self.assertEqual(current_score, self.machine.game.player.score)
@@ -63,13 +71,6 @@ class TestBombsDroppedMode(FullMachineTestCase):
     #############
     ## Helpers ##
     #############
-
-    def begin_gameplay(self):
-        self.hit_and_release_switch("s_start")
-        self.advance_time_and_run(1)
-        self.hit_and_release_switch("s_plunger_lane")
-        self.advance_time_and_run(4) # 3+1
-        self.assertEqual(1, self.machine.playfield.balls)
 
     def trigger_mode(self):
         for x in range(0, 5):

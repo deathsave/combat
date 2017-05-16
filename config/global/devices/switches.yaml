@@ -11,10 +11,6 @@ switches:
   #s_slingshot_2:
   #  number: 0-0
   #  tags: playfield_active
-  s_plunger_lane:
-    # fake for now... we can kill this completely and change trough setup
-    number: 1-4
-    tags: launch
   s_start:
     # fake number for now
     number: 1-3
@@ -26,10 +22,13 @@ switches:
   # Trough Switches (max 3 balls, "duo-multi" and "extra")
   s_trough_1:
     number: 0-0
+    type: NC
   s_trough_2:
     number: 0-1
+    type: NC
   s_trough_jam:
     number: 0-2
+    type: NC
   # Pop Bumpers
   #s_kicker_saucer:
   #  number: 0-28

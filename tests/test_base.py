@@ -7,11 +7,18 @@ class TestBaseMode(FullMachineTestCase):
         return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
     def test_scoring(self):
-        self.begin_gameplay()
+        current_score = 0
+        self.hit_and_release_switch("s_start")
+        self.advance_time_and_run(1)
+
+        # activate base mode
+        self.hit_and_release_switch("s_rollover_top_1")
+        self.advance_time_and_run(4) # 3+1
+        current_score += 500
         self.assertEqual(1, self.machine.playfield.balls)
+        self.assertEqual(current_score, self.machine.game.player.score)
 
         ## test pop bumper scoring
-        current_score = 0
         self.hit_and_release_switch("s_bumper_1")
         self.hit_and_release_switch("s_bumper_2")
         self.hit_and_release_switch("s_bumper_3")
@@ -87,13 +94,3 @@ class TestBaseMode(FullMachineTestCase):
         self.hit_and_release_switch("s_stationary_special")
         current_score += 500 # more when 'lit'
         self.assertEqual(current_score, self.machine.game.player.score)
-
-    #############
-    ## Helpers ##
-    #############
-
-    def begin_gameplay(self):
-        self.hit_and_release_switch("s_start")
-        self.advance_time_and_run(1)
-        self.hit_and_release_switch("s_plunger_lane")
-        self.advance_time_and_run(4) # 3+1

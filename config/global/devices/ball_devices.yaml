@@ -8,17 +8,9 @@ ball_devices:
       trough
       home
       drain
+      ball_add_live
     eject_coil: c_trough_eject
-    eject_targets: bd_plunger
+    eject_targets: playfield
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
-    debug: true
-  bd_plunger:
-    ball_switches: s_plunger_lane
-    tags: ball_add_live
-    mechanical_eject: true
-    eject_coil: c_plunger_eject
-    entrance_count_delay: 300ms
-    eject_timeouts: 3s
-    player_controlled_eject_event: sw_launch
     debug: true
