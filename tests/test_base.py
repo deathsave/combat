@@ -40,9 +40,10 @@ class TestBaseMode(FullMachineTestCase):
         self.assertEqual(current_score, self.machine.game.player.score)
 
         # test lowest "Hole Score" value (saucer)
-        self.hit_and_release_switch("s_kicker_saucer")
-        current_score += 50
-        self.assertEqual(current_score, self.machine.game.player.score)
+        # TODO: renable when we get wired
+        #self.hit_and_release_switch("s_kicker_saucer")
+        #current_score += 50
+        #self.assertEqual(current_score, self.machine.game.player.score)
 
         # test gun score
         self.hit_and_release_switch("s_kicker_gun")
@@ -55,10 +56,11 @@ class TestBaseMode(FullMachineTestCase):
         self.assertEqual(current_score, self.machine.game.player.score)
 
         # test slingshot scoring
-        self.hit_and_release_switch("s_slingshot_1")
-        self.hit_and_release_switch("s_slingshot_2")
-        current_score += 10 * 2
-        self.assertEqual(current_score, self.machine.game.player.score)
+        # TODO: reenable when we hook up mechs
+        #self.hit_and_release_switch("s_slingshot_1")
+        #self.hit_and_release_switch("s_slingshot_2")
+        #current_score += 10 * 2
+        #self.assertEqual(current_score, self.machine.game.player.score)
 
         ## test drain-area rollovers
         self.hit_and_release_switch("s_rollover_bonus_ball_1")
