@@ -1,0 +1,31 @@
+#config_version=4
+# actived when all 5 drop targets have dropped
+# user wants to continue hitting those
+# hitting the special kills the mode
+mode:
+  start_events: ball_hold_gun_full
+  priority: 121
+  code: multiball.Custom
+  stop_events: mode_multiball_stopped
+
+scoring:
+  s_kicker_gun_active:
+    # score occurs when leaving lock
+    # and anytime thereafter during multiball
+    score: 10000|block
+
+multiballs:
+  multi_bombs:
+    ball_count: 1
+    ball_count_type: add
+    # if ball drains within 20 seconds
+    # player should get another one
+    shoot_again: 20s
+    # begin when new ball
+    # is manually plunged
+    start_events:
+      mode_multiball_started
+    # setting these probably breaks 'shoot_again'
+    # let's see if MPF auto-handles the drain...
+    #disable_events: ball_drain
+    #stop_events: ball_drain

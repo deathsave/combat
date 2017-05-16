@@ -34,7 +34,6 @@ class TestBombsDroppedMode(FullMachineTestCase):
         self.assertEqual(current_score, self.machine.game.player.score)
         self.assertModeNotRunning('bombs_dropped')
         self.assertModeRunning('base')
-        print('mode no longer running, should NOT block')
         # hitting special ends mode
         # special scores 500 again
         self.hit_and_release_switch("s_stationary_special")

@@ -3,3 +3,4 @@ modes:
   # dont need attract here (built-in)
   - base
   - bombs_dropped
+  - multiball

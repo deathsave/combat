@@ -16,9 +16,8 @@ class Custom(m):
     # until scoring happens. this clears them
     def initialize_player_scores(self, **kwargs):
         # TODO: this is not working. cant seem to clear the persisted
-        # values for scores between games...
+        # values for scores between games... (issue #939 in MPF core)
         for player in self.machine.game.player_list:
-            print('Removing player{}s score'.format(player.number))
             self.machine.remove_machine_var(
                 name='player{}_score'.format(player.number))
             self.machine.create_machine_var(
@@ -30,21 +29,5 @@ class Custom(m):
         del kwargs
 
     def mode_init(self):
-        """This code that will run once mode when MPF boots."""
         self.machine.events.add_handler(
             'multiplayer_game', self.initialize_player_scores)
-        pass
-
-    def mode_start(self, **kwargs):
-        """This code will run every time this mode starts."""
-        print('base mode started')
-        del kwargs
-
-        # call seek(self.player.bgm_position) to resume OR start music
-
-    def mode_stop(self, **kwargs):
-        """This code will run every time this mode stops."""
-        # call get_pos() on sound and save
-        # to self.player.bgm_position
-        print('base mode ended')
-        pass

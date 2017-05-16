@@ -17,3 +17,28 @@ scoring:
     score: 20000|block
   s_drop_target_active:
     score: 10000|block # in ask app, these were 5000
+  s_kicker_gun_active:
+    # activates multiball
+    #   - no score when rolling into the lock
+    #     only "out" of it after user launches
+    #     next ball and it hits a top rollover
+    score: 0|block
+
+# multiball_locks seems to release when multiball
+# begins, but we still need to player to plunge
+# so "hold" until they hit a switch
+ball_holds:
+  gun:
+    balls_to_hold: 1
+    hold_devices: bd_gun
+    release_one_events:
+      # there appears to be a long delay
+      # between these events and the release
+      #  - adding event: [delay] didn't change it =/
+      s_rollover_top_1_active
+      s_rollover_top_2_active
+      s_rollover_top_3_active
+      s_rollover_top_4_active
+      s_rollover_top_5_active
+      s_rollover_top_6_active
+      s_rollover_top_7_active
