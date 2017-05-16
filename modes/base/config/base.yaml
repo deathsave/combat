@@ -68,6 +68,8 @@ scoring:
     score: 500 # 5k once drop target complete...
   s_drop_target_active:
     score: 1000 # in ask app, these were 5000
+  s_drop_target_behind_active:
+    score: 500
   s_stationary_advance_bonus_active:
     score: 0
   s_stationary_advance_hole_score_active:

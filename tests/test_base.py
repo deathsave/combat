@@ -39,6 +39,11 @@ class TestBaseMode(FullMachineTestCase):
         current_score += 1000 * 4
         self.assertEqual(current_score, self.machine.game.player.score)
 
+        # test switch 'behind' drop target
+        self.hit_and_release_switch("s_drop_target_behind")
+        current_score += 500
+        self.assertEqual(current_score, self.machine.game.player.score)
+
         # test lowest "Hole Score" value (saucer)
         # TODO: renable when we get wired
         #self.hit_and_release_switch("s_kicker_saucer")

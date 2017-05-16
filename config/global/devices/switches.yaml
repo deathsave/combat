@@ -96,6 +96,9 @@ switches:
   s_drop_target:
     number: 0-11
     tags: playfield_active
+  s_drop_target_behind:
+    number: 0-12
+    tags: playfield_active
   s_drop_target_reset:
     number: 0-13
   s_stationary_advance_bonus:
