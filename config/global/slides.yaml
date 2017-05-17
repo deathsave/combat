@@ -1,19 +1,50 @@
 #config_version=4
 slides:
-# only using slides for the fake DMD currently, see players.yaml
+# see players.yaml for slide changes per events
   default_slide:
     widgets:
-      - type: image
-        image: backglass
-        z: 1
       - type: color_dmd
         # source_display: dmd (default)
         width: 1024
         height: 256
         y: top-85%
-        z: 2
+      # this is the top of the LCD where the player
+      # scores are for changing the "player up" assets
+      - type: slide_frame
+        name: player_up_frame
+        width: 1920
+        height: 324
+        anchor_y: top
+        y: top
+      # default backglass
+      - type: image
+        image: backglass-attract
   loading_slide:
     widgets:
       - type: text
         text: Loading...
         z: 0
+  single_player_up_slide:
+    widgets:
+      - type: image
+        image: backglass-single-player
+        anchor_y: top
+        y: top
+  player_1_up_slide:
+    widgets:
+      - type: image
+        image: backglass-player1-up
+        anchor_y: top
+        y: top
+  player_2_up_slide:
+    widgets:
+      - type: image
+        image: backglass-player2-up
+        anchor_y: top
+        y: top
+  awaiting_player_slide:
+    widgets:
+      - type: image
+        image: backglass-awaiting-player
+        anchor_y: top
+        y: top

@@ -18,11 +18,13 @@ widget_player:
         y: top-74%
     current_score:
       action: remove # when a game ends...
-    player_scores:
-      action: remove
     player_up:
       action: remove
     ball_count:
+      action: remove
+    player_one_score:
+      action: remove
+    player_two_score:
       action: remove
   mode_base_started:
     current_score:
@@ -31,7 +33,11 @@ widget_player:
         anchor_y: middle
         anchor_x: center
         y: middle+6%
-    player_scores:
+    player_one_score:
+      target: window
+      action: add
+    player_two_score:
+      target: window
       action: add
     player_up:
       action: add

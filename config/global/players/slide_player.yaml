@@ -1,9 +1,23 @@
 #config_version=4
 slide_player:
-  mode_attract_started:
-    default_slide:
-      target: window
-      priority: 1000
   init_start:
     loading_slide:
       target: window
+  init_done:
+    default_slide:
+      target: window
+  mode_attract_started:
+    awaiting_player_slide:
+      target: player_up_frame
+  single_player_ball_started:
+    single_player_up_slide:
+      target: player_up_frame
+  multiplayer_game:
+    player_1_up_slide:
+      target: player_up_frame
+  player_1_ball_started:
+    player_1_up_slide:
+      target: player_up_frame
+  player_2_ball_started:
+    player_2_up_slide:
+      target: player_up_frame
