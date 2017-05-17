@@ -10,10 +10,29 @@
 
 from mpf.core.mode import Mode as m
 
-
 class Custom(m):
+    # MPF persists player's scores so they can display in the attact
+    # mode, but then they akwardly display immediately in a new game
+    # until scoring happens. this clears them
+    def initialize_player_scores(self, **kwargs):
+        # TODO: this is not working. cant seem to clear the persisted
+        # values for scores between games...
+        for player in self.machine.game.player_list:
+            print('Removing player{}s score'.format(player.number))
+            self.machine.remove_machine_var(
+                name='player{}_score'.format(player.number))
+            self.machine.create_machine_var(
+                'player{}_score'.format(player.number),
+                value=0,
+                persist=False,
+                expire_secs=None,
+                silent=False)
+        del kwargs
+
     def mode_init(self):
         """This code that will run once mode when MPF boots."""
+        self.machine.events.add_handler(
+            'multiplayer_game', self.initialize_player_scores)
         pass
 
     def mode_start(self, **kwargs):
