@@ -1,48 +1,44 @@
 #config_version=4
 coils:
   c_trough_eject:
-    number: 0
+    number: 0-3
     pulse_ms: 20
-  # auto kicker for multi-ball
-  c_plunger_eject:
-    number: 1
+  c_flipper_1_main:
+    number: 0-7
     pulse_ms: 20
-#  c_flipper_1_main:
-#    number: 2
-#    pulse_ms: 20
-#  c_flipper_1_hold:
-#    number: 3
-#    allow_enable: true
-#  c_flipper_2_main:
-#    number: 4
-#    pulse_ms: 20
-#  c_flipper_2_hold:
-#    number: 5
-#    allow_enable: true
-#  c_bumper_1:
-#    number: 6
-#    pulse_ms: 20
-#  c_bumper_2:
-#    number: 7
-#    pulse_ms: 20
-#  c_bumper_3:
-#    number: 8
-#    pulse_ms: 20
-#  c_slingshot_1:
-#    number: 9
-#    pulse_ms: 20
-#  c_slingshot_2:
-#    number: 10
-#    pulse_ms: 20
+  c_flipper_1_hold:
+    number: 0-6
+    allow_enable: true
+  c_flipper_2_main:
+    number: 0-5
+    pulse_ms: 20
+  c_flipper_2_hold:
+    number: 0-4
+    allow_enable: true
+  c_bumper_1:
+    number: 1-3
+    pulse_ms: 20
+  c_bumper_2:
+    number: 1-2
+    pulse_ms: 20
+  c_bumper_3:
+    number: 1-1
+    pulse_ms: 20
+  c_slingshot_1:
+    number: 1-0
+    pulse_ms: 20
+  c_slingshot_2:
+    number: 0-2
+    pulse_ms: 20
 #  c_kicker_saucer:
 #    number: 11
 #    pulse_ms: 20
-#  c_kicker_gun:
-#    number: 12
-#    pulse_ms: 20
+  c_kicker_gun:
+    number: 0-0
+    pulse_ms: 20
 #  c_knocker:
 #    number: 13
 #    pulse_ms: 20
-#  c_drop_target:
-#    number: 14
-#    pulse_ms: 20
+  c_drop_target:
+    number: 0-1
+    pulse_ms: 20
