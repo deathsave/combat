@@ -3,6 +3,66 @@ Combat by Zaccaria
 
 *Re-imagined by Pinball Plaid.
 
+Game Rules
+----------
+
+### TODO: Flash Score
+
+Launch a missle (northwest kicker) or fire the gun (northeast kicker)
+
+* Active for 15 seconds.
+* Pop Bumpers score 1,000
+* Cluster Bombs (north rollovers) score 5,000
+
+
+### Laser-guided Bombs (bombs_dropped)
+
+Enemy is in plain sight. Attack!
+
+* Laser-guided bombs are deadly accurate and score 10k
+* Laser-guided Torpedo (special):
+  * Pro: Inflicts significant damage (scores 20k)
+  * Con: Gives up our position (forfeit 10x bombs multiplier)
+* Outlanes light and award extra ball
+
+
+### Hole Score Bonus
+
+Shoot the battleship (spinner), right-side target or in-lane to advance.
+Launch a missle to collect.
+
+* 50 points to 30% lit
+* 500 points to 60% lit
+* 5,000 points to 90% lit
+* 50,000 points fully lit
+
+
+### TODO: Explosion Bonus (use MPF built-in game-over bonus)
+
+Shoot the Cluster Bombs (when lit) or right-side target to advance.
+
+* Collected at end of ball.
+
+#### TODO: x10 Explosion Bonus Multiplier
+
+* South-most led lit
+* Activation Logic TODO
+
+
+### TODO: Same Player Shoots Again
+
+Awarded after 100 battleships (spins) on a single ball.
+Only awarded once per game, per player.
+
+* Lights the led at bottom of playfield
+* Free ball after draining
+
+
+### Multiball
+
+After dropping the bombs, load the gun to activate.
+
+
 Development
 -----------
 
