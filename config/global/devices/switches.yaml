@@ -46,8 +46,12 @@ switches:
     number: 1-2
     tags: playfield_active
   s_flipper_1:
+    number: 0-7
+  s_flipper_1_eos:
     number: 0-4
   s_flipper_2:
+    number: 0-6
+  s_flipper_2_eos:
     number: 0-3
   s_spinner:
     number: 0-26
@@ -83,7 +87,7 @@ switches:
     number: 0-24
     tags: playfield_active
   s_rollover_advance_hole_2:
-    number: 0-6
+    number: 0-31
     tags: playfield_active
   s_stationary_thousand:
     number: 0-27
