@@ -1,0 +1,10 @@
+#config_version=4
+mode:
+  start_events: s_kicker_saucer_active
+  priority: 200
+  code: hole_score.Custom
+
+# TODO: turn off lights one by one, top to bottom
+#led_player:
+#  mode_base_started:
+#    l_hole_score_lane_1: FF0000 # red

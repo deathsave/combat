@@ -24,8 +24,6 @@ event_player:
     s_drop_target_reset_active
 
 scoring:
-  s_kicker_saucer_active:
-    score: 50
   s_kicker_gun_active:
     score: 5000
   s_bumper_1_active:

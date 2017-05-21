@@ -1,0 +1,29 @@
+#config_version=4
+# blocks reset on completion by default
+logic_blocks:
+  counters:
+    bombs:
+      count_events: s_drop_target_active
+      starting_count: 5
+      count_complete_value: 0
+      direction: down
+      events_when_complete: bombs_complete
+      restart_events: s_drop_target_reset_active
+    spins:
+      count_events: s_spinner_active
+      starting_count: 0
+      count_complete_value: 8
+      direction: up
+      events_when_complete: spins_advance_hole
+    hole_score:
+      count_events:
+        s_rollover_advance_hole_1_active
+        s_rollover_advance_hole_2_active
+        s_stationary_advance_hole_score_active
+        spin_advances_hole
+      starting_count: 1
+      count_complete_value: 10
+      events_when_complete: hole_score_complete
+      direction: up
+      restart_events: mode_hole_score_stopped
+      reset_on_complete: false
