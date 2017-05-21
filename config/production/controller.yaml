@@ -2,26 +2,27 @@
 hardware:
   platform: fast
   driverboards: fast
-  #rgb_dmd: smartmatrix
+  rgb_dmd: smartmatrix
 
 fast:
   watchdog: 5000
+  hardware_led_fade_time: 65ms
+  config_number_format: int
+  rgb_buffer: 10
   ports:
-    # A = DMD /dev/tty.usbserial-142A
+    # A = DMD (not on the Nano)
     # B = MAIN
     # C = RBG LED
-    # D = Custom (unused)
+    # D = Custom (unused and also not on the Nano)
     /dev/ttyUSB1
     /dev/ttyUSB2
 
-#smartmatrix:
-#  port: /dev/ttyACM0
-#  baud: 2500000
-#  old_cookie: true
-#
-#physical_rgb_dmds:
-#  ppp_dmd::
-#    platform: smartmatrix
-#    brightness: 0.6
-#    gamma: 2.0
-#    fps: 24
+smartmatrix:
+  port: /dev/ttyACM0
+  baud: 3400000
+
+physical_rgb_dmds:
+  smartmatrix:
+    brightness: 0.5
+    gamma: 2.2
+    fps: 25
