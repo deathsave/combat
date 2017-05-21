@@ -9,6 +9,7 @@ config:
 - global/devices/ball_devices.yaml
 - global/devices/switches.yaml
 - global/devices/coils.yaml
+- global/devices/autofire_coils.yaml
 - global/devices/leds.yaml
 - global/devices/ball_devices.yaml
 - global/game.yaml

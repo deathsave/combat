@@ -1,0 +1,34 @@
+#config_version=4
+autofire_coils:
+  left_sling:
+    coil: c_slingshot_1
+    switch: s_slingshot_1
+    enable_events: ball_starting
+  right_sling:
+    coil: c_slingshot_2
+    switch: s_slingshot_2
+    enable_events: ball_starting
+  pop_bumper_left:
+    coil: c_bumper_1
+    switch: s_bumper_1
+    enable_events: ball_starting
+  pop_bumper_top:
+    coil: c_bumper_2
+    switch: s_bumper_2
+    enable_events: ball_starting
+  pop_bumper_bottom:
+    coil: c_bumper_3
+    switch: s_bumper_3
+    enable_events: ball_starting
+  #  saucer:
+  #    coil: c_kicker_saucer
+  #    switch: s_kicker_saucer
+  #    enable_events: ball_starting
+  gun:
+    coil: c_kicker_gun
+    switch: s_kicker_gun
+    enable_events: ball_starting
+  bombs:
+    coil: c_drop_target
+    switch: s_drop_target
+    enable_events: ball_starting
