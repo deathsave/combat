@@ -2,61 +2,61 @@
 - time: 0
   leds:
     l_hole_score_lane_1: 'FF0000' # red
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_2: 'FF1900'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_3: 'FF3300'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_4: 'FF4D00'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_5: 'FF6600'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_6: 'FF8000' # orange
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_7: 'FF9900'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_8: 'FFB300'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_9: 'FFCC00'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_10: 'FFFF00' # double jump to yellow - should be FFE600
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_1: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_2: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_3: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_4: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_5: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_6: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_7: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_8: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_9: '000000'
-- time: '+0.3'
+- time: '+0.15'
   leds:
     l_hole_score_lane_10: '000000'
-- time: '+0.3'
+- time: '+0.15'

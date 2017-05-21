@@ -1,5 +1,13 @@
 # show_version=4
-- time: 6.0
+- time: '+1.0'
+  leds:
+    l_spinner: "ffffff"
+    l_special: "FF69B4"
+    l_bonus_ball_1: "ff0000"
+    l_bonus_ball_2: "ff0000"
+    l_shoots_again: "ffffff"
+    l_bonus_score: "ffffff"
+- time: '+0.15'
   leds:
     l_spinner: "000000"
     l_special: "000000"
@@ -7,15 +15,15 @@
     l_bonus_ball_2: "000000"
     l_shoots_again: "000000"
     l_bonus_score: "000000"
-- time: '+0.6'
+- time: '+0.15'
   leds:
     l_spinner: "ffffff"
-    l_special: "ffffff"
+    l_special: "FF69B4"
     l_bonus_ball_1: "ff0000"
     l_bonus_ball_2: "ff0000"
     l_shoots_again: "ffffff"
     l_bonus_score: "ffffff"
-- time: '+0.6'
+- time: '+0.3'
   leds:
     l_spinner: "000000"
     l_special: "000000"
@@ -23,15 +31,15 @@
     l_bonus_ball_2: "000000"
     l_shoots_again: "000000"
     l_bonus_score: "000000"
-- time: '+0.6'
+- time: '+0.3'
   leds:
     l_spinner: "ffffff"
-    l_special: "ffffff"
+    l_special: "FF69B4"
     l_bonus_ball_1: "ff0000"
     l_bonus_ball_2: "ff0000"
     l_shoots_again: "ffffff"
     l_bonus_score: "ffffff"
-- time: '+0.6'
+- time: '+1.1'
   leds:
     l_spinner: "000000"
     l_special: "000000"
