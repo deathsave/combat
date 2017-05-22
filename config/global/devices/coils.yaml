@@ -24,9 +24,9 @@ coils:
   c_bumper_3:
     number: 1-1
     pulse_ms: 40
-  #c_slingshot_1:
-  #  number: 1-0
-  #  pulse_ms: 40
+  c_slingshot_1:
+    number: 1-0
+    pulse_ms: 40
   c_slingshot_2:
     number: 0-2
     pulse_ms: 40

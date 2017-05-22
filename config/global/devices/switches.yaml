@@ -5,9 +5,9 @@ switches:
   #s_knocker:
   #  number:
   #  tags: playfield_active
-  #s_slingshot_1:
-  #  number: 0-30
-  #  tags: playfield_active
+  s_slingshot_1:
+    number: 1-3
+    tags: playfield_active
   s_slingshot_2:
     number: 0-29
     tags: playfield_active
