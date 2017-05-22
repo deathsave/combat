@@ -13,7 +13,7 @@ switches:
     tags: playfield_active
   s_start:
     # fake number for now
-    number: 1-3
+    number: 1-5
     # 'start' tag is important
     tags: start
   # switch inside coin door to activate Config Menu
