@@ -29,13 +29,13 @@ switches:
   s_trough_jam:
     number: 0-2
     type: NC
-  # Pop Bumpers
   #s_kicker_saucer:
   #  number: 0-28
   #  tags: playfield_active
   s_kicker_gun:
     number: 0-10
     tags: playfield_active
+  # Pop Bumpers
   s_bumper_1:
     number: 1-0
     tags: playfield_active

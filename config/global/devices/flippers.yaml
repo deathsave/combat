@@ -1,8 +1,8 @@
 flippers:
-  #left_flipper:
-  #  main_coil: c_flipper_main_1
-  #  hold_coil: c_flipper_hold_1
-  #  activation_switch: s_flipper_1
+  left_flipper:
+    main_coil: c_flipper_main_1
+    hold_coil: c_flipper_hold_1
+    activation_switch: s_flipper_1
   right_flipper:
     main_coil: c_flipper_main_2
     hold_coil: c_flipper_hold_2
