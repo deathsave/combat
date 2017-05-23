@@ -12,6 +12,7 @@ config:
 - global/devices/autofire_coils.yaml
 - global/devices/leds.yaml
 - global/devices/ball_devices.yaml
+- global/logic_blocks.yaml
 - global/game.yaml
 - global/shots.yaml
 - global/animations.yaml
