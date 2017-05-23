@@ -29,7 +29,7 @@ switches:
   s_trough_jam:
     number: 0-2
     type: NC
-  s_kicker_saucer:
+  s_kicker_missile:
     number: 0-28
     tags: playfield_active
   s_kicker_gun:

@@ -30,9 +30,9 @@ coils:
   c_slingshot_2:
     number: 0-2
     pulse_ms: 40
-#  c_kicker_saucer:
-#    number: 11
-#    pulse_ms: 40
+  c_kicker_missile:
+    number: 11
+    pulse_ms: 40
   c_kicker_gun:
     number: 0-0
     pulse_ms: 40

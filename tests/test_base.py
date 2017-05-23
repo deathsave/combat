@@ -53,7 +53,7 @@ class TestBaseMode(FullMachineTestCase):
 
         # test lowest "Hole Score" value (saucer)
         # TODO: renable when we get wired
-        #self.hit_and_release_switch("s_kicker_saucer")
+        #self.hit_and_release_switch("s_kicker_missile")
         #current_score += 50
         #self.assertEqual(current_score, self.machine.game.player.score)
 

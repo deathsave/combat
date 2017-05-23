@@ -9,7 +9,7 @@ class TestHoleScoreMode(FullMachineTestCase):
     def test_default(self):
         current_score = self._init_game()
         # wah, wah... only 50 points collected if you don't advance the hole
-        self.hit_and_release_switch("s_kicker_saucer")
+        self.hit_and_release_switch("s_kicker_missile")
         current_score += 50
         self.assertEqual(current_score, self.machine.game.player.score)
 
@@ -18,8 +18,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # begin at 1, in low throughin first block for up to two advancements
         for i in range(2):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
-        self.hit_and_release_switch("s_kicker_saucer")
-        self.assertModeRunning('hole_score')
+        self.hit_and_release_switch("s_kicker_missile")
         current_score += 50
         self.assertEqual(current_score, self.machine.game.player.score)
         # 550 != 1000
@@ -29,8 +28,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # begin at 1, in mid through 6
         for i in range(5):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
-        self.hit_and_release_switch("s_kicker_saucer")
-        self.assertModeRunning('hole_score')
+        self.hit_and_release_switch("s_kicker_missile")
         current_score += 500
         self.assertEqual(current_score, self.machine.game.player.score)
         # 1000 != 5500
@@ -40,8 +38,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # begin at 1, in high through 9
         for i in range(8):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
-        self.hit_and_release_switch("s_kicker_saucer")
-        self.assertModeRunning('hole_score')
+        self.hit_and_release_switch("s_kicker_missile")
         current_score += 5000
         self.assertEqual(current_score, self.machine.game.player.score)
 
@@ -50,8 +47,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # 10 advancements for max value...
         for i in range(1,10):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
-        self.hit_and_release_switch("s_kicker_saucer")
-        self.assertModeRunning('hole_score')
+        self.hit_and_release_switch("s_kicker_missile")
         current_score += 50000
         self.assertEqual(current_score, self.machine.game.player.score)
 

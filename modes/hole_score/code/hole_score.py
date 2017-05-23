@@ -8,12 +8,15 @@
 # Also add a "code: your_mode.YourMode" (or whatever you call it) to the
 # "mode:" section of your mode's <mode_name>.yaml configuration file.
 
-from mpf.core.mode import Mode as m
+from mpf.core.mode import Mode
 from mpf.core.delays import DelayManager
 
-class Custom(m):
+class Custom(Mode):
     def mode_start(self, **kwargs):
-        print('Collecting hole score bonus')
+        #for mode in self.machine.mode_controller.active_modes:
+        #    print(vars(mode))
+        #    if mode.name == 'hole_score':
+        #        hole_score_mode = mode
         player = self.machine.game.player
         awarded_score = 0
         if player.hole_score_count == 10:
@@ -31,4 +34,5 @@ class Custom(m):
 
         #for i in range(player.hole_score_count):
         #    player.score += int(awarded_part) # rounding errors...
+        self.machine.modes.hole_score.stop()
         del kwargs
