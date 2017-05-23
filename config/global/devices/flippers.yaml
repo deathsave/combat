@@ -3,7 +3,15 @@ flippers:
     main_coil: c_flipper_main_1
     hold_coil: c_flipper_hold_1
     activation_switch: s_flipper_1
+    eos_switch: s_flipper_1_eos
+    enable_events: ball_starting
+    use_eos: true
+    label: Left Flipper
   right_flipper:
     main_coil: c_flipper_main_2
     hold_coil: c_flipper_hold_2
     activation_switch: s_flipper_2
+    eos_switch: s_flipper_2_eos
+    enable_events: ball_starting
+    use_eos: true
+    label: Right Flipper
