@@ -30,7 +30,7 @@ switches:
     number: 0-2
     type: NC
   s_kicker_missile:
-    number: 0-28
+    number: 2-7
     tags: playfield_active
   s_kicker_gun:
     number: 0-10

@@ -3,12 +3,12 @@ coils:
   c_trough_eject:
     number: 0-3
     pulse_ms: 40
-  #c_flipper_main_1:
-  #  number: 0-7
-  #  pulse_ms: 40
-  #c_flipper_hold_1:
-  #  number: 0-6
-  #  allow_enable: true
+  c_flipper_main_1:
+    number: 0-7
+    pulse_ms: 40
+  c_flipper_hold_1:
+    number: 0-6
+    allow_enable: true
   c_flipper_main_2:
     number: 0-5
     pulse_ms: 40
@@ -31,14 +31,14 @@ coils:
     number: 0-2
     pulse_ms: 40
   c_kicker_missile:
-    number: 11
+    number: 2-2
     pulse_ms: 40
   c_kicker_gun:
     number: 0-0
     pulse_ms: 40
-#  c_knocker:
-#    number: 13
-#    pulse_ms: 40
+  c_knocker:
+    number: 2-1
+    pulse_ms: 40
   c_drop_target:
     number: 0-1
     pulse_ms: 40
