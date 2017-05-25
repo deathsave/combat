@@ -5,11 +5,14 @@ switches:
   #s_knocker:
   #  number:
   #  tags: playfield_active
+  s_tilt:
+    number: 2-1
+    tags: tilt_warning
   s_slingshot_1:
     number: 1-3
     tags: playfield_active
   s_slingshot_2:
-    number: 0-29
+    number: 2-0
     tags: playfield_active
   s_start:
     # fake number for now
@@ -47,10 +50,12 @@ switches:
     tags: playfield_active
   s_flipper_1:
     number: 0-7
+    tags: left_flipper
   s_flipper_1_eos:
     number: 0-4
   s_flipper_2:
     number: 0-6
+    tags: right_flipper
   s_flipper_2_eos:
     number: 0-3
   s_spinner:

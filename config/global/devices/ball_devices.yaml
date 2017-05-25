@@ -17,9 +17,11 @@ ball_devices:
   bd_gun:
     ball_capacity: 1
     entrance_switch: s_kicker_gun
+    confirm_eject_switch: s_kicker_gun
     eject_coil: c_kicker_gun
     eject_targets: playfield
     eject_timeouts: 5s
+    exit_count_delay: 5s
     debug: true
   bd_missile:
     ball_capacity: 1
@@ -27,4 +29,5 @@ ball_devices:
     eject_coil: c_kicker_missile
     eject_targets: playfield
     eject_timeouts: 3s
+    exit_count_delay: 3s
     debug: true

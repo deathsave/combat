@@ -17,15 +17,17 @@ logic_blocks:
     spins:
       count_events: s_spinner_active
       starting_count: 0
-      count_complete_value: 8
+      count_complete_value: 5
       direction: up
-      events_when_complete: spins_advance_hole
+      events_when_complete: spins_advances_hole
+      restart_events: spins_advances_hole
+      reset_on_complete: true
     hole_score:
       count_events:
         s_rollover_advance_hole_1_active
         s_rollover_advance_hole_2_active
         s_stationary_advance_hole_score_active
-        spin_advances_hole
+        spins_advances_hole
       starting_count: 1
       count_complete_value: 10
       events_when_complete: hole_score_complete

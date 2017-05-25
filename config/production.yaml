@@ -6,6 +6,7 @@ config:
 - global/devices/displays.yaml
 - production/controller.yaml
 - production/display.yaml
+- global/devices/flippers.yaml
 - global/devices/ball_devices.yaml
 - global/devices/switches.yaml
 - global/devices/coils.yaml
