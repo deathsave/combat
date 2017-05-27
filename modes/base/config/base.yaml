@@ -37,10 +37,10 @@ logic_blocks:
 
 sound_player:
   mode_base_started:
-    plunging_bgm:
+    base_bgm:
       action: play
-  balldevice_playfield_ball_enter:
-    plunging_bgm:
+  mode_base_stopped:
+    base_bgm:
       action: stop
 
 shows:

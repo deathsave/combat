@@ -14,6 +14,14 @@ scoring:
     # and anytime thereafter during multiball
     score: 10000|block
 
+sound_player:
+  mode_multiball_started:
+    multiball_bgm:
+      action: play
+  mode_multiball_stopped:
+    multiball_bgm:
+      action: stop
+
 multiballs:
   multi_bombs:
     ball_count: 1
