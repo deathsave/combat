@@ -6,7 +6,7 @@ sound_system:
   master_volume: 0.9
   tracks:
     music:
-      volume: 0.5
+      volume: 0.7
       simultaneous_sounds: 1
       events_when_stopped: music_track_stopped
       events_when_played: music_track_played, keep_going
@@ -23,19 +23,28 @@ sound_system:
 sounds:
   attract_bgm:
     # TODO: either add a delay or silence to end of file
+    priority: 100
     file: attract_bgm.ogg
     track: music
     volume: 0.4
-    loops: -1 # repeat until shut off
+    loops: 1 # repeat until shut off
   base_bgm:
+    priority: 100
     file: base_bgm.ogg
     track: music
-    volume: 0.6
+    volume: 0.5
     loops: -1 # repeat until shut off
   multiball_bgm:
     # TODO: add a partial loop to play after sound
     # gets near the end...
+    priority: 200
     file: multiball_bgm.ogg
     track: music
-    volume: 0.8
+    volume: 0.9
     loops: -1
+  high_score_bgm:
+    priority: 200
+    file: high_score_bgm.ogg
+    track: music
+    volume: 0.4
+    loops: 1 # repeat until shut off

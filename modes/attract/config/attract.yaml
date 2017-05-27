@@ -26,11 +26,3 @@ show_player:
       action: stop
     general_illumination:
       action: play
-
-sound_player:
-  mode_attract_started:
-    attract_bgm:
-      action: play
-  mode_attract_stopped:
-    attract_bgm:
-      action: stop

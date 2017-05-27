@@ -35,14 +35,6 @@ logic_blocks:
       restart_events: mode_hole_score_stopped
       reset_on_complete: false
 
-sound_player:
-  mode_base_started:
-    base_bgm:
-      action: play
-  mode_base_stopped:
-    base_bgm:
-      action: stop
-
 shows:
   hole_score_show:
     - duration: -1
