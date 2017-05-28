@@ -29,3 +29,5 @@ multiballs:
     # let's see if MPF auto-handles the drain...
     #disable_events: ball_drain
     #stop_events: ball_drain
+    #
+    # when I "drained", it was an infinite scoring loop

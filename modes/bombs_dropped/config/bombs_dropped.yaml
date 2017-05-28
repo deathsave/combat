@@ -32,13 +32,10 @@ ball_holds:
     balls_to_hold: 1
     hold_devices: bd_gun
     release_one_events:
-      # there appears to be a long delay
-      # between these events and the release
-      #  - adding event: [delay] didn't change it =/
-      s_rollover_top_1_active
-      s_rollover_top_2_active
-      s_rollover_top_3_active
-      s_rollover_top_4_active
-      s_rollover_top_5_active
-      s_rollover_top_6_active
-      s_rollover_top_7_active
+      # release on any 'playfield_active' switch
+      sw_playfield_active
+    disable_events:
+      # needs to not "hold" any further balls after multiball is
+      # activated BUT still need to release the held ball when
+      # during multiball
+      ball_hold_gun_balls_released
