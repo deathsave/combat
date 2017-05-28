@@ -6,13 +6,20 @@ mode:
   start_events: ball_hold_gun_full
   priority: 121
   code: multiball.Custom
-  stop_events: mode_multiball_stopped
+  stop_events: multiball_multi_bombs_ball_lost
 
 scoring:
   s_kicker_gun_active:
     # score occurs when leaving lock
     # and anytime thereafter during multiball
+    # THIS MAY CAUSE A DUPLICATE COIL FIRE...
     score: 10000|block
+  s_bumper_1_active:
+    score: 1000|block # bumpers 10x all day during multi
+  s_bumper_2_active:
+    score: 1000|block
+  s_bumper_3_active:
+    score: 1000|block
 
 multiballs:
   multi_bombs:
@@ -28,6 +35,5 @@ multiballs:
     # setting these probably breaks 'shoot_again'
     # let's see if MPF auto-handles the drain...
     #disable_events: ball_drain
-    #stop_events: ball_drain
-    #
-    # when I "drained", it was an infinite scoring loop
+    stop_events:
+      multiball_multi_bombs_ball_lost

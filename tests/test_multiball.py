@@ -55,3 +55,18 @@ class TestMultiballMode(FullMachineTestCase):
         # and this time scores 10k
         self.hit_and_release_switch("s_kicker_gun")
         current_score += 10000 # 10x multi on drop targets during mode
+        # ensure gun doesn't hold ball infinitely during multiball
+        self.advance_time_and_run(12)
+        self.assertEqual(2, self.machine.playfield.balls)
+        # bumpers score 10x while we have 2 balls in play
+        self.hit_and_release_switch("s_bumper_1")
+        self.hit_and_release_switch("s_bumper_2")
+        self.hit_and_release_switch("s_bumper_3")
+        current_score += 3000
+        # ball drains, ending multiball but not player's turn
+        self.hit_switch_and_run('s_trough_1', 1)
+        self.assertEqual(1, self.machine.playfield.balls)
+        self.assertModeNotRunning('multiball')
+        # bumpers back to normal with single ball in play
+        self.hit_and_release_switch("s_bumper_1")
+        current_score += 100
