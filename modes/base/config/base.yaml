@@ -4,6 +4,13 @@ mode:
   priority: 100
   code: base.Custom
 
+ball_holds:
+  missile:
+    balls_to_hold: 1
+    hold_devices: bd_missile
+    release_one_events:
+      mode_hole_score_stopped: 2s
+
 # blocks reset on completion by default
 logic_blocks:
   counters:
