@@ -42,91 +42,17 @@ logic_blocks:
       restart_events: mode_hole_score_stopped
       reset_on_complete: false
 
-shows:
-  hole_score_show:
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-        l_hole_score_lane_4: 'FF69B4'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-        l_hole_score_lane_4: 'FF69B4'
-        l_hole_score_lane_5: 'FF69B4'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-        l_hole_score_lane_4: 'FF69B4'
-        l_hole_score_lane_5: 'FF69B4'
-        l_hole_score_lane_6: 'FF69B4'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-        l_hole_score_lane_4: 'FF69B4'
-        l_hole_score_lane_5: 'FF69B4'
-        l_hole_score_lane_6: 'FF69B4'
-        l_hole_score_lane_7: 'FFFF00'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-        l_hole_score_lane_4: 'FF69B4'
-        l_hole_score_lane_5: 'FF69B4'
-        l_hole_score_lane_6: 'FF69B4'
-        l_hole_score_lane_7: 'FFFF00'
-        l_hole_score_lane_8: 'FFFF00'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-        l_hole_score_lane_4: 'FF69B4'
-        l_hole_score_lane_5: 'FF69B4'
-        l_hole_score_lane_6: 'FF69B4'
-        l_hole_score_lane_7: 'FFFF00'
-        l_hole_score_lane_8: 'FFFF00'
-        l_hole_score_lane_9: 'FFFF00'
-    - duration: -1
-      leds:
-        l_hole_score_lane_1: '56A20A'
-        l_hole_score_lane_2: '56A20A'
-        l_hole_score_lane_3: '56A20A'
-        l_hole_score_lane_4: 'FF69B4'
-        l_hole_score_lane_5: 'FF69B4'
-        l_hole_score_lane_6: 'FF69B4'
-        l_hole_score_lane_7: 'FFFF00'
-        l_hole_score_lane_8: 'FFFF00'
-        l_hole_score_lane_9: 'FFFF00'
-        l_hole_score_lane_10: 'FF8000'
-
 show_player:
+  mode_hole_score_started:
+    hole_score_collect:
+      action: play
   logicblock_hole_score_updated:
-    hole_score_show:
+    hole_score_step:
       start_step: current_player.hole_score_count
-  mode_hole_score_stopped:
-    hole_score_show:
-      start_step: 1
+  balldevice_bd_missile_ball_eject_success:
+    hole_score_collect:
+      action: stop
+
 
 event_player:
   # cause the drop target to reset

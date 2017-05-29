@@ -47,6 +47,8 @@ leds:
     number: 0-35
   l_bumper_3:
     number: 0-36
+  l_missile:
+    number: 0-37
   l_rollover_top_1:
     number: 0-29
   l_rollover_top_2:
