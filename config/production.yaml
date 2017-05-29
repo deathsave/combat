@@ -3,6 +3,7 @@
 ## PRODUCTION CONFIG ##
 #######################
 config:
+- global/assets.yaml
 - global/devices/displays.yaml
 - production/controller.yaml
 - production/display.yaml
