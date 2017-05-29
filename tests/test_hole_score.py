@@ -18,6 +18,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # begin at 1, in low throughin first block for up to two advancements
         for i in range(2):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
+            current_score += 100
         self.hit_and_release_switch("s_kicker_missile")
         current_score += 50
         self.assertEqual(current_score, self.machine.game.player.score)
@@ -28,6 +29,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # begin at 1, in mid through 6
         for i in range(5):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
+            current_score += 100
         self.hit_and_release_switch("s_kicker_missile")
         current_score += 500
         self.assertEqual(current_score, self.machine.game.player.score)
@@ -38,6 +40,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # begin at 1, in high through 9
         for i in range(8):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
+            current_score += 100
         self.hit_and_release_switch("s_kicker_missile")
         current_score += 5000
         self.assertEqual(current_score, self.machine.game.player.score)
@@ -47,6 +50,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         # 10 advancements for max value...
         for i in range(1,10):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
+            current_score += 100
         self.hit_and_release_switch("s_kicker_missile")
         current_score += 50000
         self.assertEqual(current_score, self.machine.game.player.score)

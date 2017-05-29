@@ -181,6 +181,6 @@ scoring:
   s_drop_target_behind_active:
     score: 500
   s_stationary_advance_bonus_active:
-    score: 0
+    score: 100
   s_stationary_advance_hole_score_active:
-    score: 0
+    score: 100

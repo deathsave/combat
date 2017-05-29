@@ -85,7 +85,7 @@ class TestBaseMode(FullMachineTestCase):
         ## test 'advancing' stationary targets
         self.hit_and_release_switch("s_stationary_advance_bonus")
         self.hit_and_release_switch("s_stationary_advance_hole_score")
-        # no scoring change...
+        current_score += 100 * 2
         self.assertEqual(current_score, self.machine.game.player.score)
 
         ## test 'scoring' stationary targets
