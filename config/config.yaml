@@ -3,6 +3,7 @@
 ## DEVELOPMENT CONFIG ##
 ########################
 config:
+- global/assets.yaml
 - global/devices/displays.yaml
 - development/controller.yaml
 - development/display.yaml
@@ -13,6 +14,7 @@ config:
 - global/devices/autofire_coils.yaml
 - global/devices/leds.yaml
 - global/devices/ball_devices.yaml
+- global/ball_saves.yaml
 - global/game.yaml
 - global/shots.yaml
 - global/animations.yaml
