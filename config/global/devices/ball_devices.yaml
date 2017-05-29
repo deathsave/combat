@@ -9,6 +9,7 @@ ball_devices:
       home
       drain
       ball_add_live
+    eject_timeouts: 1s
     eject_coil: c_trough_eject
     eject_targets: playfield
     jam_switch: s_trough_jam
@@ -17,6 +18,7 @@ ball_devices:
   bd_gun:
     ball_capacity: 1
     entrance_switch: s_kicker_gun
+    eject_timeouts: 1s
     # confirming eject swich is fail - stop it
     eject_coil: c_kicker_gun
     eject_targets: playfield
@@ -24,6 +26,7 @@ ball_devices:
   bd_missile:
     ball_capacity: 1
     entrance_switch: s_kicker_missile
+    eject_timeouts: 1s
     eject_coil: c_kicker_missile
     eject_targets: playfield
     debug: true
