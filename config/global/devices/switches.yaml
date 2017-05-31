@@ -1,10 +1,6 @@
 #config_version=4
 # all switches left to right
 switches:
-  # TODO
-  #s_knocker:
-  #  number:
-  #  tags: playfield_active
   s_tilt:
     number: 2-1
     tags: tilt_warning
@@ -17,10 +13,7 @@ switches:
   s_start:
     number: 2-2
     tags: start
-  # switch inside coin door to activate Config Menu
-  #s_menu:
-  #  number: 0-0
-  # Trough Switches (max 3 balls, "duo-multi" and "extra")
+  # Trough Switches (max 2 balls, "duo-multi" and "extra")
   s_trough_1:
     number: 0-0
     type: NC
