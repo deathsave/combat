@@ -6,7 +6,10 @@ mode:
   start_events: bombs_complete # from logic_block
   priority: 110
   code: bombs_dropped.Custom
-  stop_events: s_stationary_special_active
+  stop_events:
+    s_stationary_special_active
+    mode_multiball_stopped # after multi, you must hit drops again
+
 
 led_player:
   mode_bombs_dropped_started:
@@ -38,7 +41,7 @@ ball_holds:
       # needs to not "hold" any further balls after multiball is
       # activated BUT still need to release the held ball when
       # during multiball
-      multiball_multi_bombs_started
+      multiball_multiball_started
     enable_events:
       mode_bombs_dropped_started
-      multiball_multi_bombs_stopped
+      multiball_multiball_started

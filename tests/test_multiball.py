@@ -28,8 +28,6 @@ class TestMultiballMode(FullMachineTestCase):
         current_score += 5000
         self.assertEqual(current_score, self.machine.game.player.score)
 
-        # lock should be enabled????
-
         # ball rolls into lock - doesn't score yet...
         self.hit_and_release_switch("s_kicker_gun")
         self.assertEqual(0, self.machine.playfield.balls)
@@ -37,7 +35,7 @@ class TestMultiballMode(FullMachineTestCase):
 
         # after some time, should be a locked ball in the gun
         # and another ball waiting to plunge
-        self.advance_time_and_run(10)
+        self.advance_time_and_run(2)
         self.assertModeRunning('multiball')
         # trough is empty, both balls in play
         self.assertEqual(0, self.machine.ball_devices.bd_trough.balls)
@@ -49,22 +47,24 @@ class TestMultiballMode(FullMachineTestCase):
         # meaning, user launched the unclaimed' ball
         self.hit_and_release_switch("s_rollover_top_1")
         # advancing only 10 actually fails here
-        self.advance_time_and_run(12)
+        self.advance_time_and_run(2)
         self.assertEqual(2, self.machine.playfield.balls)
         # after release, gun switch is rolled over again
         # and this time scores 10k
         self.hit_and_release_switch("s_kicker_gun")
-        current_score += 10000 # 10x multi on drop targets during mode
+        current_score += 10000
         # ensure gun doesn't hold ball infinitely during multiball
-        self.advance_time_and_run(12)
+        self.advance_time_and_run(2)
         self.assertEqual(2, self.machine.playfield.balls)
         # bumpers score 10x while we have 2 balls in play
         self.hit_and_release_switch("s_bumper_1")
         self.hit_and_release_switch("s_bumper_2")
         self.hit_and_release_switch("s_bumper_3")
         current_score += 3000
+        # wait for "shoot again" to expire
+        self.advance_time_and_run(15)
         # ball drains, ending multiball but not player's turn
-        self.hit_switch_and_run('s_trough_1', 1)
+        self.hit_switch_and_run('s_trough_1', 2)
         self.assertEqual(1, self.machine.playfield.balls)
         self.assertModeNotRunning('multiball')
         # bumpers back to normal with single ball in play
