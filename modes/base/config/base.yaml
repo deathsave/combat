@@ -4,6 +4,10 @@ mode:
   priority: 100
   code: base.Custom
 
+# ensures the drop target bank is reset at start of ball
+#coil_player:
+#  mode_base_started: c_drop_target
+
 ball_holds:
   missile:
     balls_to_hold: 1
@@ -28,7 +32,6 @@ logic_blocks:
       direction: up
       events_when_complete: spins_advances_hole
       restart_events: spins_advances_hole
-      reset_on_complete: true
     hole_score:
       count_events:
         s_rollover_advance_hole_1_active

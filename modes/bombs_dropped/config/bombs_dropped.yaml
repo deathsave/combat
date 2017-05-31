@@ -41,7 +41,7 @@ ball_holds:
       # needs to not "hold" any further balls after multiball is
       # activated BUT still need to release the held ball when
       # during multiball
-      multiball_multiball_started
+      mode_multiball_started
     enable_events:
       mode_bombs_dropped_started
-      multiball_multiball_started
+      mode_multiball_stopped

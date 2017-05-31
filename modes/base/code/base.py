@@ -8,9 +8,9 @@
 # Also add a "code: your_mode.YourMode" (or whatever you call it) to the
 # "mode:" section of your mode's <mode_name>.yaml configuration file.
 
-from mpf.core.mode import Mode as m
+from mpf.core.mode import Mode
 
-class Custom(m):
+class Custom(Mode):
     # MPF persists player's scores so they can display in the attact
     # mode, but then they akwardly display immediately in a new game
     # until scoring happens. this clears them
@@ -31,3 +31,7 @@ class Custom(m):
     def mode_init(self):
         self.machine.events.add_handler(
             'multiplayer_game', self.initialize_player_scores)
+
+    def mode_start(self, **kwargs):
+        #print('Resetting Drop Target')
+        self.machine.coils.c_drop_target.pulse()

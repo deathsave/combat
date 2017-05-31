@@ -21,7 +21,6 @@ config:
 - global/widgets.yaml
 - global/slides.yaml
 - global/sounds.yaml
-- global/players/coil_player.yaml
 - global/players/slide_player.yaml
 - global/players/widget_player.yaml
 - global/players/show_player.yaml

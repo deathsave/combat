@@ -20,15 +20,7 @@ autofire_coils:
     coil: c_bumper_3
     switch: s_bumper_3
     enable_events: ball_starting
-  #  saucer:
-  #    coil: c_kicker_missile
-  #    switch: s_kicker_missile
-  #    enable_events: ball_starting
-  # gun:
-  #   coil: c_kicker_gun
-  #   switch: s_kicker_gun
-  #   enable_events: ball_starting
-  # bombs:
-  #   coil: c_drop_target
-  #   switch: s_drop_target
-  #   enable_events: ball_starting
+  drop_target:
+    coil: c_drop_target
+    switch: s_drop_target_reset
+    enable_events: ball_starting
