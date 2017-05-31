@@ -23,17 +23,18 @@ scoring:
 
 multiballs:
   multi_bombs:
-    ball_count: 1
-    ball_count_type: add
-    # if ball drains within 20 seconds
+    ball_count: 2
+    ball_count_type: total
+    # if ball drains within 15 seconds
     # player should get another one
-    shoot_again: 20s
+    shoot_again: 15s
     # begin when new ball
     # is manually plunged
     start_events:
       mode_multiball_started
     # setting these probably breaks 'shoot_again'
     # let's see if MPF auto-handles the drain...
-    #disable_events: ball_drain
-    stop_events:
-      multiball_multi_bombs_ball_lost
+    #disable_events:
+    #  multiball_multi_bombs_ball_lost
+    #stop_events:
+    #  multiball_multi_bombs_ball_lost

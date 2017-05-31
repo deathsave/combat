@@ -38,4 +38,7 @@ ball_holds:
       # needs to not "hold" any further balls after multiball is
       # activated BUT still need to release the held ball when
       # during multiball
-      ball_hold_gun_balls_released
+      multiball_multi_bombs_started
+    enable_events:
+      mode_bombs_dropped_started
+      multiball_multi_bombs_stopped

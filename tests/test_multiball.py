@@ -70,3 +70,8 @@ class TestMultiballMode(FullMachineTestCase):
         # bumpers back to normal with single ball in play
         self.hit_and_release_switch("s_bumper_1")
         current_score += 100
+        # draining again ends the ball
+        self.assertEqual(1, self.machine.game.player.ball)
+        self.hit_switch_and_run('s_trough_2', 1)
+        self.assertEqual(0, self.machine.playfield.balls)
+        self.assertEqual(2, self.machine.game.player.ball)

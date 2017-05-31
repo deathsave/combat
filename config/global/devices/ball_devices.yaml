@@ -14,6 +14,7 @@ ball_devices:
     eject_targets: playfield
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
+    auto_fire_on_unexpected_ball: false
     debug: true
   bd_gun:
     ball_capacity: 1
