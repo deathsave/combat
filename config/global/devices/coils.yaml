@@ -5,13 +5,13 @@ coils:
     pulse_ms: 40
   c_flipper_main_1:
     number: 0-6
-    pulse_ms: 40
+    pulse_ms: 35
   c_flipper_hold_1:
     number: 0-7
     allow_enable: true
   c_flipper_main_2:
     number: 0-5
-    pulse_ms: 40
+    pulse_ms: 35
   c_flipper_hold_2:
     number: 0-4
     allow_enable: true
