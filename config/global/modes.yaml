@@ -5,4 +5,5 @@ modes:
   - bombs_dropped
   - multiball
   - hole_score
+  - explosion_bonus
   - high_score
