@@ -44,14 +44,30 @@ logic_blocks:
       direction: up
       restart_events: mode_hole_score_stopped
       reset_on_complete: false
+    explosion_bonus:
+      count_events:
+        # TODO - add event for top rollover (when lit)
+        s_stationary_advance_bonus_active
+      # need to start at 1 to sync the led show
+      # GOTCHA - 2 == 1000 and 3 == 2000
+      starting_count: 1
+      count_complete_value: 11
+      events_when_complete: explosion_bonus_complete
+      direction: up
+      reset_on_complete: false
 
 show_player:
+  logicblock_explosion_bonus_updated:
+    explosion_bonus_advance:
+      start_step: current_player.explosion_bonus_count
   mode_hole_score_started:
+    # TODO - add to updated and make it end (current infinite)
     hole_score_collect:
       action: play
   logicblock_hole_score_updated:
-    hole_score_step:
+    hole_score_advance:
       start_step: current_player.hole_score_count
+  # TODO - and remove this after moving collect show
   balldevice_bd_missile_ball_eject_success:
     hole_score_collect:
       action: stop
