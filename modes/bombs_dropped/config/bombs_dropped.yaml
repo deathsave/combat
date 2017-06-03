@@ -10,26 +10,33 @@ mode:
     s_stationary_special_active
     mode_multiball_stopped # after multi, you must hit drops again
 
+extra_balls:
+  laser_bombs_outlanes:
+    award_events:
+      s_rollover_bonus_ball_1_active
+      s_rollover_bonus_ball_2_active
+    reset_events: extra_ball_awarded # infinite extra balls for now
 
 led_player:
   mode_bombs_dropped_started:
     l_special: FF0000 # red
+    l_bonus_ball_1: FF0000
+    l_bonus_ball_2: FF0000
+  extra_ball_awarded:
+    l_shoots_again: orange
+    l_bonus_ball_1:
+      color: 000000
+      priority: 200
+    l_bonus_ball_2:
+      color: 000000
+      priority: 200
 
-scoring:
-  s_stationary_special_active:
-    score: 20000|block
-  s_drop_target_active:
-    score: 10000|block # in ask app, these were 5000
-  s_kicker_gun_active:
-    # activates multiball
-    #   - no score when rolling into the lock
-    #     only "out" of it after user launches
-    #     next ball and it hits a top rollover
-    score: 0|block
+coil_player:
+  extra_ball_awarded: c_knocker
 
 # multiball_locks seems to release when multiball
-# begins, but we still need to player to plunge
-# so "hold" until they hit a switch
+# begins, but we still need the player to plunge
+# workaround by "holding" until they hit a switch
 ball_holds:
   gun:
     balls_to_hold: 1
@@ -45,3 +52,16 @@ ball_holds:
     enable_events:
       mode_bombs_dropped_started
       mode_multiball_stopped
+
+scoring:
+  s_stationary_special_active:
+    score: 20000|block
+  s_drop_target_active:
+    score: 10000|block # in ask app, these were 5000
+  s_kicker_gun_active:
+    # activates multiball
+    #   - no score when rolling into the lock
+    #     only "out" of it after user launches
+    #     next ball and it hits a top rollover
+    score: 0|block
+
