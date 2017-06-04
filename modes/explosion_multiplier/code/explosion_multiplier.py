@@ -11,14 +11,14 @@
 from mpf.core.mode import Mode as m
 
 class Custom(m):
+    def mode_init(self):
+        """This code that will run once mode when MPF boots."""
+        pass
+
     def mode_start(self, **kwargs):
-        #   NICE TO HAVE - unlight each led and fire a sound in sequence
-        player = self.machine.game.player
-        base_bonus_score = ((player.explosion_bonus_count - 1) * 1000)
-        # TODO x10 if gun was ever hit (x10 led lit)
-        # TODO base_bonus_score = 0 (if TILTED)
-        if self.machine.modes.explosion_multiplier.active:
-            player.score += (base_bonus_score * 10)
-        else:
-            player.score += base_bonus_score
+        """This code will run every time this mode starts."""
         del kwargs
+
+    def mode_stop(self, **kwargs):
+        """This code will run every time this mode stops."""
+        pass

@@ -39,7 +39,7 @@ leds:
     number: 0-3
   l_shoots_again:
     number: 0-1
-  l_bonus_score:
+  l_bonus_multiplier:
     number: 0-0
   l_bumper_1:
     number: 0-34

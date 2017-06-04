@@ -5,7 +5,7 @@ led:
   l_bonus_ball_2:
     x: 0.8004212743549236
     y: 0.6457345971563981
-  l_bonus_score:
+  l_bonus_multiplier:
     x: 0.4718272775144813
     y: 0.8945497630331753
   l_bumper1_1:

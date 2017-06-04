@@ -6,7 +6,7 @@
     l_bonus_ball_1: "ff0000"
     l_bonus_ball_2: "ff0000"
     l_shoots_again: "ffffff"
-    l_bonus_score: "ffffff"
+    l_bonus_multiplier: "ffffff"
 - time: '+0.15'
   leds:
     l_spinner: "000000"
@@ -14,7 +14,7 @@
     l_bonus_ball_1: "000000"
     l_bonus_ball_2: "000000"
     l_shoots_again: "000000"
-    l_bonus_score: "000000"
+    l_bonus_multiplier: "000000"
 - time: '+0.15'
   leds:
     l_spinner: "ffffff"
@@ -22,7 +22,7 @@
     l_bonus_ball_1: "ff0000"
     l_bonus_ball_2: "ff0000"
     l_shoots_again: "ffffff"
-    l_bonus_score: "ffffff"
+    l_bonus_multiplier: "ffffff"
 - time: '+0.3'
   leds:
     l_spinner: "000000"
@@ -30,7 +30,7 @@
     l_bonus_ball_1: "000000"
     l_bonus_ball_2: "000000"
     l_shoots_again: "000000"
-    l_bonus_score: "000000"
+    l_bonus_multiplier: "000000"
 - time: '+0.3'
   leds:
     l_spinner: "ffffff"
@@ -38,7 +38,7 @@
     l_bonus_ball_1: "ff0000"
     l_bonus_ball_2: "ff0000"
     l_shoots_again: "ffffff"
-    l_bonus_score: "ffffff"
+    l_bonus_multiplier: "ffffff"
 - time: '+1.1'
   leds:
     l_spinner: "000000"
@@ -46,4 +46,4 @@
     l_bonus_ball_1: "000000"
     l_bonus_ball_2: "000000"
     l_shoots_again: "000000"
-    l_bonus_score: "000000"
+    l_bonus_multiplier: "000000"

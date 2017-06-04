@@ -7,4 +7,5 @@ modes:
   - multiball
   - hole_score
   - explosion_bonus
+  - explosion_multiplier
   - high_score

@@ -1,0 +1,9 @@
+#config_version=4
+mode:
+  start_events: in_and_out_of_gun
+  priority: 200
+  code: explosion_multiplier.Custom
+
+led_player:
+  mode_explosion_multiplier_started:
+    l_bonus_multiplier: 0029DE # blue
