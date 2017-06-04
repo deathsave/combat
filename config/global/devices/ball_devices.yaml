@@ -17,7 +17,7 @@ ball_devices:
     auto_fire_on_unexpected_ball: false
     debug: true
   bd_gun:
-    ball_capacity: 1
+    ball_capacity: 2
     entrance_switch: s_kicker_gun
     eject_timeouts: 1s
     # confirming eject swich is fail - stop it
