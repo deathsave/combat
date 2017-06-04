@@ -29,6 +29,7 @@ switches:
   s_kicker_gun:
     number: 0-10
     tags: playfield_active
+    ignore_window_ms: 1000ms
   # Pop Bumpers
   s_bumper_1:
     number: 1-0
