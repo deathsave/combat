@@ -7,7 +7,7 @@ mode:
   priority: 110
   code: gun.Custom
   stop_events:
-    timer_gun_timer_complete
+    in_and_out_of_gun
 
 ball_holds:
   gun_hold:
