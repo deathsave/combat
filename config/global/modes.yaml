@@ -2,7 +2,8 @@
 modes:
   # dont need attract here (built-in)
   - base
-  # real modes
+  - cluster_bombs_a
+  - cluster_bombs_b
   - bombs_dropped
   - multiball
   - hole_score

@@ -1,0 +1,42 @@
+#config_version=4
+mode:
+  start_events:
+    ball_starting
+    mode_cluster_bombs_b_stopped
+  stop_events:
+    timer_cluster_a_complete
+    s_bumper_1_active
+    s_bumper_2_active
+    s_bumper_3_active
+  priority: 150
+
+timers:
+  cluster_a:
+    start_value: 0
+    end_value: 8
+    direction: up
+    control_events:
+      - event: mode_cluster_bombs_a_started
+        action: reset
+      - event: mode_cluster_bombs_a_started
+        action: start
+      - event: timer_cluster_a_complete
+        action: stop
+
+led_player:
+  mode_cluster_bombs_a_started:
+    l_rollover_top_1: ff8000
+    l_rollover_top_4: ff8000
+    l_rollover_top_7: ff8000
+  timer_cluster_a_complete:
+    l_rollover_top_1: 000000
+    l_rollover_top_4: 000000
+    l_rollover_top_7: 000000
+
+scoring:
+  s_rollover_top_1_active:
+    score: 5000|block
+  s_rollover_top_4_active:
+    score: 5000|block
+  s_rollover_top_7_active:
+    score: 5000|block
