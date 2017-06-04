@@ -1,7 +1,7 @@
 import os
 from mpfmc.tests.FullMpfMachineTestCase import FullMachineTestCase
 
-class TestBombsDroppedMode(FullMachineTestCase):
+class TestClusterBombsMode(FullMachineTestCase):
 
     def getMachinePath(self):
         return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))

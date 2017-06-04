@@ -4,6 +4,7 @@ modes:
   - base
   - cluster_bombs_a
   - cluster_bombs_b
+  - flash_score
   - bombs_dropped
   - multiball
   - hole_score

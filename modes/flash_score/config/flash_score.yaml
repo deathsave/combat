@@ -1,0 +1,33 @@
+#config_version=4
+mode:
+  start_events:
+    in_and_out_of_gun
+    s_kicker_missile_active
+  stop_events:
+    timer_flash_score_complete
+  priority: 150
+
+timers:
+  flash_score:
+    start_value: 0
+    end_value: 15
+    direction: up
+    start_running: true
+    control_events:
+      - event: timer_flash_score_complete
+        action: reset
+      - event: timer_flash_score_complete
+        action: stop
+
+show_player:
+  mode_flash_score_started:
+    bumper_flash:
+      action: play
+
+scoring:
+  s_bumper_1_active:
+    score: 1000|block
+  s_bumper_2_active:
+    score: 1000|block
+  s_bumper_3_active:
+    score: 1000|block
