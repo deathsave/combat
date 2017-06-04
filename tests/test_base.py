@@ -7,12 +7,14 @@ class TestBaseMode(FullMachineTestCase):
         return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
     def test_scoring(self):
+        ## See Cluster Bombs test for rollovers (timed scoring)
+
         current_score = 0
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(1)
 
         # activate base mode
-        self.hit_and_release_switch("s_rollover_top_1")
+        self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
         self.assertEqual(1, self.machine.playfield.balls)
@@ -23,17 +25,6 @@ class TestBaseMode(FullMachineTestCase):
         self.hit_and_release_switch("s_bumper_2")
         self.hit_and_release_switch("s_bumper_3")
         current_score += 100 * 3
-        self.assertEqual(current_score, self.machine.game.player.score)
-
-        ## test rollover top scoring
-        self.hit_and_release_switch("s_rollover_top_1")
-        self.hit_and_release_switch("s_rollover_top_2")
-        self.hit_and_release_switch("s_rollover_top_3")
-        self.hit_and_release_switch("s_rollover_top_4")
-        self.hit_and_release_switch("s_rollover_top_5")
-        self.hit_and_release_switch("s_rollover_top_6")
-        self.hit_and_release_switch("s_rollover_top_7")
-        current_score += 500 * 7
         self.assertEqual(current_score, self.machine.game.player.score)
 
         ## test drop target scoring

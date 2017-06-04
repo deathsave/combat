@@ -15,7 +15,6 @@ class Custom(m):
         #   NICE TO HAVE - unlight each led and fire a sound in sequence
         player = self.machine.game.player
         base_bonus_score = ((player.explosion_bonus_count - 1) * 1000)
-        # TODO x10 if gun was ever hit (x10 led lit)
         # TODO base_bonus_score = 0 (if TILTED)
         if self.machine.modes.explosion_multiplier.active:
             player.score += (base_bonus_score * 10)

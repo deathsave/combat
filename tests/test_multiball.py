@@ -12,7 +12,7 @@ class TestMultiballMode(FullMachineTestCase):
         self.advance_time_and_run(1)
 
         # activate base mode
-        self.hit_and_release_switch("s_rollover_top_1")
+        self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
         self.assertEqual(1, self.machine.playfield.balls)
@@ -45,7 +45,7 @@ class TestMultiballMode(FullMachineTestCase):
 
         # release lock when a top rollover is hit
         # meaning, user launched the unclaimed' ball
-        self.hit_and_release_switch("s_rollover_top_1")
+        self.hit_and_release_switch("s_rollover_top_2")
         # advancing only 10 actually fails here
         self.advance_time_and_run(2)
         self.assertEqual(2, self.machine.playfield.balls)

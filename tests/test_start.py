@@ -18,7 +18,7 @@ class TestGameStart(FullMachineTestCase):
         self.assertEqual(0, self.machine.playfield.balls)
         ## player launches a ball
         ## and it hits a playfield switch
-        self.hit_and_release_switch("s_rollover_top_1")
+        self.hit_and_release_switch("s_rollover_top_2")
         ## not immediately "on the playfield", though
         self.assertEqual(0, self.machine.playfield.balls)
         ## after a brief delay, the ball is now on the playfield...

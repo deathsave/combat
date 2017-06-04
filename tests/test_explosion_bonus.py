@@ -12,7 +12,7 @@ class TestExplosionBonusMode(FullMachineTestCase):
         self.advance_time_and_run(1)
 
         # activate base mode
-        self.hit_and_release_switch("s_rollover_top_1")
+        self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
         self.assertEqual(1, self.machine.playfield.balls)
@@ -45,11 +45,14 @@ class TestExplosionBonusMode(FullMachineTestCase):
         self.advance_time_and_run(1)
 
         # activate base mode
-        self.hit_and_release_switch("s_rollover_top_1")
+        self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
         self.assertEqual(1, self.machine.playfield.balls)
         self.assertEqual(current_score, self.machine.game.player.score)
+
+        # TODO: advance the bonus with LIT rollover
+        # self.hit_and_release_switch("s_rollover_top_1")
 
         # advance the bonus with target 5 times
         for x in range(0, 5):
@@ -58,9 +61,6 @@ class TestExplosionBonusMode(FullMachineTestCase):
             # just the base 100 points for each
             current_score += 100
         self.assertEqual(current_score, self.machine.game.player.score)
-
-        # TODO: advance the bonus with LIT rollover
-        # self.hit_and_release_switch("s_rollover_top_1")
 
         # wait for "shoot again" to expire
         self.advance_time_and_run(15)
