@@ -1,7 +1,7 @@
 #config_version=4
 mode:
   start_events:
-    in_and_out_of_gun
+    s_kicker_gun_active
     s_kicker_missile_active
   stop_events:
     timer_flash_score_complete

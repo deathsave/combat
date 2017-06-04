@@ -56,12 +56,11 @@ class TestFlashScoreMode(FullMachineTestCase):
 
         # activate mode with gun this time
         self.hit_and_release_switch("s_kicker_gun")
-        self.advance_time_and_run(1) # wait for ball hold
-        self.hit_and_release_switch("s_kicker_gun")
+        self.advance_time_and_run(1)
         self.assertModeRunning('flash_score')
 
-        # mode still running 15 (14 + 1 hold) seconds from activation
-        self.advance_time_and_run(14)
+        # mode still running 14 (13 + 1 hold) seconds from activation
+        self.advance_time_and_run(13)
         self.assertModeRunning('flash_score')
 
         # mode expires 1 second later
@@ -71,11 +70,14 @@ class TestFlashScoreMode(FullMachineTestCase):
         # wait 10 seconds and activate again
         self.advance_time_and_run(10)
         self.hit_and_release_switch("s_kicker_gun")
-        self.advance_time_and_run(1) # wait for ball hold
-        self.hit_and_release_switch("s_kicker_gun")
+        self.advance_time_and_run(1)
         self.assertModeRunning('flash_score')
 
         # prove the timer doesn't keep ticking between runs
-        # should have full 15 seconds again
-        self.advance_time_and_run(14)
+        # (running at 14s after activation)
+        self.advance_time_and_run(13)
         self.assertModeRunning('flash_score')
+
+        # mode expires again 1 second later
+        self.advance_time_and_run(1)
+        self.assertModeNotRunning('flash_score')

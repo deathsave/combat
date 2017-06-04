@@ -1,6 +1,7 @@
 #config_version=4
 modes:
   # dont need attract here (built-in)
+  - initialize
   - base
   - cluster_bombs_a
   - cluster_bombs_b

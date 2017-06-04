@@ -3,7 +3,7 @@
 # user wants to continue hitting those
 # hitting the special kills the mode
 mode:
-  start_events: ball_hold_gun_full
+  start_events: ball_hold_gun_multi_full
   priority: 121
   code: multiball.Custom
   stop_events: multiball_multi_bombs_ball_lost

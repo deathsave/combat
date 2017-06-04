@@ -1,17 +1,11 @@
 #config_version=4
 mode:
-  start_events: ball_starting
+  start_events: timer_start_base_complete
   priority: 100
-  code: base.Custom
 
-ball_holds:
-  missile_hold:
-    balls_to_hold: 1
-    hold_devices: bd_missile
-    release_one_events:
-      mode_hole_score_stopped: 1s
-
-# blocks reset on completion by default
+# drop target counter is here
+# so we can ignore the 'reset' and 'hit'
+# during the initialization mode
 logic_blocks:
   counters:
     bombs:
@@ -21,69 +15,6 @@ logic_blocks:
       direction: down
       events_when_complete: bombs_complete
       restart_events: s_drop_target_reset_active
-    gun_score:
-      count_events: s_kicker_gun_active
-      starting_count: 0
-      count_complete_value: 2
-      direction: up
-      events_when_complete: in_and_out_of_gun
-      restart_events: in_and_out_of_gun
-    spins:
-      count_events: s_spinner_active
-      starting_count: 0
-      count_complete_value: 5
-      direction: up
-      events_when_complete: spins_advances_hole
-      restart_events: spins_advances_hole
-    hole_score:
-      count_events:
-        s_rollover_advance_hole_1_active
-        s_rollover_advance_hole_2_active
-        s_stationary_advance_hole_score_active
-        spins_advances_hole
-      starting_count: 1
-      count_complete_value: 10
-      events_when_complete: hole_score_complete
-      direction: up
-      restart_events: mode_hole_score_stopped
-      reset_on_complete: false
-    explosion_bonus:
-      count_events:
-        # TODO - add event for top rollover (when lit)
-        s_stationary_advance_bonus_active
-        cluster_a_advance_bonus_hit
-        cluster_b_advance_bonus_hit
-      # need to start at 1 to sync the led show
-      # GOTCHA - 2 == 1000 and 3 == 2000
-      starting_count: 1
-      count_complete_value: 11
-      events_when_complete: explosion_bonus_complete
-      direction: up
-      reset_on_complete: false
-
-show_player:
-  logicblock_explosion_bonus_updated:
-    explosion_bonus_advance:
-      start_step: current_player.explosion_bonus_count
-  mode_hole_score_started:
-    # TODO - add to updated and make it end (current infinite)
-    hole_score_collect:
-      action: play
-  logicblock_hole_score_updated:
-    hole_score_advance:
-      start_step: current_player.hole_score_count
-  # TODO - and remove this after moving collect show
-  balldevice_bd_missile_ball_eject_success:
-    hole_score_collect:
-      action: stop
-
-
-event_player:
-  # cause the drop target to reset
-  # when mode ends event if only
-  # partially activated
-  mode_bombs_dropped_stopped:
-    s_drop_target_reset_active
 
 scoring:
   s_bumper_1_active:
@@ -132,5 +63,5 @@ scoring:
     score: 100
   s_stationary_advance_hole_score_active:
     score: 100
-  in_and_out_of_gun:
+  s_kicker_gun_active:
     score: 5000

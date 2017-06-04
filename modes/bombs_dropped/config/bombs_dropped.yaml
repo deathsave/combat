@@ -4,7 +4,7 @@
 # hitting the special kills the mode
 mode:
   start_events: bombs_complete # from logic_block
-  priority: 110
+  priority: 150
   code: bombs_dropped.Custom
   stop_events:
     s_stationary_special_active
@@ -38,7 +38,7 @@ coil_player:
 # begins, but we still need the player to plunge
 # workaround by "holding" until they hit a switch
 ball_holds:
-  gun:
+  gun_multi:
     balls_to_hold: 1
     hold_devices: bd_gun
     release_one_events:

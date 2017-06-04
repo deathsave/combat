@@ -29,7 +29,7 @@ class TestMultiballMode(FullMachineTestCase):
         self.assertEqual(current_score, self.machine.game.player.score)
 
         # ball rolls into lock - doesn't score yet...
-        self.hit_and_release_switch("s_kicker_gun")
+        self.hit_switch_and_run('s_kicker_gun', 1)
         self.assertEqual(0, self.machine.playfield.balls)
         self.assertEqual(1, self.machine.ball_devices.bd_gun.balls)
 

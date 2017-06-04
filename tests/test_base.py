@@ -11,9 +11,18 @@ class TestBaseMode(FullMachineTestCase):
 
         current_score = 0
         self.hit_and_release_switch("s_start")
-        self.advance_time_and_run(1)
 
-        # activate base mode
+        # initialize mode happens first
+        # when drop target is reset here, it should not score
+        # the hit counter resets when base mode begins, too
+        self.assertModeNotRunning('base')
+        self.hit_and_release_switch("s_drop_target_reset")
+        self.hit_and_release_switch("s_drop_target")
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        # base mode activates after 500ms from initialization
+        self.advance_time_and_run(1)
+        self.assertModeRunning('base')
         self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
@@ -28,13 +37,9 @@ class TestBaseMode(FullMachineTestCase):
         self.assertEqual(current_score, self.machine.game.player.score)
 
         ## test drop target scoring
-        # hit drop target only 4/5 times
-        # so we don't trigger the bombs_dropped mode
-        self.hit_and_release_switch("s_drop_target")
-        self.hit_and_release_switch("s_drop_target")
-        self.hit_and_release_switch("s_drop_target")
-        self.hit_and_release_switch("s_drop_target")
-        current_score += 1000 * 4
+        for x in range(0,4):
+            self.hit_and_release_switch("s_drop_target")
+            current_score += 1000
         self.assertEqual(current_score, self.machine.game.player.score)
 
         # test switch 'behind' drop target
@@ -42,20 +47,15 @@ class TestBaseMode(FullMachineTestCase):
         current_score += 500
         self.assertEqual(current_score, self.machine.game.player.score)
 
-        # test lowest "Hole Score" value (saucer)
+        # test entering the 'Missile' ball device (hole_score collect)
         self.hit_and_release_switch("s_kicker_missile")
         current_score += 50
         self.assertEqual(current_score, self.machine.game.player.score)
 
-        # first starts 'Gun' mode
+        # text entering the 'Gun' ball device
         self.hit_and_release_switch("s_kicker_gun")
-        self.advance_time_and_run(1) # wait to get into the mode
-        self.assertModeRunning('base')
-        # scores when timer expires, releasing the hold
+        self.advance_time_and_run(2) # wait to get into the mode
         current_score += 5000
-        # rollover on exit SHOUT NOT score
-        self.hit_and_release_switch("s_kicker_gun")
-        self.assertEqual(current_score, self.machine.game.player.score)
 
         # test spinner
         self.hit_and_release_switch("s_spinner")

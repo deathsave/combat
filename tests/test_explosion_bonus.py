@@ -67,8 +67,7 @@ class TestExplosionBonusMode(FullMachineTestCase):
 
         # trigger the Gun to activate 10x
         self.hit_and_release_switch("s_kicker_gun")
-        self.advance_time_and_run(1) # wait to get into the mode
-        self.hit_and_release_switch("s_kicker_gun")
+        self.advance_time_and_run(1)
         current_score += 5000 # score for hitting gun
         self.assertModeRunning('explosion_multiplier')
 
