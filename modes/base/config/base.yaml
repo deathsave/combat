@@ -4,16 +4,33 @@ mode:
   priority: 100
   code: base.Custom
 
-# ensures the drop target bank is reset at start of ball
-#coil_player:
-#  mode_base_started: c_drop_target
-
 ball_holds:
-  missile:
+  missile_hold:
     balls_to_hold: 1
     hold_devices: bd_missile
     release_one_events:
-      mode_hole_score_stopped: 2s
+      mode_hole_score_stopped: 1s
+  gun_hold:
+    balls_to_hold: 1
+    hold_devices: bd_gun
+    release_one_events:
+      timer_gun_timer_complete
+
+timers:
+  gun_timer:
+    direction: up
+    # restarts but doesn't stop!!!
+    restart_on_complete: true
+    start_value: 0
+    end_value: 2
+    control_events:
+      - event: ball_hold_gun_hold_full
+        action: reset
+      - event: ball_hold_gun_hold_full
+        action: start
+      - event: timer_gun_timer_complete
+        action: stop
+
 
 # blocks reset on completion by default
 logic_blocks:
