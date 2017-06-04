@@ -1,4 +1,7 @@
 # show_version=4
+# show starts from the bottom of the trough and
+# insinuates 'explosion' of the ship - this is why
+# the led numbers are not in ascending order
 - time: 0.1
   leds:
     l_explosion_7: "ff0000"
