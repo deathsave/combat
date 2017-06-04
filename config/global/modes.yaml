@@ -2,7 +2,6 @@
 modes:
   # dont need attract here (built-in)
   - base
-  - gun
   # real modes
   - bombs_dropped
   - multiball

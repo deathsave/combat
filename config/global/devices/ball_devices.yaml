@@ -17,10 +17,12 @@ ball_devices:
     auto_fire_on_unexpected_ball: false
     debug: true
   bd_gun:
-    ball_capacity: 2
+    ball_capacity: 1
     entrance_switch: s_kicker_gun
+    # eject doesn't work because the switch immediately
+    # opens after rolling over and MPF thinks the ball
+    # has already left
     eject_timeouts: 1s
-    # confirming eject swich is fail - stop it
     eject_coil: c_kicker_gun
     eject_targets: playfield
     debug: true
