@@ -22,6 +22,14 @@ timers:
       - event: timer_cluster_b_complete
         action: stop
 
+shots:
+  cluster_b_advance_bonus:
+    switches:
+      s_rollover_top_2
+      s_rollover_top_3
+      s_rollover_top_5
+      s_rollover_top_6
+
 led_player:
   mode_cluster_bombs_b_started:
     l_rollover_top_2: ff8000

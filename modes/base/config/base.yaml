@@ -51,6 +51,8 @@ logic_blocks:
       count_events:
         # TODO - add event for top rollover (when lit)
         s_stationary_advance_bonus_active
+        cluster_a_advance_bonus_hit
+        cluster_b_advance_bonus_hit
       # need to start at 1 to sync the led show
       # GOTCHA - 2 == 1000 and 3 == 2000
       starting_count: 1

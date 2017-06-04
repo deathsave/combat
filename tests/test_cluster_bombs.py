@@ -51,3 +51,12 @@ class TestBombsDroppedMode(FullMachineTestCase):
         self.assertModeRunning('cluster_bombs_a')
         self.hit_and_release_switch("s_bumper_3")
         self.assertModeRunning('cluster_bombs_b')
+
+    def test_advancing_explosion_bonus(self):
+        self.hit_and_release_switch("s_start")
+        self.advance_time_and_run(1)
+        player = self.machine.game.player
+
+        current_bonus_count = player.explosion_bonus_count
+        self.hit_and_release_switch("s_rollover_top_1")
+        self.assertEqual(current_bonus_count + 1, player.explosion_bonus_count)
