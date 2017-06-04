@@ -85,10 +85,3 @@ show_player:
   balldevice_bd_missile_ball_eject_success:
     hole_score_collect:
       action: stop
-
-event_player:
-  # cause the drop target to reset
-  # when mode ends event if only
-  # partially activated
-  mode_bombs_dropped_stopped:
-    s_drop_target_reset_active

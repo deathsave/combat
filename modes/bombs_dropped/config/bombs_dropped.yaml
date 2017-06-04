@@ -3,7 +3,7 @@
 # user wants to continue hitting those
 # hitting the special kills the mode
 mode:
-  start_events: bombs_complete # from logic_block
+  start_events: bombs_complete # fired by BOTH logic block AND reset switch
   priority: 150
   code: bombs_dropped.Custom
   stop_events:
@@ -33,6 +33,9 @@ led_player:
 
 coil_player:
   extra_ball_awarded: c_knocker
+  # directly fire drop target coil instead
+  # to reset the drops on exit (to prevent infinite loop)
+  mode_bombs_dropped_stopped: c_drop_target
 
 # multiball_locks seems to release when multiball
 # begins, but we still need the player to plunge

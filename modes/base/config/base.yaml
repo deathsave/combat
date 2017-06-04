@@ -13,8 +13,22 @@ logic_blocks:
       starting_count: 5
       count_complete_value: 0
       direction: down
+      # the reset switch starts laser bombs,
+      # either pragmatically or mechanically
       events_when_complete: bombs_complete
-      restart_events: s_drop_target_reset_active
+      enable_events:
+        mode_base_started
+        mode_bombs_dropped_stopped
+      disable_events: mode_bombs_dropped_started
+      restart_events:
+        mode_bombs_dropped_stopped
+
+event_player:
+  # cause the drop target to reset
+  # when mode ends event if only
+  # partially activated
+  s_drop_target_reset_active:
+    bombs_complete
 
 scoring:
   s_bumper_1_active:
