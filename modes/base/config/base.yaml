@@ -21,6 +21,13 @@ logic_blocks:
       direction: down
       events_when_complete: bombs_complete
       restart_events: s_drop_target_reset_active
+    gun_score:
+      count_events: s_kicker_gun_active
+      starting_count: 0
+      count_complete_value: 2
+      direction: up
+      events_when_complete: in_and_out_of_gun
+      restart_events: in_and_out_of_gun
     spins:
       count_events: s_spinner_active
       starting_count: 0
@@ -77,8 +84,6 @@ event_player:
     s_drop_target_reset_active
 
 scoring:
-  s_kicker_gun_active:
-    score: 5000
   s_bumper_1_active:
     score: 100 # in ask app these were 1000 immediately
   s_bumper_2_active:
@@ -125,3 +130,5 @@ scoring:
     score: 100
   s_stationary_advance_hole_score_active:
     score: 100
+  in_and_out_of_gun:
+    score: 5000

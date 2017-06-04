@@ -56,9 +56,14 @@ class TestBaseMode(FullMachineTestCase):
         current_score += 50
         self.assertEqual(current_score, self.machine.game.player.score)
 
-        # test gun score
+        # first starts 'Gun' mode
         self.hit_and_release_switch("s_kicker_gun")
+        self.advance_time_and_run(1) # wait to get into the mode
+        self.assertModeRunning('base')
+        # scores when timer expires, releasing the hold
         current_score += 5000
+        # rollover on exit SHOUT NOT score
+        self.hit_and_release_switch("s_kicker_gun")
         self.assertEqual(current_score, self.machine.game.player.score)
 
         # test spinner

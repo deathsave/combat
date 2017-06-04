@@ -2,10 +2,12 @@
 # this is just for adding the timer to the gun ball capture
 # and preventing coil fire when ball rolls back over the switch
 mode:
-  start_events: s_kicker_gun_active
+  start_events:
+    s_kicker_gun_active
   priority: 110
   code: gun.Custom
-  stop_events: s_kicker_gun_active
+  stop_events:
+    timer_gun_timer_complete
 
 ball_holds:
   gun_hold:
@@ -28,3 +30,5 @@ timers:
         action: start
       - event: timer_gun_timer_complete
         action: stop
+
+# scoring happens via counter logic block in base mode

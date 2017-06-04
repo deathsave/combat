@@ -2,3 +2,5 @@
 shots:
   shared_drop:
     switch: s_drop_target
+  gun_shot:
+    switch: s_kicker_gun
