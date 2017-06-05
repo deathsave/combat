@@ -8,19 +8,6 @@ mode:
   code: multiball.Custom
   stop_events: multiball_multi_bombs_ball_lost
 
-scoring:
-  s_kicker_gun_active:
-    # score occurs when leaving lock
-    # and anytime thereafter during multiball
-    # THIS MAY CAUSE A DUPLICATE COIL FIRE...
-    score: 10000|block
-  s_bumper_1_active:
-    score: 1000|block # bumpers 10x all day during multi
-  s_bumper_2_active:
-    score: 1000|block
-  s_bumper_3_active:
-    score: 1000|block
-
 multiballs:
   multi_bombs:
     ball_count: 2
@@ -38,3 +25,37 @@ multiballs:
     #  multiball_multi_bombs_ball_lost
     #stop_events:
     #  multiball_multi_bombs_ball_lost
+
+scoring:
+  s_bumper_1_active:
+    score: 1000|block # bumpers 10x all day during multi
+  s_bumper_2_active:
+    score: 1000|block
+  s_bumper_3_active:
+    score: 1000|block
+  s_kicker_gun_active:
+    score: 10000|block
+  s_slingshot_1_active:
+    score: 20|block
+  s_slingshot_2_active:
+    score: 20|block
+  s_spinner_active:
+    score: 200|block
+  s_rollover_bonus_ball_1_active:
+    score: 2000|block
+  s_rollover_bonus_ball_2_active:
+    score: 2000|block
+  s_rollover_advance_hole_1_active:
+    score: 2000|block
+  s_rollover_advance_hole_2_active:
+    score: 2000|block
+  s_stationary_thousand_active:
+    score: 2000|block
+  s_stationary_special_active:
+    score: 1000|block
+  s_drop_target_behind_active:
+    score: 1000|block
+  s_stationary_advance_bonus_active:
+    score: 200|block
+  s_stationary_advance_hole_score_active:
+    score: 200|block

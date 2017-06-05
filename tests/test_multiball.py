@@ -43,19 +43,72 @@ class TestMultiballMode(FullMachineTestCase):
         self.assertEqual(1, self.machine.ball_devices.bd_gun.balls)
         # the other ball is 'unclaimed', waiting to plunge
 
-        # release lock when a top rollover is hit
-        # meaning, user launched the unclaimed' ball
-        self.hit_and_release_switch("s_rollover_top_2")
-        # advancing only 10 actually fails here
+        ##################
+        ## TEST SCORING ##
+        ##################
+
+        # release lock when 'playfield_active' switch hit
+        # cluster bombs vary by time so mock with a slingshot
+        self.hit_and_release_switch("s_slingshot_1")
+        self.hit_and_release_switch("s_slingshot_2")
+        current_score += 20 * 2
+        self.assertEqual(current_score, self.machine.game.player.score)
+
         self.advance_time_and_run(2)
         self.assertEqual(2, self.machine.playfield.balls)
+
+        self.hit_and_release_switch("s_bumper_1")
+        self.hit_and_release_switch("s_bumper_2")
+        self.hit_and_release_switch("s_bumper_3")
+        current_score += 1000 * 3
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        self.hit_and_release_switch("s_spinner")
+        current_score += 200
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        # These award an extra ball, so skip
+        # but leaving here for scoring reference
+        #self.hit_and_release_switch("s_rollover_bonus_ball_1")
+        #self.hit_and_release_switch("s_rollover_bonus_ball_2")
+        #current_score += 2000 * 2
+
+        self.hit_and_release_switch("s_stationary_thousand")
+        current_score += 2000
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        self.hit_and_release_switch("s_stationary_advance_bonus")
+        current_score += 200
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        self.hit_and_release_switch("s_stationary_advance_hole_score")
+        current_score += 200
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        self.hit_and_release_switch("s_kicker_missile")
+        current_score += 100 # first 3 counters of hole_score mode
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        self.hit_and_release_switch("s_rollover_advance_hole_1")
+        self.hit_and_release_switch("s_rollover_advance_hole_2")
+        current_score += 2000 * 2
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        self.hit_and_release_switch("s_drop_target_behind")
+        current_score += 1000 # normally 500
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        # stationary special scoring not elevated
+        # (first hit will already be from laser bombs)
+        self.hit_and_release_switch("s_stationary_special")
+        current_score += 20000
+        self.assertEqual(current_score, self.machine.game.player.score)
+
         # after release, gun switch is rolled over again
         # and this time scores 10k
         self.hit_and_release_switch("s_kicker_gun")
         current_score += 10000
-        # ensure gun doesn't hold ball infinitely during multiball
-        self.advance_time_and_run(2)
-        self.assertEqual(2, self.machine.playfield.balls)
+
         # bumpers score 10x while we have 2 balls in play
         self.hit_and_release_switch("s_bumper_1")
         self.hit_and_release_switch("s_bumper_2")
@@ -73,5 +126,4 @@ class TestMultiballMode(FullMachineTestCase):
         # draining again ends the ball
         self.assertEqual(1, self.machine.game.player.ball)
         self.hit_switch_and_run('s_trough_2', 1)
-        self.assertEqual(0, self.machine.playfield.balls)
         self.assertEqual(2, self.machine.game.player.ball)

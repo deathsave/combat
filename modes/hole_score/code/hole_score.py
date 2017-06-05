@@ -27,6 +27,8 @@ class Custom(Mode):
             awarded_score += 500
         else:
             awarded_score += 50
+        if self.machine.modes.multiball.active:
+            awarded_score *= 2
         player.score += awarded_score
         # FUTURE? - award fragment of total for each count
         # for a "bonus collection" experience
