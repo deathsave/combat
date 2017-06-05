@@ -7,6 +7,7 @@ mode:
     s_bumper_1_active
     s_bumper_2_active
     s_bumper_3_active
+    mode_base_stopped
   priority: 150
 
 timers:
