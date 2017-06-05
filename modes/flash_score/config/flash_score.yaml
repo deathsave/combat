@@ -5,7 +5,8 @@ mode:
     s_kicker_missile_active
   stop_events:
     timer_flash_score_complete
-    mode_base_stopped
+    ball_will_end
+    game_ended
   priority: 150
 
 timers:
@@ -18,6 +19,8 @@ timers:
       - event: timer_flash_score_complete
         action: reset
       - event: timer_flash_score_complete
+        action: stop
+      - event: ball_will_end
         action: stop
 
 show_player:

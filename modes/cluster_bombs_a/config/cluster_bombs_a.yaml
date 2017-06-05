@@ -8,7 +8,8 @@ mode:
     s_bumper_1_active
     s_bumper_2_active
     s_bumper_3_active
-    mode_base_stopped
+    ball_will_end
+    game_ended
   priority: 150
 
 timers:
@@ -22,6 +23,8 @@ timers:
       - event: mode_cluster_bombs_a_started
         action: start
       - event: timer_cluster_a_complete
+        action: stop
+      - event: ball_will_end
         action: stop
 
 shots:
