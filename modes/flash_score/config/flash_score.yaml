@@ -5,6 +5,7 @@ mode:
     s_kicker_missile_active
   stop_events:
     timer_flash_score_complete
+    mode_base_stopped
   priority: 150
 
 timers:
