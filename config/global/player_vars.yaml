@@ -1,0 +1,4 @@
+#config_version=4
+player_vars:
+  score_level:
+    initial_value: 0

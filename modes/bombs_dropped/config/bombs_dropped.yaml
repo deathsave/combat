@@ -32,10 +32,11 @@ led_player:
       priority: 200
 
 coil_player:
-  extra_ball_awarded: c_knocker
   # directly fire drop target coil instead
   # to reset the drops on exit (to prevent infinite loop)
   mode_bombs_dropped_stopped: c_drop_target
+  # TODO: add a game sound, knocker reserved for "score levels"
+  #extra_ball_awarded: c_knocker
 
 # multiball_locks seems to release when multiball
 # begins, but we still need the player to plunge

@@ -28,9 +28,23 @@ class Custom(Mode):
                 silent=False)
         del kwargs
 
+    def track_score_levels(self, **kwargs):
+        # Tracks the player's score to see if they are entitled
+        # to an extra ball at various levels (currently only 1 level)
+        player = self.machine.game.player
+        if player.score_level > 0:
+            return
+        elif player.score_level == 0 and player.score >= 150000:
+            self.machine.extra_balls.score_level_1.award()
+            self.machine.coils.c_knocker.pulse()
+            player.score_level = 1
+        del kwargs
+
     def mode_init(self):
         self.machine.events.add_handler(
             'multiplayer_game', self.initialize_player_scores)
+        self.machine.events.add_handler(
+            'player_score', self.track_score_levels)
 
     def mode_start(self, **kwargs):
         #print('Resetting Drop Target')

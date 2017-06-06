@@ -70,6 +70,10 @@ logic_blocks:
       direction: up
       reset_on_complete: false
 
+extra_balls:
+  score_level_1:
+    label: 'Score Level 1'
+
 show_player:
   logicblock_explosion_bonus_updated:
     explosion_bonus_advance:
