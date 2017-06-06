@@ -74,14 +74,10 @@ show_player:
   logicblock_explosion_bonus_updated:
     explosion_bonus_advance:
       start_step: current_player.explosion_bonus_count
-  mode_hole_score_started:
-    # TODO - add to updated and make it end (current infinite)
-    hole_score_collect:
-      action: play
   logicblock_hole_score_updated:
     hole_score_advance:
       start_step: current_player.hole_score_count
   # TODO - and remove this after moving collect show
-  balldevice_bd_missile_ball_eject_success:
+  mode_base_started:
     hole_score_collect:
-      action: stop
+      action: play

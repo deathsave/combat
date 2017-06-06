@@ -26,6 +26,25 @@
 - time: '+0.15'
   leds:
     l_missile: "FFCC00"
-- time: '+0.8'
+# reverse
+- time: '+0.15'
   leds:
-    l_missile: "FFFF00"
+    l_missile: "FFB300"
+- time: '+0.15'
+  leds:
+    l_missile: "FF9900"
+- time: '+0.15'
+  leds:
+    l_missile: "FF8000"
+- time: '+0.15'
+  leds:
+    l_missile: "FF6600"
+- time: '+0.15'
+  leds:
+    l_missile: "FF4D00"
+- time: '+0.15'
+  leds:
+    l_missile: "FF3300"
+- time: '+0.15'
+  leds:
+    l_missile: "FF1900"
