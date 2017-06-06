@@ -3,7 +3,8 @@
 switches:
   s_tilt:
     number: 2-1
-    tags: tilt_warning
+    tags:
+      tilt_warning
   s_slingshot_1:
     number: 1-3
     tags: playfield_active

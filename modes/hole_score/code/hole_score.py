@@ -13,10 +13,6 @@ from mpf.core.delays import DelayManager
 
 class Custom(Mode):
     def mode_start(self, **kwargs):
-        #for mode in self.machine.mode_controller.active_modes:
-        #    print(vars(mode))
-        #    if mode.name == 'hole_score':
-        #        hole_score_mode = mode
         player = self.machine.game.player
         awarded_score = 0
         if player.hole_score_count == 10:

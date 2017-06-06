@@ -77,3 +77,38 @@ class TestExplosionBonusMode(FullMachineTestCase):
         # at the end of the ball, the player collects the bonus
         current_score += 50000
         self.assertEqual(current_score, self.machine.game.player.score)
+
+    def test_tilted(self):
+        current_score = 0
+        self.hit_and_release_switch("s_start")
+        self.advance_time_and_run(1)
+
+        # activate base mode
+        self.hit_and_release_switch("s_rollover_top_2")
+        self.advance_time_and_run(4) # 3+1
+        current_score += 500
+        self.assertEqual(1, self.machine.playfield.balls)
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        # advance the bonus with target 5 times
+        for x in range(0, 5):
+            self.hit_and_release_switch("s_stationary_advance_bonus")
+            # bonus points not added now...
+            # just the base 100 points for each
+            current_score += 100
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        # wait for "shoot again" to expire
+        self.advance_time_and_run(15)
+
+        # TILT the fucker!
+        for x in range(0, 3):
+            self.hit_and_release_switch("s_tilt")
+            self.advance_time_and_run(1)
+
+        # TILT has a 5 second settle time
+        self.hit_switch_and_run('s_trough_1', 5)
+        self.assertEqual(2, self.machine.game.player.ball)
+        # at the end of the ball, the player collects the bonus
+        current_score += 0
+        self.assertEqual(current_score, self.machine.game.player.score)

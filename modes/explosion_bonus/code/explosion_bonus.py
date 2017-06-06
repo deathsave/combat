@@ -15,9 +15,9 @@ class Custom(m):
         #   NICE TO HAVE - unlight each led and fire a sound in sequence
         player = self.machine.game.player
         base_bonus_score = ((player.explosion_bonus_count - 1) * 1000)
-        # TODO base_bonus_score = 0 (if TILTED)
-        if self.machine.modes.explosion_multiplier.active:
-            player.score += (base_bonus_score * 10)
-        else:
-            player.score += base_bonus_score
+        if player.tilt_warnings < 2:
+            if self.machine.modes.explosion_multiplier.active:
+                player.score += (base_bonus_score * 10)
+            else:
+                player.score += base_bonus_score
         del kwargs
