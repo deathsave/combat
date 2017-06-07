@@ -29,6 +29,11 @@ multiballs:
 sound_player:
   mode_multiball_started: multiball_sfx
 
+show_player:
+  mode_multiball_started:
+    bumper_flash:
+      action: play
+
 scoring:
   s_bumper_1_active:
     score: 1000|block # bumpers 10x all day during multi
@@ -56,6 +61,8 @@ scoring:
     score: 2000|block
   s_stationary_special_active:
     score: 1000|block
+  s_drop_target_active:
+    score: 2000|block
   s_drop_target_behind_active:
     score: 1000|block
   s_stationary_advance_bonus_active:

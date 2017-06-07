@@ -98,14 +98,10 @@ class TestMultiballMode(FullMachineTestCase):
         current_score += 1000 # normally 500
         self.assertEqual(current_score, self.machine.game.player.score)
 
-        # stationary special scoring not elevated
-        # (first hit will already be from laser bombs)
         self.hit_and_release_switch("s_stationary_special")
-        current_score += 20000
+        current_score += 1000
         self.assertEqual(current_score, self.machine.game.player.score)
 
-        # after release, gun switch is rolled over again
-        # and this time scores 10k
         self.hit_and_release_switch("s_kicker_gun")
         current_score += 10000
 
@@ -114,6 +110,7 @@ class TestMultiballMode(FullMachineTestCase):
         self.hit_and_release_switch("s_bumper_2")
         self.hit_and_release_switch("s_bumper_3")
         current_score += 3000
+
         # wait for "shoot again" to expire
         self.advance_time_and_run(15)
         # ball drains, ending multiball but not player's turn

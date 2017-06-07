@@ -11,12 +11,15 @@
 from mpf.core.mode import Mode as m
 
 class Custom(m):
-    def mode_init(self):
-        """This code that will run once mode when MPF boots."""
-        pass
+    def stop_bombs_dropped_mode(self, **kwargs):
+        # because we don't want to award
+        # extra balls while in multiball
+        self.machine.modes.bombs_dropped.stop()
+        del kwargs
 
     def mode_start(self, **kwargs):
-        """This code will run every time this mode starts."""
+        self.machine.events.add_handler(
+            'ball_hold_gun_multi_balls_released', self.stop_bombs_dropped_mode)
         del kwargs
 
     def mode_stop(self, **kwargs):

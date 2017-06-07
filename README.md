@@ -91,9 +91,10 @@ How:
 What:
 
 * 2-ball Multiball
-* Laser Bombs persists
-* Pop Bumpers score 1,000
-* Most other targets score 2x
+* Flash score all day (Pop Bumpers score 1,000)
+* Other targets score 2x
+  * Exceptions:
+    * Cluster bombs score normally
 
 
 Development
