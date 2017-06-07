@@ -6,30 +6,50 @@ Combat by Zaccaria
 Game Rules
 ----------
 
-### TODO: Flash Score
+### Flash Score
 
-Launch a missle (northwest kicker) or fire the gun (northeast kicker)
+How:
 
-* Active for 15 seconds.
+* Launch a missle (northwest kicker) or
+* Fire the gun (northeast kicker)
+
+What: 
+
 * Pop Bumpers score 1,000
-* Cluster Bombs (north rollovers) score 5,000
+* Active for 15 seconds only
 
 
 ### Laser-guided Bombs (bombs_dropped)
 
-Enemy is in plain sight. Attack!
 
-* Laser-guided bombs are deadly accurate and score 10k
-* Laser-guided Torpedo (special):
-  * Pro: Inflicts significant damage (scores 20k)
-  * Con: Gives up our position (forfeit 10x bombs multiplier)
-* Outlanes light and award extra ball
+How:
+
+* Drop all five B.O.M.B.S. targets
+
+What:
+
+* Drop 'Laser-guided' bombs to score 10k
+* Fire 'Laser-guided' Torpedo (special) which:
+  * Inflicts significant damage (scores 20k)
+  * Gives up our position (forfeit 10x bombs multiplier)
+* Rolling over outlanes award extra ball
 
 
-### Hole Score Bonus
+### Missile Launch (Hole Score Bonus)
 
-Shoot the battleship (spinner), right-side target or in-lane to advance.
-Launch a missle to collect.
+Fuel up the missile and launch it!
+
+How to advance:
+
+* Shoot the battleship (spinner) or
+* Shoot the right-side 'Advance Hole Score' target or
+* Roll over in-lanes
+
+How to collect:
+
+* Roll into the hole at the peak of the missile lane.
+
+Points:
 
 * 50 points to 30% lit
 * 500 points to 60% lit
@@ -37,30 +57,43 @@ Launch a missle to collect.
 * 50,000 points fully lit
 
 
-### TODO: Explosion Bonus (use MPF built-in game-over bonus)
+### Explosion Bonus
 
-Shoot the Cluster Bombs (when lit) or right-side target to advance.
+How:
+
+* Roll over Cluster Bombs (when lit) or
+* Hit right-side 'Explosion Bonus' target
+
+What:
 
 * Collected at end of ball.
-
-#### TODO: x10 Explosion Bonus Multiplier
-
-* South-most led lit
-* Activation Logic TODO
+* Fire the gun for x10 Multiplier:
 
 
-### TODO: Same Player Shoots Again
+### Same Player Shoots Again
 
-Awarded after 100 battleships (spins) on a single ball.
-Only awarded once per game, per player.
+How:
 
-* Lights the led at bottom of playfield
-* Free ball after draining
+* Exceed 150k points for the first time
+* Roll over outlanes during 'Laser Bombs'
+
+What:
+
+* Extra ball awarded
 
 
 ### Multiball
 
-After dropping the bombs, load the gun to activate.
+How:
+
+* After activating Laser Bombs, load the gun
+
+What:
+
+* 2-ball Multiball
+* Laser Bombs persists
+* Pop Bumpers score 1,000
+* Most other targets score 2x
 
 
 Development
