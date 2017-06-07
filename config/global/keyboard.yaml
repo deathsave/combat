@@ -22,9 +22,21 @@ keyboard:
   3:
     switch: s_trough_jam
     toggle: true
+  p:
+    switch: s_bumper_1
   d:
     switch: s_drop_target
   g:
     switch: s_kicker_gun
+  m:
+    switch: s_kicker_missile
+  h:
+    switch: s_stationary_advance_hole_score
+  b:
+    switch: s_stationary_advance_bonus
+  c:
+    switch: s_stationary_special
+  n:
+    switch: s_spinner
   t:
     switch: s_tilt

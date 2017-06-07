@@ -30,6 +30,32 @@ event_player:
   s_drop_target_reset_active:
     bombs_complete
 
+sound_player:
+  # unique targets
+  s_kicker_gun_active: gun_explosion_sfx
+  s_bumper_1_active: bullet_ping_pool
+  s_bumper_2_active: bullet_ping_pool
+  s_bumper_3_active: bullet_ping_pool
+  s_spinner_active: shot_and_ping_pool
+  # quick gun sound for sounds that may be concurrent
+  s_rollover_advance_hole_score_1_active: gun_shot_distant_sfx
+  s_rollover_advance_hole_score_2_active: gun_shot_distant_sfx
+  s_stationary_advance_hole_score_active: gun_shot_distant_sfx
+  # unique pools for 2 main logic blocks
+  logicblock_hole_score_updated: missile_advance_pool
+  cluster_a_advance_bonus_hit: machine_gun_pool
+  cluster_b_advance_bonus_hit: machine_gun_pool
+  s_stationary_advance_bonus_active: machine_gun_pool
+  # basic explosion sound for everything else
+  s_slingshot_1_active: explosion_pool
+  s_slingshot_2_active: explosion_pool
+  s_rollover_bonus_ball_1_active: explosion_pool
+  s_rollover_bonus_ball_2_active: explosion_pool
+  s_stationary_thousand_active: explosion_pool
+  s_stationary_special_active: explosion_pool
+  s_drop_target_active: explosion_pool
+  s_drop_target_behind_active: explosion_pool
+
 scoring:
   s_bumper_1_active:
     score: 100 # in ask app these were 1000 immediately

@@ -1,22 +1,22 @@
 #config_version=4
 sound_system:
-  buffer: 2048
+  buffer: 768
   frequency: 44100
   channels: 2
   master_volume: 0.9
   tracks:
     music:
-      volume: 0.7
+      volume: 0.6
       simultaneous_sounds: 1
       events_when_stopped: music_track_stopped
       events_when_played: music_track_played, keep_going
       events_when_paused: music_track_paused
     sfx:
-      volume: 0.4
-      simultaneous_sounds: 8
+      volume: 0.7
+      simultaneous_sounds: 32
       preload: yes
     voice:
-      volume: 0.6
+      volume: 0.9
       simultaneous_sounds: 1
       preload: yes
 
@@ -32,7 +32,7 @@ sounds:
     priority: 100
     file: base_bgm.ogg
     track: music
-    volume: 0.5
+    volume: 0.4
     loops: -1 # repeat until shut off
   multiball_bgm:
     # TODO: add a partial loop to play after sound
@@ -48,3 +48,118 @@ sounds:
     track: music
     volume: 0.4
     loops: 1 # repeat until shut off
+  explosion_1_sfx:
+    priority: 150
+    file: explosion_1.ogg
+    track: sfx
+    volume: 0.8
+  explosion_2_sfx:
+    priority: 150
+    file: explosion_2.ogg
+    track: sfx
+    volume: 0.8
+  multiball_sfx:
+    priority: 150
+    file: multiball.ogg
+    track: sfx
+    volume: 0.4
+  gun_shot_1_sfx:
+    priority: 150
+    file: gun_shot_1.ogg
+    track: sfx
+  gun_shot_near_sfx:
+    priority: 150
+    file: gun_shot_near.ogg
+    track: sfx
+    volume: 0.6
+  gun_shot_distant_sfx:
+    priority: 150
+    file: gun_shot_distant.ogg
+    track: sfx
+    volume: 0.9
+  machine_gun_near_sfx:
+    priority: 150
+    file: machine_gun_near.ogg
+    track: sfx
+    volume: 0.4
+  machine_gun_distant_sfx:
+    priority: 150
+    file: machine_gun_distant.ogg
+    track: sfx
+    volume: 0.9
+  laser_bombs_sfx:
+    priority: 150
+    file: laser_bombs.ogg
+    track: sfx
+    volume: 1.0
+  gun_explosion_sfx:
+    priority: 150
+    file: gun_explosion.ogg
+    track: sfx
+    volume: 0.4
+  missile_collect_sfx:
+    priority: 150
+    file: missile_collect.ogg
+    track: sfx
+  missile_advance_1_sfx:
+    priority: 150
+    file: missile_advance_1.ogg
+    track: sfx
+  missile_advance_2_sfx:
+    priority: 150
+    file: missile_advance_2.ogg
+    track: sfx
+  missile_advance_3_sfx:
+    priority: 150
+    file: missile_advance_3.ogg
+    track: sfx
+  bullet_ping_1_sfx:
+    priority: 150
+    file: bullet_ping_1.ogg
+    track: sfx
+    volume: 0.8
+  bullet_ping_2_sfx:
+    priority: 150
+    file: bullet_ping_2.ogg
+    track: sfx
+    volume: 0.8
+  bullet_ping_3_sfx:
+    priority: 150
+    file: bullet_ping_3.ogg
+    track: sfx
+    volume: 0.8
+
+sound_pools:
+  explosion_pool:
+    type: random
+    sounds:
+      explosion_1_sfx
+      explosion_2_sfx
+  missile_advance_pool:
+    type: random
+    sounds:
+      missile_advance_1_sfx
+      missile_advance_2_sfx
+      missile_advance_3_sfx
+  bullet_ping_pool:
+    type: random
+    sounds:
+      bullet_ping_1_sfx
+      bullet_ping_2_sfx
+      bullet_ping_3_sfx
+  shot_and_ping_pool:
+    type: random
+    sounds:
+      gun_shot_distant_sfx|5
+      gun_shot_near_sfx|3
+      bullet_ping_1_sfx|1
+      bullet_ping_2_sfx|1
+      bullet_ping_3_sfx|1
+  machine_gun_pool:
+    type: random
+    sounds:
+      machine_gun_near_sfx
+      machine_gun_distant_sfx
+
+sound_player:
+  s_start_active: gun_explosion_sfx

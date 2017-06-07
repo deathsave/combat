@@ -10,6 +10,10 @@ mode:
     s_stationary_special_active
     mode_multiball_stopped # after multi, you must hit drops again
 
+sound_player:
+  mode_bombs_dropped_started: laser_bombs_sfx
+  extra_ball_awarded: missile_advance_3_sfx
+
 extra_balls:
   laser_bombs_outlanes:
     award_events:

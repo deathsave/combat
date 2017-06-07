@@ -26,6 +26,9 @@ multiballs:
     #stop_events:
     #  multiball_multi_bombs_ball_lost
 
+sound_player:
+  mode_multiball_started: multiball_sfx
+
 scoring:
   s_bumper_1_active:
     score: 1000|block # bumpers 10x all day during multi

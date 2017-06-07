@@ -35,6 +35,12 @@ shots:
       s_rollover_top_5
       s_rollover_top_6
 
+# opposite cluster's sounds
+sound_player:
+  s_rollover_top_1_active: gun_shot_near_sfx
+  s_rollover_top_4_active: gun_shot_near_sfx
+  s_rollover_top_7_active: gun_shot_near_sfx
+
 led_player:
   mode_cluster_bombs_b_started:
     l_rollover_top_2: ff8000
