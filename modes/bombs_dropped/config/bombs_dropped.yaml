@@ -27,7 +27,6 @@ led_player:
     l_bonus_ball_1: FF0000
     l_bonus_ball_2: FF0000
   extra_ball_awarded:
-    l_shoots_again: orange
     l_bonus_ball_1:
       color: 000000
       priority: 200

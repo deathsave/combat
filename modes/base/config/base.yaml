@@ -30,6 +30,10 @@ event_player:
   s_drop_target_reset_active:
     bombs_complete
 
+led_player:
+  extra_ball_awarded:
+    l_shoots_again: orange
+
 sound_player:
   # unique targets
   s_kicker_gun_active: gun_explosion_sfx
