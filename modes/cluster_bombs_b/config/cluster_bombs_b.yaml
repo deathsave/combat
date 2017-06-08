@@ -1,7 +1,7 @@
 #config_version=4
 mode:
   start_events:
-    mode_cluster_bombs_a_stopped
+    timer_cluster_a_complete
   stop_events:
     timer_cluster_b_complete
     ball_will_end
@@ -16,12 +16,10 @@ timers:
     direction: up
     control_events:
       - event: mode_cluster_bombs_b_started
-        action: reset
-      - event: mode_cluster_bombs_b_started
         action: start
-      - event: timer_cluster_b_complete
-        action: stop
       - event: ball_will_end
+        action: stop
+      - event: high_score_started
         action: stop
 
 shots:

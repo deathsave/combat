@@ -1,5 +1,5 @@
 #config_version=4
 queue_relay_player:
-  mode_high_score_stopping:
+  game_ending:
     post: start_game_over
-    wait_for: mode_game_over_stopped
+    wait_for: stop_game_over

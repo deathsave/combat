@@ -25,6 +25,7 @@ sound_player:
   mode_high_score_started:
     high_score_bgm:
       action: play
-  mode_high_score_stopped:
+  # carry song through both modes
+  mode_game_over_stopped:
     high_score_bgm:
       action: stop

@@ -10,10 +10,11 @@ high_score:
       - HIGH SCORE 4
   defaults:
     score:
-      - PPP: 1000000
-      - ZAC: 500000
-      - CAR: 250000
-      - RIA: 100000
+      - ZAC: 999999
+      - CAR: 99999
+      - RIA: 9999
+      - COM: 999
+      - BAT: 99
 
 sound_player:
   mode_high_score_started:

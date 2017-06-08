@@ -26,6 +26,8 @@ widget_player:
       action: remove
     player_two_score:
       action: remove
+    game_over:
+      action: remove
   mode_base_started:
     current_score:
       action: add
@@ -59,3 +61,24 @@ widget_player:
       action: remove
     company:
       action: remove
+  mode_game_over_started:
+    player_one_score:
+      target: window
+      action: update
+    player_two_score:
+      target: window
+      action: update
+    current_score:
+      action: remove
+    player_up:
+      action: remove
+    ball_count:
+      action: remove
+    title:
+      action: remove
+    credit:
+      action: remove
+    company:
+      action: remove
+    game_over:
+      action: add

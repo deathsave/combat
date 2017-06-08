@@ -70,3 +70,10 @@ widgets:
       style: dmd_med
       animations:
         add_to_slide: pulsate
+  game_over:
+    - type: text
+      text: "GAME OVER"
+      style: dmd_big
+      color: F9ED32
+      animations:
+        add_to_slide: pulsate
