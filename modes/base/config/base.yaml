@@ -59,6 +59,7 @@ sound_player:
   s_stationary_special_active: explosion_pool
   s_drop_target_active: explosion_pool
   s_drop_target_behind_active: explosion_pool
+  extra_ball_awarded: missile_advance_3_sfx
 
 scoring:
   s_bumper_1_active:
