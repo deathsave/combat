@@ -12,4 +12,5 @@ modes:
   - explosion_bonus
   - explosion_multiplier
   - high_score
+  - game_over
   - tilt

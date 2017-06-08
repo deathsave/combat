@@ -1,0 +1,25 @@
+#config_version=4
+mode:
+  start_events: start_game_over
+  stop_events: timer_game_over_complete
+  priority: 200
+  code: game_over.Custom
+
+timers:
+  game_over:
+    start_value: 0
+    end_value: 10
+    direction: up
+    control_events:
+      - event: mode_game_over_started
+        action: start
+      - event: timer_game_over_complete
+        action: stop
+
+sound_player:
+  mode_game_over_started:
+    high_score_bgm:
+      action: play
+  timer_game_over_complete:
+    high_score_bgm:
+      action: stop
