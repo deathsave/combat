@@ -34,7 +34,7 @@ class Custom(Mode):
         player = self.machine.game.player
         if player.score_level > 0:
             return
-        elif player.score_level == 0 and player.score >= 150000:
+        elif player.score_level == 0 and player.score >= 250000:
             self.machine.extra_balls.score_level_1.award()
             self.machine.coils.c_knocker.pulse()
             player.score_level = 1
