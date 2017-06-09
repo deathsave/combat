@@ -162,4 +162,6 @@ sound_pools:
       machine_gun_distant_sfx
 
 sound_player:
-  s_start_active: gun_explosion_sfx
+  mode_game_started: gun_explosion_sfx
+  # only good enough for 2 players
+  multiplayer_game: bullet_ping_pool
