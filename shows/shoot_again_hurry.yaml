@@ -1,0 +1,8 @@
+# show_version=4
+- time: 0
+  leds:
+    l_shoots_again: orange
+- time: '+0.3'
+  leds:
+    l_shoots_again: 000000
+- time: '+0.3'

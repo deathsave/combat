@@ -85,3 +85,14 @@ show_player:
   mode_base_started:
     hole_score_collect:
       action: play
+  ball_save_default_timer_start:
+    shoot_again_normal:
+      action: play
+  ball_save_default_hurry_up:
+    shoot_again_normal:
+      action: stop
+    shoot_again_hurry:
+      action: play
+  ball_save_default_disabled:
+    shoot_again_hurry:
+      action: stop
