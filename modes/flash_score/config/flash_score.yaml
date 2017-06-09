@@ -28,10 +28,18 @@ show_player:
     bumper_flash:
       action: play
 
+led_player:
+  mode_flash_score_started:
+    l_spinner: white
+  mode_flash_score_stopped:
+    l_spinner: 000000
+
 scoring:
   s_bumper_1_active:
     score: 1000|block
   s_bumper_2_active:
     score: 1000|block
   s_bumper_3_active:
+    score: 1000|block
+  s_spinner_active:
     score: 1000|block

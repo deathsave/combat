@@ -16,10 +16,11 @@ How:
 What: 
 
 * Pop Bumpers score 1,000
+* Spinner lights and scores 1,000 as well
 * Active for 15 seconds only
 
 
-### Laser-guided Bombs (bombs_dropped)
+### Laser-guided Bombs
 
 
 How:
