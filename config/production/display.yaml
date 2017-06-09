@@ -1,10 +1,10 @@
 #config_version=4
 window:
-  width: 1280
-  height: 720
+  width: 1920
+  height: 1080
   title: Immortal Combat
   resizable: false
-  fullscreen: false
+  fullscreen: true
   borderless: true
   exit_on_escape: true
   source_display: window
