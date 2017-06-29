@@ -4,9 +4,6 @@ mode:
     mode_cluster_bombs_a_stopped
   stop_events:
     timer_cluster_b_complete
-    s_bumper_1_active
-    s_bumper_2_active
-    s_bumper_3_active
     ball_will_end
     ball_starting
     game_ended

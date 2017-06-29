@@ -5,9 +5,6 @@ mode:
     mode_cluster_bombs_b_stopped
   stop_events:
     timer_cluster_a_complete
-    s_bumper_1_active
-    s_bumper_2_active
-    s_bumper_3_active
     ball_will_end
     game_ended
   priority: 150

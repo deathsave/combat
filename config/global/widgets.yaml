@@ -30,7 +30,7 @@ widgets:
         add_to_slide: pulsate
   player_one_score:
     - type: text
-      text: "(machine|player1_score)"
+      text: "(player1|score)"
       number_grouping: true # adds commas to integer value display
       min_digits: 2
       color: 333333
@@ -40,7 +40,7 @@ widgets:
       x: center-10%
   player_two_score:
     - type: text
-      text: "(machine|player2_score)"
+      text: "(player2|score)"
       number_grouping: true
       min_digits: 2
       color: 333333
