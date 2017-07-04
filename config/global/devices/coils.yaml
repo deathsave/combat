@@ -6,12 +6,14 @@ coils:
   c_flipper_main_1:
     number: 0-6
     pulse_ms: 35
+    pulse_power: 7
   c_flipper_hold_1:
     number: 0-7
     allow_enable: true
   c_flipper_main_2:
     number: 0-5
     pulse_ms: 35
+    pulse_power: 7
   c_flipper_hold_2:
     number: 0-4
     allow_enable: true
@@ -27,9 +29,11 @@ coils:
   c_slingshot_1:
     number: 1-0
     pulse_ms: 40
+    pulse_power: 7
   c_slingshot_2:
     number: 2-0
     pulse_ms: 40
+    pulse_power: 7
   c_kicker_missile:
     number: 2-2
     pulse_ms: 80
