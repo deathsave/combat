@@ -8,11 +8,27 @@ animations:
       value: 128
       duration: 5s
       repeat: true
-  pulsate:
+  scroll_left:
+    - property: x
+      value: 128
+      duration: 1ms
+    - property: x
+      value: -128
+      duration: 5s
+      repeat: true
+  pulsate_fast:
     - property: opacity
       value: 0.0
       duration: 250ms
     - property: opacity
       value: 1.0
       duration: 250ms
+      repeat: true
+  pulsate_slow:
+    - property: opacity
+      value: 0.0
+      duration: 500ms
+    - property: opacity
+      value: 1.0
+      duration: 500ms
       repeat: true

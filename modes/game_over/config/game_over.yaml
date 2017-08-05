@@ -22,6 +22,9 @@ timers:
       - event: timer_game_over_complete
         action: stop
 
+show_player:
+  mode_game_over_started: high_scores_scroll_dmd
+
 event_player:
   s_start_active: stop_game_over
   timer_game_over_complete: stop_game_over

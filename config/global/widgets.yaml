@@ -27,7 +27,7 @@ widgets:
       style: dmd_big
       font_size: 12
       animations:
-        add_to_slide: pulsate
+        add_to_slide: pulsate_fast
   player_one_score:
     - type: text
       text: "(player1|score)"
@@ -48,11 +48,62 @@ widgets:
       anchor_x: right
       y: top-20.5% # 18 + 2+2 margin
       x: right-6%
+  high_score_1:
+    - type: text
+      text: "(machine|score1_label) (machine|score1_name): (machine|score1_value)"
+      number_grouping: true
+      min_digits: 2
+      style: dmd_small
+      color: F9ED32
+      x: 256
+      animations:
+        add_to_slide: scroll_left
+  high_score_2:
+    - type: text
+      text: "1st) (machine|score2_name): (machine|score2_value)"
+      number_grouping: true
+      min_digits: 2
+      style: dmd_small
+      color: F9ED32
+      x: 256
+      animations:
+        add_to_slide: scroll_left
+  high_score_3:
+    - type: text
+      text: "2nd) (machine|score3_name): (machine|score3_value)"
+      number_grouping: true
+      min_digits: 2
+      style: dmd_small
+      color: F9ED32
+      x: 256
+      animations:
+        add_to_slide: scroll_left
+  high_score_4:
+    - type: text
+      text: "3rd) (machine|score4_name): (machine|score4_value)"
+      number_grouping: true
+      min_digits: 2
+      style: dmd_small
+      color: F9ED32
+      x: 256
+      animations:
+        add_to_slide: scroll_left
+  high_score_5:
+    - type: text
+      text: "4th) (machine|score5_name): (machine|score5_value)"
+      number_grouping: true
+      min_digits: 2
+      style: dmd_small
+      color: F9ED32
+      x: 256
+      animations:
+        add_to_slide: scroll_left
   title:
     - type: text
       text: "Zaccaria “Combat”"
       style: dmd_big
       color: F9ED32
+      x: -128
       animations:
         add_to_slide: scroll_right
   credit:
@@ -61,19 +112,17 @@ widgets:
       style: dmd_small
       color: F9ED32
       font_size: 9
-      animations:
-        add_to_slide: pulsate
   company:
     - type: text
       text: "Pinball Plaid"
       color: F9ED32
       style: dmd_med
       animations:
-        add_to_slide: pulsate
+        add_to_slide: pulsate_slow
   game_over:
     - type: text
       text: "GAME OVER"
       style: dmd_big
       color: F9ED32
       animations:
-        add_to_slide: pulsate
+        add_to_slide: pulsate_slow

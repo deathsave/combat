@@ -1,0 +1,56 @@
+# show_version=4
+- duration: 5s
+  widgets:
+    high_score_1:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-4%
+- duration: 2s
+  widgets:
+    high_score_1:
+      action: remove
+- duration: 5s
+  widgets:
+    high_score_2:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-4%
+- duration: 2s
+  widgets:
+    high_score_2:
+      action: remove
+- duration: 5s
+  widgets:
+    high_score_3:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-4%
+- duration: 2s
+  widgets:
+    high_score_3:
+      action: remove
+- duration: 5s
+  widgets:
+    high_score_4:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-4%
+- duration: 2s
+  widgets:
+    high_score_4:
+      action: remove
+- duration: 5s
+  widgets:
+    high_score_5:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-4%
+- duration: 2s
+  widgets:
+    high_score_5:
+      action: remove
