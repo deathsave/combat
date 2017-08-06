@@ -10,12 +10,12 @@ widget_player:
       action: add
       widget_settings:
         anchor_y: top
-        y: top-50%
+        y: top-44%
     company:
       action: add
       widget_settings:
         anchor_y: top
-        y: top-74%
+        y: top-70%
     current_score:
       action: remove # when a game ends...
     player_up:
