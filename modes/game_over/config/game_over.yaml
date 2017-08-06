@@ -23,7 +23,11 @@ timers:
         action: stop
 
 show_player:
-  mode_game_over_started: high_scores_scroll_dmd
+  mode_game_over_started:
+    high_scores_scroll_dmd:
+      loops: -1
+    credits_scroll_dmd:
+      loops: 0
 
 event_player:
   s_start_active: stop_game_over

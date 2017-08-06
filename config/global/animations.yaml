@@ -6,7 +6,7 @@ animations:
       duration: 1ms
     - property: x
       value: 128
-      duration: 5s
+      duration: 4s
       repeat: true
   scroll_left:
     - property: x
@@ -14,7 +14,23 @@ animations:
       duration: 1ms
     - property: x
       value: -128
-      duration: 5s
+      duration: 4s
+      repeat: true
+  scroll_left_medium:
+    - property: x
+      value: 256
+      duration: 1ms
+    - property: x
+      value: -256
+      duration: 8s
+      repeat: true
+  scroll_left_long:
+    - property: x
+      value: 448
+      duration: 1ms
+    - property: x
+      value: -448
+      duration: 12s
       repeat: true
   pulsate_fast:
     - property: opacity

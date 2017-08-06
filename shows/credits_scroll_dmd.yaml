@@ -1,0 +1,45 @@
+# show_version=4
+- duration: 12s
+  widgets:
+    credits_game:
+      action: add
+      widget_settings:
+        anchor_y: bottom
+        y: bottom+4%
+- duration: 1s
+  widgets:
+    credits_game:
+      action: remove
+- duration: 12s
+  widgets:
+    credits_music:
+      action: add
+      widget_settings:
+        anchor_y: bottom
+        y: bottom+4%
+- duration: 1s
+  widgets:
+    credits_music:
+      action: remove
+- duration: 8s
+  widgets:
+    credits_sfx:
+      action: add
+      widget_settings:
+        anchor_y: bottom
+        y: bottom+4%
+- duration: 1s
+  widgets:
+    credits_sfx:
+      action: remove
+- duration: 12s
+  widgets:
+    credits_podcast:
+      action: add
+      widget_settings:
+        anchor_y: bottom
+        y: bottom+4%
+- duration: 2s
+  widgets:
+    credits_sfx:
+      action: remove

@@ -48,6 +48,38 @@ widgets:
       anchor_x: right
       y: top-20.5% # 18 + 2+2 margin
       x: right-6%
+  credits_music:
+    - type: text
+      text: "Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks"
+      style: dmd_small
+      color: F9ED32
+      x: 512
+      animations:
+        add_to_slide: scroll_left_long
+  credits_sfx:
+    - type: text
+      text: "Sound Effects by Raphael Rodriguez"
+      style: dmd_small
+      color: F9ED32
+      x: 256
+      animations:
+        add_to_slide: scroll_left_medium
+  credits_game:
+    - type: text
+      text: "Zaccaria Combat reimagined by Pinball Plaid - Steve Prehoda, Josiah Cox & Ryan Richardson"
+      style: dmd_small
+      color: F9ED32
+      x: 512
+      animations:
+        add_to_slide: scroll_left_long
+  credits_podcast:
+    - type: text
+      text: "Subscribe to the Pinball Plaid Podcast from http://pinballplaid.com/show"
+      style: dmd_small
+      color: F9ED32
+      x: 512
+      animations:
+        add_to_slide: scroll_left_long
   high_score_1:
     - type: text
       text: "(machine|score1_label) (machine|score1_name): (machine|score1_value)"
