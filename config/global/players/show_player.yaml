@@ -4,3 +4,6 @@ show_player:
   init_done:
     general_illumination_fade:
       action: play
+  ball_ending{current_player.extra_balls>0}:
+    shoot_again_dmd:
+      loops: 0

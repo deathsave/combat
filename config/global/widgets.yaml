@@ -48,6 +48,15 @@ widgets:
       anchor_x: right
       y: top-20.5% # 18 + 2+2 margin
       x: right-6%
+  shoot_again:
+    - type: text
+      text: "PLAYER (number) SHOOT AGAIN"
+      style: dmd_small
+      color: 99CCFF
+      anchor_y: top
+      y: top-4%
+      animations:
+        add_to_slide: pulsate_slow
   credits_music:
     - type: text
       text: "Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks"

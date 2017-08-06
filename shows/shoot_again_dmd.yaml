@@ -1,0 +1,9 @@
+# show_version=4
+- duration: 8s
+  widgets:
+    shoot_again:
+      action: add
+- duration: 1s
+  widgets:
+    shoot_again:
+      action: remove
