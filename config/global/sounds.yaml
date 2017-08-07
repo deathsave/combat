@@ -1,6 +1,6 @@
 #config_version=4
 sound_system:
-  buffer: 768
+  buffer: 512
   frequency: 44100
   channels: 2
   master_volume: 0.9
@@ -34,6 +34,7 @@ sounds:
     track: music
     volume: 0.7
     loops: -1 # repeat until shut off
+    mode_end_action: stop
   multiball_bgm:
     # TODO: add a partial loop to play after sound
     # gets near the end...
@@ -42,12 +43,13 @@ sounds:
     track: music
     volume: 0.9
     loops: -1
+    mode_end_action: stop
   high_score_bgm:
     priority: 200
     file: high_score_bgm.ogg
     track: music
     volume: 0.6
-    loops: 1 # repeat until shut off
+    loops: 1
   explosion_1_sfx:
     priority: 150
     file: explosion_1.ogg

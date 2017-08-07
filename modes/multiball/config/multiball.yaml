@@ -27,7 +27,18 @@ multiballs:
     #  multiball_multi_bombs_ball_lost
 
 sound_player:
-  mode_multiball_started: multiball_sfx
+  mode_multiball_started:
+    multiball_sfx:
+      action: play
+    multiball_bgm:
+      action: play
+    base_bgm:
+      action: stop
+  mode_multiball_stopped:
+    multiball_bgm:
+      action: stop
+    base_bgm:
+      action: play
 
 show_player:
   mode_multiball_started:

@@ -35,6 +35,11 @@ led_player:
     l_shoots_again: orange
 
 widget_player:
+  mode_base_stopped:
+    player_one_score:
+      action: remove
+    player_two_score:
+      action: remove
   mode_base_started:
     current_score:
       action: add
@@ -70,6 +75,12 @@ widget_player:
       action: remove
 
 sound_player:
+  mode_base_started:
+    base_bgm:
+      action: play
+  mode_base_stopped:
+    base_bgm:
+      action: stop
   # unique targets
   s_kicker_gun_active: gun_explosion_sfx
   s_bumper_1_active: bullet_ping_pool

@@ -1,27 +1,8 @@
 #config_version=4
 sound_player:
-  mode_attract_started:
-    attract_bgm:
-      action: play
-  mode_attract_stopped:
-    attract_bgm:
-      action: stop
-  mode_base_started:
-    base_bgm:
-      action: play
-  mode_base_stopped:
-    base_bgm:
-      action: stop
-  mode_multiball_started:
-    multiball_bgm:
-      action: play
-    base_bgm:
-      action: stop
-  mode_multiball_stopped:
-    multiball_bgm:
-      action: stop
-    base_bgm:
-      action: play
+  # must be here due to mode_end_action seemingly not able to "bubble up"
+  # meaning, only be defined in the sound_player for game_over so music
+  # doesn't restart if setting high score
   mode_high_score_started:
     high_score_bgm:
       action: play

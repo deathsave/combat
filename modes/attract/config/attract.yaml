@@ -23,10 +23,14 @@ show_player:
       action: stop
     rollover_top_swap:
       action: stop
-    general_illumination_fade:
-      action: stop
-    general_illumination:
+
+sound_player:
+  mode_attract_started:
+    attract_bgm:
       action: play
+  mode_attract_stopped:
+    attract_bgm:
+      action: stop
 
 widget_player:
   mode_attract_started:
