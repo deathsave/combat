@@ -22,7 +22,6 @@ config:
 - global/slides.yaml
 - global/sounds.yaml
 - global/players/slide_player.yaml
-- global/players/widget_player.yaml
 - global/players/show_player.yaml
 - global/players/sound_player.yaml
 - global/queue_relay.yaml

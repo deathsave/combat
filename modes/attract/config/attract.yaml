@@ -1,6 +1,7 @@
 #config_version=4
 show_player:
   mode_attract_started:
+    # LEDs
     bumper_flash:
       action: play
     hole_score_lane_sweep:
@@ -26,3 +27,34 @@ show_player:
       action: stop
     general_illumination:
       action: play
+
+widget_player:
+  mode_attract_started:
+    # DMD
+    title:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-4%
+    credit:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-44%
+    company:
+      action: add
+      widget_settings:
+        anchor_y: top
+        y: top-70%
+    current_score:
+      action: remove # when a game ends...
+    player_up:
+      action: remove
+    ball_count:
+      action: remove
+    player_one_score:
+      action: remove
+    player_two_score:
+      action: remove
+    game_over:
+      action: remove
