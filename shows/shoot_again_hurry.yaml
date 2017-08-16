@@ -2,7 +2,25 @@
 - time: 0
   leds:
     l_shoots_again: orange
-- time: '+0.3'
+- time: '+0.25'
   leds:
     l_shoots_again: 000000
-- time: '+0.3'
+- time: '+0.25'
+  leds:
+    l_shoots_again: orange
+- time: '+0.25'
+  leds:
+    l_shoots_again: 000000
+- time: '+0.25'
+  leds:
+    l_shoots_again: orange
+- time: '+0.25'
+  leds:
+    l_shoots_again: 000000
+- time: '+0.25'
+  leds:
+    l_shoots_again: orange
+- time: '+0.25'
+  leds:
+    l_shoots_again: 000000
+- time: '+0.25'

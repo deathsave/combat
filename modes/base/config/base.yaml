@@ -78,6 +78,9 @@ sound_player:
   mode_base_started:
     base_bgm:
       action: play
+  mode_multiball_stopped:
+    base_bgm:
+      action: play
   mode_base_stopped:
     base_bgm:
       action: stop

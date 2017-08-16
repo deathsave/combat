@@ -2,10 +2,12 @@
 ball_saves:
   default:
     active_time: 10s
+    # pretty sure this is still part of the active time
     hurry_up_time: 2s
+    # added onto the active time, so total 12s
     grace_period: 2s
     enable_events: mode_base_started
-    timer_start_events: balldevice_bd_trough_ball_eject_success
+    timer_start_events: sw_playfield_active
     # defaults true but only valid with auto-plunger
     auto_launch: false
     balls_to_save: 1

@@ -40,18 +40,6 @@ class TestClusterBombsMode(FullMachineTestCase):
         self.assertEqual(current_score, self.machine.game.player.score)
         self.assertModeRunning('cluster_bombs_b')
 
-    def test_bumper_hits(self):
-        self.hit_and_release_switch("s_start")
-        self.advance_time_and_run(1)
-
-        self.assertModeRunning('cluster_bombs_a')
-        self.hit_and_release_switch("s_bumper_1")
-        self.assertModeRunning('cluster_bombs_b')
-        self.hit_and_release_switch("s_bumper_2")
-        self.assertModeRunning('cluster_bombs_a')
-        self.hit_and_release_switch("s_bumper_3")
-        self.assertModeRunning('cluster_bombs_b')
-
     def test_advancing_explosion_bonus(self):
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(1)

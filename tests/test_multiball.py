@@ -48,7 +48,8 @@ class TestMultiballMode(FullMachineTestCase):
         ##################
 
         # release lock when 'playfield_active' switch hit
-        # cluster bombs vary by time so mock with a slingshot
+        # cluster bombs vary by time so trigger mode with
+        # a slingshot to prevent scoring variation
         self.hit_and_release_switch("s_slingshot_1")
         self.hit_and_release_switch("s_slingshot_2")
         current_score += 20 * 2

@@ -1,6 +1,6 @@
 #config_version=4
 sound_system:
-  buffer: 512
+  buffer: 1024
   frequency: 44100
   channels: 2
   master_volume: 0.9

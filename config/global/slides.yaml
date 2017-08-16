@@ -3,11 +3,11 @@ slides:
 # see players.yaml for slide changes per events
   default_slide:
     widgets:
-      #- type: color_dmd
-      #  # source_display: dmd (default)
-      #  width: 1024
-      #  height: 256
-      #  y: top-85%
+      - type: color_dmd
+        # source_display: dmd (default)
+        width: 1024
+        height: 256
+        y: top-85%
       # this is the top of the LCD where the player
       # scores are for changing the "player up" assets
       - type: slide_frame
