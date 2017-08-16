@@ -18,7 +18,11 @@ slides:
         y: top
       # default backglass
       - type: image
-        image: backglass-attract
+        image: attract
+  attract_post_slide:
+    widgets:
+      - type: image
+        image: attract-post
   loading_slide:
     widgets:
       - type: text
