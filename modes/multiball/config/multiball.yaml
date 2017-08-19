@@ -4,7 +4,7 @@
 # hitting the special kills the mode
 mode:
   start_events: ball_hold_gun_multi_full
-  priority: 121
+  priority: 150
   code: multiball.Custom
   stop_events: multiball_multi_bombs_ball_lost
 
@@ -45,6 +45,12 @@ show_player:
     bumper_flash:
       action: play
 
+led_player:
+  mode_multiball_started:
+    l_spinner: white
+  mode_multiball_stopped:
+    l_spinner: 000000
+
 scoring:
   s_bumper_1_active:
     score: 1000|block # bumpers 10x all day during multi
@@ -59,7 +65,7 @@ scoring:
   s_slingshot_2_active:
     score: 20|block
   s_spinner_active:
-    score: 200|block
+    score: 1000|block
   s_rollover_bonus_ball_1_active:
     score: 2000|block
   s_rollover_bonus_ball_2_active:

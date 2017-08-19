@@ -4,7 +4,7 @@
 # hitting the special kills the mode
 mode:
   start_events: bombs_complete # fired by BOTH logic block AND reset switch
-  priority: 150
+  priority: 125
   code: bombs_dropped.Custom
   stop_events:
     s_stationary_special_active
@@ -28,17 +28,13 @@ led_player:
   s_rollover_bonus_ball_1_active:
     l_bonus_ball_1:
       color: 000000
-      priority: 200
     l_bonus_ball_2:
       color: 000000
-      priority: 200
   s_rollover_bonus_ball_2_active:
     l_bonus_ball_1:
       color: 000000
-      priority: 200
     l_bonus_ball_2:
       color: 000000
-      priority: 200
 
 coil_player:
   # directly fire drop target coil instead

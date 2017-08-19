@@ -9,7 +9,7 @@ mode:
     mode_attract_started
     ball_will_end
     game_ended
-  priority: 150
+  priority: 125
 
 timers:
   flash_score:

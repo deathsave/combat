@@ -1,7 +1,7 @@
 #config_version=4
 mode:
   start_events: s_kicker_missile_active
-  priority: 200
+  priority: 125
   code: hole_score.Custom
 
 sound_player:

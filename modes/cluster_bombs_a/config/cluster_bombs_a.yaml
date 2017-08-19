@@ -7,7 +7,7 @@ mode:
     timer_cluster_a_complete
     ball_will_end
     game_ended
-  priority: 150
+  priority: 125
 
 timers:
   cluster_a:

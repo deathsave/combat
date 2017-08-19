@@ -63,8 +63,9 @@ class TestMultiballMode(FullMachineTestCase):
         current_score += 1000 * 3
         self.assertEqual(current_score, self.machine.game.player.score)
 
+        self.advance_time_and_run(2)
         self.hit_and_release_switch("s_spinner")
-        current_score += 200
+        current_score += 1000
         self.assertEqual(current_score, self.machine.game.player.score)
 
         # These award an extra ball, so skip

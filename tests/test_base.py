@@ -47,19 +47,16 @@ class TestBaseMode(FullMachineTestCase):
         current_score += 500
         self.assertEqual(current_score, self.machine.game.player.score)
 
-        # test entering the 'Missile' ball device (hole_score collect)
-        self.hit_and_release_switch("s_kicker_missile")
-        current_score += 50
-        self.assertEqual(current_score, self.machine.game.player.score)
-
-        # text entering the 'Gun' ball device
-        self.hit_and_release_switch("s_kicker_gun")
-        self.advance_time_and_run(2) # wait to get into the mode
-        current_score += 5000
-
         # test spinner
         self.hit_and_release_switch("s_spinner")
         current_score += 100
+        self.assertEqual(current_score, self.machine.game.player.score)
+
+        # SPINNER IS A "FLASH-MODE AFFECTED" SWITCH
+        # Missile test must come after...
+        # test entering the 'Missile' ball device (hole_score collect)
+        self.hit_and_release_switch("s_kicker_missile")
+        current_score += 50
         self.assertEqual(current_score, self.machine.game.player.score)
 
         # test slingshot scoring
@@ -88,3 +85,10 @@ class TestBaseMode(FullMachineTestCase):
         self.hit_and_release_switch("s_stationary_special")
         current_score += 500 # more when 'lit'
         self.assertEqual(current_score, self.machine.game.player.score)
+
+        # test entering the 'Gun' ball device
+        # Test last since (like missile) also activates flash score
+        self.hit_and_release_switch("s_kicker_gun")
+        self.advance_time_and_run(2) # wait to get into the mode
+        current_score += 5000
+
