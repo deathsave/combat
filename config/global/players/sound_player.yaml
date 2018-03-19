@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 sound_player:
   # must be here due to mode_end_action seemingly not able to "bubble up"
   # meaning, only be defined in the sound_player for game_over so music

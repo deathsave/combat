@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 mode:
   start_events: timer_start_base_complete
   priority: 100
@@ -22,6 +22,12 @@ logic_blocks:
       disable_events: mode_bombs_dropped_started
       restart_events:
         mode_bombs_dropped_stopped
+
+shots:
+  shared_drop:
+    switch: s_drop_target
+  gun_shot:
+    switch: s_kicker_gun
 
 event_player:
   # cause the drop target to reset

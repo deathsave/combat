@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 animations:
   scroll_right:
     - property: x

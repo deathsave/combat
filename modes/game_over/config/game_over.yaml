@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 # mode currently prevents starting a new virtual game
 # when it thinks balls are missing. seems to function
 # as expected on production though

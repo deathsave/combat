@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 autofire_coils:
   left_sling:
     coil: c_slingshot_1

@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 queue_relay_player:
   game_ending:
     post: start_game_over

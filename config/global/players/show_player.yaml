@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 show_player:
   ball_ending{current_player.extra_balls>0}:
     shoot_again_dmd:

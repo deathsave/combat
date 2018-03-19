@@ -1,4 +1,4 @@
-#config_version=4
+#config_version=5
 slide_player:
   init_start:
     loading_slide:

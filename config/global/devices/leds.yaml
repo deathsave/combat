@@ -1,5 +1,5 @@
-#config_version=4
-leds:
+#config_version=5
+lights:
   #l_gi_top_1:
   #  number:
   #l_gi_top_2:
