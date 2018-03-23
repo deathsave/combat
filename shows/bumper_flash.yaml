@@ -1,6 +1,6 @@
-# show_version=4
+#show_version=5
 - time: 0
-  leds:
+  lights:
     l_bumper1_1: '000000'
     l_bumper1_2: '000000'
     l_bumper1_3: '000000'
@@ -74,7 +74,7 @@
     l_bumper3_23: '000000'
     l_bumper3_24: '000000'
 - time: '+0.15'
-  leds:
+  lights:
     l_bumper1_1: '0029DE'
     l_bumper1_2: '0029DE'
     l_bumper1_3: '0029DE'

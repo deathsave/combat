@@ -26,9 +26,6 @@ lights:
   #  number:
   #l_gi_slingshot_2:
   #  number:
-  l_saucer:
-    number: 0-33
-  # rename per Steve
   l_spinner:
     number: 0-14
   l_special:

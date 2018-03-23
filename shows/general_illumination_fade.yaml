@@ -1,6 +1,6 @@
-# show_version=4
+#show_version=5
 - time: 0
-  leds:
+  lights:
     #led_player: - TODO: figure out how to "fade" leds
     #  fade: '0.5s'
     l_gi_top_1: "000000"
@@ -17,7 +17,7 @@
     l_gi_slingshot_1: "000000"
     l_gi_slingshot_2: "000000"
 - time: '+0.6'
-  leds:
+  lights:
     #led_player:
     #  fade: '0.5s'
     l_gi_top_1: "ffff00"

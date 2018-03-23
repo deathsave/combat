@@ -1,31 +1,31 @@
-# show_version=4
+#show_version=5
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'
     l_hole_score_lane_4: 'FF69B4'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'
     l_hole_score_lane_4: 'FF69B4'
     l_hole_score_lane_5: 'FF69B4'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'
@@ -33,7 +33,7 @@
     l_hole_score_lane_5: 'FF69B4'
     l_hole_score_lane_6: 'FF69B4'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'
@@ -42,7 +42,7 @@
     l_hole_score_lane_6: 'FF69B4'
     l_hole_score_lane_7: 'FFFF00'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'
@@ -52,7 +52,7 @@
     l_hole_score_lane_7: 'FFFF00'
     l_hole_score_lane_8: 'FFFF00'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'
@@ -63,7 +63,7 @@
     l_hole_score_lane_8: 'FFFF00'
     l_hole_score_lane_9: 'FFFF00'
 - duration: -1
-  leds:
+  lights:
     l_hole_score_lane_1: '56A20A'
     l_hole_score_lane_2: '56A20A'
     l_hole_score_lane_3: '56A20A'

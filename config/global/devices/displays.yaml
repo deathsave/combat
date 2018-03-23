@@ -7,4 +7,6 @@ displays:
   window:
     width: 1920
     height: 1080
-
+  player_up_display:
+    width: 1920
+    height: 324

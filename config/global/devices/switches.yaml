@@ -26,10 +26,14 @@ switches:
     type: NC
   s_kicker_missile:
     number: 2-7
-    tags: playfield_active
+    # v0.50 - "Ball device 'bd_missile' uses switch 's_kicker_missile' which has a
+    #         'playfield_active' tag" error
+    # tags: playfield_active
   s_kicker_gun:
     number: 0-10
-    tags: playfield_active
+    # v0.50 - "Ball device 'bd_gun' uses switch 's_kicker_gun' which has a
+    #         'playfield_active' tag" error
+    # tags: playfield_active
   # Pop Bumpers
   s_bumper_1:
     number: 1-0

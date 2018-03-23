@@ -1,6 +1,6 @@
-# show_version=4
+#show_version=5
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: '000000'
     l_explosion_2: '000000'
     l_explosion_3: '000000'
@@ -12,32 +12,32 @@
     l_explosion_9: '000000'
     l_explosion_10: '000000'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: 'FFFFFF'
     l_explosion_3: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: 'FFFFFF'
     l_explosion_3: 'FFFFFF'
     l_explosion_4: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: 'FFFFFF'
     l_explosion_3: 'FFFFFF'
     l_explosion_4: 'FFFFFF'
     l_explosion_5: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: 'FFFFFF'
     l_explosion_3: 'FFFFFF'
@@ -45,7 +45,7 @@
     l_explosion_5: 'FFFFFF'
     l_explosion_6: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: 'FFFFFF'
     l_explosion_3: 'FFFFFF'
@@ -54,7 +54,7 @@
     l_explosion_6: 'FFFFFF'
     l_explosion_7: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: 'FFFFFF'
     l_explosion_3: 'FFFFFF'
@@ -64,7 +64,7 @@
     l_explosion_7: 'FFFFFF'
     l_explosion_8: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: 'FFFFFF'
     l_explosion_2: 'FFFFFF'
     l_explosion_3: 'FFFFFF'
@@ -75,7 +75,7 @@
     l_explosion_8: 'FFFFFF'
     l_explosion_9: '0029DE'
 - duration: -1
-  leds:
+  lights:
     l_explosion_1: '0029DE'
     L_explosion_2: '0029DE'
     l_explosion_3: '0029DE'

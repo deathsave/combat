@@ -18,7 +18,10 @@ extra_balls:
     award_events:
       s_rollover_bonus_ball_1_active
       s_rollover_bonus_ball_2_active
-    reset_events: extra_ball_awarded # infinite extra balls for now
+    # v0.50 - was erroring due to
+    # "mode:bombs_dropped:extra_balls:laser_bombs_outlanes:reset_events"
+    # not being a valid setting name"
+    # reset_events: extra_ball_awarded # infinite extra balls for now
 
 led_player:
   mode_bombs_dropped_started:

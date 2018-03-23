@@ -1,6 +1,6 @@
-# show_version=4
+#show_version=5
 - time: 0
-  leds:
+  lights:
     l_gi_top_1: "ffff00"
     l_gi_top_2: "ffff00"
     l_gi_saucer: "ffff00"

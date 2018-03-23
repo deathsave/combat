@@ -133,23 +133,27 @@ sounds:
 
 sound_pools:
   explosion_pool:
+    track: sfx
     type: random
     sounds:
       explosion_1_sfx
       explosion_2_sfx
   missile_advance_pool:
+    track: sfx
     type: random
     sounds:
       missile_advance_1_sfx
       missile_advance_2_sfx
       missile_advance_3_sfx
   bullet_ping_pool:
+    track: sfx
     type: random
     sounds:
       bullet_ping_1_sfx
       bullet_ping_2_sfx
       bullet_ping_3_sfx
   shot_and_ping_pool:
+    track: sfx
     type: random
     sounds:
       gun_shot_distant_sfx|5
@@ -158,6 +162,7 @@ sound_pools:
       bullet_ping_2_sfx|1
       bullet_ping_3_sfx|1
   machine_gun_pool:
+    track: sfx
     type: random
     sounds:
       machine_gun_near_sfx
