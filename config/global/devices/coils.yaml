@@ -3,42 +3,56 @@ coils:
   c_trough_eject:
     number: 0-2
     default_pulse_ms: 40
+    default_hold_power: 0.1
   c_flipper_main_1:
     number: 0-6
     default_pulse_ms: 35
+    default_hold_power: 0.1
   c_flipper_hold_1:
     number: 0-7
     allow_enable: true
+    default_hold_power: 0.1
   c_flipper_main_2:
     number: 0-5
     default_pulse_ms: 35
+    default_hold_power: 0.1
   c_flipper_hold_2:
     number: 0-4
     allow_enable: true
+    default_hold_power: 0.1
   c_bumper_1:
     number: 1-3
     default_pulse_ms: 40
+    default_hold_power: 0.1
   c_bumper_2:
     number: 1-2
     default_pulse_ms: 40
+    default_hold_power: 0.1
   c_bumper_3:
     number: 1-1
     default_pulse_ms: 40
+    default_hold_power: 0.1
   c_slingshot_1:
     number: 1-0
     default_pulse_ms: 40
+    default_hold_power: 0.1
   c_slingshot_2:
     number: 2-0
     default_pulse_ms: 40
+    default_hold_power: 0.1
   c_kicker_missile:
     number: 2-2
     default_pulse_ms: 80
+    default_hold_power: 0.1
   c_kicker_gun:
     number: 0-0
     default_pulse_ms: 60
+    default_hold_power: 0.1
   c_knocker:
     number: 2-1
     default_pulse_ms: 40
+    default_hold_power: 0.1
   c_drop_target:
     number: 0-1
     default_pulse_ms: 100
+    default_hold_power: 0.1
