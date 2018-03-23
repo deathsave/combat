@@ -11,11 +11,43 @@ Most of the work is handled by a YAML config which we have split into smaller
 files contextually in the `./config` directory. The `./monitor` directory
 is the configuration of component positioning on the virtual playfield display.
 
+### Up and Running on MacOS
 
-Conventions
------------
+Install Homebrew.
 
-* time shows in with 0.3s base (0.15s, 0.6s, 1.2s, etc.).
+```bash
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Then, install pyenv (and Python 3.5.3).
+
+```bash
+  brew install pyenv
+  pyenv install 3.5.3
+  pyenv global 3.5.3
+  echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
+  source ~/.bashrc
+```
+
+...and the mac-specific deps.
+
+```bash
+  wget https://mpf.kantert.net/mpf_mac_frameworks.zip
+  unzip mpf_mac_frameworks.zip
+  sudo mv Frameworks/* /Library/Frameworks/
+  rm -Rf Frameworks
+  rm -Rf __MACOSX
+  rm -Rf ReadMe.txt
+  rm -Rf License.txt
+  rm -Rf mpf_mac_frameworks.zip
+```
+
+Finally, install mpf-recommended `cython` version and "dev" mpf.
+
+```bash
+  pip3 install pip setuptools cython==0.24.1 --upgrade
+  pip3 install mpf mpf-mc mpf-monitor --pre
+```
 
 
 Testing
@@ -42,3 +74,8 @@ is what we have mapped thus far:
 * The key `l` will launch a ball
 * The key `a` will simulate a playfield switch (top rollover)
 * Use the keys `1 and 2` to trigger a trough switch (drains a ball)
+
+Conventions
+-----------
+
+* time shows in with 0.3s base (0.15s, 0.6s, 1.2s, etc.).
