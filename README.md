@@ -69,11 +69,24 @@ playfield and state monitor.
 There is also a virtual keyboard for simulating the switch hits. Here 
 is what we have mapped thus far:
 
+**Primary Switches**
+
 * Use the keys `z and /` for left and right flipper respectively
 * The key `s` will start a game
 * The key `l` will launch a ball
-* The key `a` will simulate a playfield switch (top rollover)
 * Use the keys `1 and 2` to trigger a trough switch (drains a ball)
+
+**Scoring Switches**
+
+* The key `p` hits a Pop Bumper
+* The key `d` hits a "B.O.M.B.S." Drop Target
+* The key `g` simulates a ball entering the "Gun" (right hole)
+* The key `m` simulates a ball entering the "Missile" (left hole)
+* The key `h` advances the "hole score" value
+* The key `b` advances the "end of ball bonus" value
+* The key `c` hits the "Special" stationary target
+* The key `n` simulates one *tick* of the "Spinner"
+* The key `t` triggers a tilt (3 ends the ball)
 
 Conventions
 -----------
