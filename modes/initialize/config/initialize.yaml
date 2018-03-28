@@ -57,6 +57,9 @@ counters:
     restart_events: mode_hole_score_stopped
     reset_on_complete: false
   explosion_bonus:
+    # GOTCHA: will not persist player variable AT ALL
+    # without this set... so we always reset on base mode start
+    persist_state: true
     count_events:
       # TODO - add event for top rollover (when lit)
       s_stationary_advance_bonus_active
@@ -68,6 +71,7 @@ counters:
     count_complete_value: 11
     events_when_complete: explosion_bonus_complete
     direction: up
+    restart_events: mode_base_started
     reset_on_complete: false
 
 extra_balls:

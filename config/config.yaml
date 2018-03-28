@@ -22,6 +22,7 @@ config:
 - global/widgets.yaml
 - global/slides.yaml
 - global/sounds.yaml
+- global/tilt.yaml
 - global/players/slide_player.yaml
 - global/players/show_player.yaml
 - global/players/sound_player.yaml

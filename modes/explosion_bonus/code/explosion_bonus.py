@@ -14,7 +14,7 @@ class Custom(m):
     def mode_start(self, **kwargs):
         #   NICE TO HAVE - unlight each led and fire a sound in sequence
         player = self.machine.game.player
-        base_bonus_score = ((player.explosion_bonus_count - 1) * 1000)
+        base_bonus_score = ((player.explosion_bonus_state.value - 1) * 1000)
         if player.tilt_warnings < 2:
             if self.machine.modes.explosion_multiplier.active:
                 player.score += (base_bonus_score * 10)
