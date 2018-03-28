@@ -30,6 +30,7 @@ class TestHoleScoreMode(FullMachineTestCase):
         for i in range(5):
             self.hit_and_release_switch("s_stationary_advance_hole_score")
             current_score += 100
+        self.assertEqual(current_score, self.machine.game.player.score)
         self.hit_and_release_switch("s_kicker_missile")
         current_score += 500
         self.assertEqual(current_score, self.machine.game.player.score)

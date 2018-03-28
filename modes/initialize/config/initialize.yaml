@@ -44,6 +44,7 @@ counters:
     events_when_complete: spins_advances_hole
     restart_events: spins_advances_hole
   hole_score:
+    persist_state: true
     count_events:
       s_rollover_advance_hole_1_active
       s_rollover_advance_hole_2_active
