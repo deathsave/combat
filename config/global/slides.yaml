@@ -4,11 +4,19 @@ slides:
   default_slide:
     display: player_up_display
     widgets:
-      #- type: color_dmd
-      #  # source_display: dmd (default)
+      #  *********************************
+      #  ****** BEGIN FAKE DMD *********** // uncomment fake DMD on Dev
+      #  *********************************
+      #- type: display
+      #  effects:
+      #    - type: color_dmd
+      #    # source_display: dmd (default)
       #  width: 1024
       #  height: 256
       #  y: top-85%
+      #  *********************************
+      #  ****** END FAKE DMD *************
+      #  *********************************
       # this is the top of the LCD where the player
       # scores are for changing the "player up" assets
       # default backglass
