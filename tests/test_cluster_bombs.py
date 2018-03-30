@@ -45,6 +45,7 @@ class TestClusterBombsMode(FullMachineTestCase):
         self.advance_time_and_run(1)
         player = self.machine.game.player
 
-        current_bonus_count = player.explosion_bonus_count
+        current_bonus_state = player.explosion_bonus_state.value
         self.hit_and_release_switch("s_rollover_top_1")
-        self.assertEqual(current_bonus_count + 1, player.explosion_bonus_count)
+        self.assertEqual(current_bonus_state + 1, player.\
+            explosion_bonus_state.value)
