@@ -1,7 +1,7 @@
 import os
-from mpfmc.tests.FullMpfMachineTestCase import FullMachineTestCase
+from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
-class TestFlashScoreMode(FullMachineTestCase):
+class TestFlashScoreMode(MpfMachineTestCase):
 
     def getMachinePath(self):
         return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
