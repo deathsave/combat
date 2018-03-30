@@ -3,6 +3,7 @@
 # when it thinks balls are missing. seems to function
 # as expected on production though
 mode:
+  game_mode: false
   start_events:
     start_game_over
   stop_events:
