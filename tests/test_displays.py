@@ -20,24 +20,34 @@ class TestDisplays(FullMachineTestCase):
         self.assertNotIn('Zaccaria “Combat”', [x.text for x in current_widgets])
 
     def test_game_loop(self):
-        self.advance_time_and_run(2)
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(1)
+        self.assertModeRunning('base')
+        self.assertEqual(1, self.machine.game.player.ball)
 
         # ball 1
-        self.assertModeRunning('base')
-        self.hit_switch_and_run('s_trough_2', 1)
-        self.hit_switch_and_run('s_trough_2', 2)
+        self.hit_and_release_switch("s_slingshot_1")
+        self.advance_time_and_run(4)
+        self.hit_and_release_switch('s_trough_2')
+        self.advance_time_and_run(1)
+        self.hit_and_release_switch('s_trough_2')
+        self.advance_time_and_run(1)
         self.assertEqual(2, self.machine.game.player.ball)
+
         # ball 2
         self.advance_time_and_run(2)
+        self.hit_and_release_switch("s_slingshot_1")
+        self.advance_time_and_run(4)
         self.hit_switch_and_run('s_trough_2', 1)
-        self.hit_switch_and_run('s_trough_2', 2)
+        self.hit_switch_and_run('s_trough_2', 1)
         self.assertEqual(3, self.machine.game.player.ball)
+
         # ball 3
         self.advance_time_and_run(2)
+        self.hit_and_release_switch("s_slingshot_1")
+        self.advance_time_and_run(4)
         self.hit_switch_and_run('s_trough_2', 1)
-        self.hit_switch_and_run('s_trough_2', 2)
+        self.hit_switch_and_run('s_trough_2', 1)
         self.assertModeRunning('attract')
 
     #############
