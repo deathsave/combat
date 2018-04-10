@@ -8,25 +8,25 @@ slide_player:
       target: window
   mode_attract_started:
     awaiting_player_slide:
-      target: player_up_frame
+      target: player_up_display
   single_player_ball_started:
     attract_post_slide:
       action: remove
       target: window
     single_player_up_slide:
-      target: player_up_frame
+      target: player_up_display
   multiplayer_game:
     player_1_up_slide:
-      target: player_up_frame
+      target: player_up_display
   player_1_ball_started:
     attract_post_slide:
       action: remove
       target: window
     player_1_up_slide:
-      target: player_up_frame
+      target: player_up_display
   player_2_ball_started:
     player_2_up_slide:
-      target: player_up_frame
+      target: player_up_display
   mode_game_over_stopped:
     attract_post_slide:
       target: window
