@@ -1,0 +1,16 @@
+score:
+- !!python/tuple
+  - ZAC
+  - 999999
+- !!python/tuple
+  - XXX
+  - 569060
+- !!python/tuple
+  - BRC
+  - 523250
+- !!python/tuple
+  - JDC
+  - 521030
+- !!python/tuple
+  - BRC
+  - 509100

@@ -1,0 +1,60 @@
+events:
+  game_ended: 376
+  game_started: 416
+player:
+  score:
+    average: 120960.98591549302
+    top:
+    - 569060
+    - 523250
+    - 521030
+    - 509100
+    - 476270
+    - 456780
+    - 449260
+    - 410090
+    - 406900
+    - 393630
+    total: 497
+shots:
+  bumper: 38
+  cluster_a_advance_bonus: 2150
+  cluster_b_advance_bonus: 1743
+  gun_shot: 937
+  shared_drop: 2161
+switches:
+  s_bumper_1: 9157
+  s_bumper_2: 10124
+  s_bumper_3: 6213
+  s_drop_target: 2161
+  s_drop_target_behind: 173
+  s_drop_target_reset: 59
+  s_flipper_1: 10096
+  s_flipper_1_eos: 9302
+  s_flipper_2: 11081
+  s_flipper_2_eos: 10161
+  s_kicker_gun: 937
+  s_kicker_missile: 376
+  s_rollover_advance_hole_1: 423
+  s_rollover_advance_hole_2: 543
+  s_rollover_bonus_ball_1: 456
+  s_rollover_bonus_ball_2: 376
+  s_rollover_top_1: 1021
+  s_rollover_top_2: 1971
+  s_rollover_top_3: 230
+  s_rollover_top_4: 1546
+  s_rollover_top_5: 1191
+  s_rollover_top_6: 1037
+  s_rollover_top_7: 993
+  s_slingshot_1: 3365
+  s_slingshot_2: 3141
+  s_spinner: 12047
+  s_start: 548
+  s_stationary_advance_bonus: 385
+  s_stationary_advance_hole_score: 488
+  s_stationary_special: 462
+  s_stationary_thousand: 64
+  s_tilt: 173
+  s_trough_1: 2012
+  s_trough_2: 2011
+  s_trough_jam: 1982
