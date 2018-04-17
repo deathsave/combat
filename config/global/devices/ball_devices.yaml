@@ -8,7 +8,6 @@ ball_devices:
       trough
       home
       drain
-      ball_add_live
     eject_timeouts: 1s
     eject_coil: c_trough_eject
     eject_targets: playfield

@@ -11,7 +11,34 @@ Most of the work is handled by a YAML config which we have split into smaller
 files contextually in the `./config` directory. The `./monitor` directory
 is the configuration of component positioning on the virtual playfield display.
 
-### Up and Running on MacOS
+### Installing MPF
+
+**On Ubuntu/Debian**
+
+Get system deps
+
+    sudo apt-get -y install git libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libsdl2-mixer-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libgstreamer1.0-dev libxine2-ffmpeg libsmpeg-dev libswscale-dev libavformat-dev libavcodec-dev libjpeg-dev libtiff5-dev libx11-dev libmtdev-dev build-essential libgl1-mesa-dev libgles2-mesa-dev pulseaudio
+
+Install Python w/ Pyenv.
+
+```bash
+  curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+  pyenv install 3.5.3
+  pyenv global 3.5.3
+  echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
+  source ~/.bashrc
+```
+
+Install kivy, Cython and mpf
+
+```bash
+  pip install kivy
+  pip install setuptools cython==0.25.2 --upgrade
+  pip install mpf mpf-mc mpf-monitor --pre
+```
+
+
+**On MacOS**
 
 Install Homebrew.
 
@@ -45,8 +72,8 @@ Then, install pyenv (and Python 3.5.3).
 Finally, install mpf-recommended `cython` version and "dev" mpf.
 
 ```bash
-  pip3 install pip setuptools cython==0.24.1 --upgrade
-  pip3 install mpf mpf-mc mpf-monitor --pre
+  pip install pip setuptools cython==0.24.1 --upgrade
+  pip install mpf mpf-mc mpf-monitor --pre
 ```
 
 
