@@ -51,7 +51,7 @@ led_player:
   mode_multiball_stopped:
     l_spinner: 000000
 
-scoring:
+variable_player:
   s_bumper_1_active:
     score: 1000|block # bumpers 10x all day during multi
   s_bumper_2_active:

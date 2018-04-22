@@ -48,7 +48,7 @@ led_player:
     l_rollover_top_5: 000000
     l_rollover_top_6: 000000
 
-scoring:
+variable_player:
   s_rollover_top_2_active:
     score: 5000|block
   s_rollover_top_3_active:

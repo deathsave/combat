@@ -36,7 +36,7 @@ led_player:
   mode_flash_score_stopped:
     l_spinner: 000000
 
-scoring:
+variable_player:
   s_bumper_1_active:
     score: 1000|block
   s_bumper_2_active:

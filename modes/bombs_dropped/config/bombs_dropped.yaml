@@ -65,7 +65,7 @@ ball_holds:
       mode_bombs_dropped_started
       mode_multiball_stopped
 
-scoring:
+variable_player:
   s_stationary_special_active:
     score: 20000|block
   s_drop_target_active:
