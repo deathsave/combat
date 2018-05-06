@@ -4,9 +4,9 @@ displays:
     width: 128
     height: 32
     default: true
-  window:
-    width: 1920
-    height: 1080
   player_up_display:
     width: 1920
     height: 324
+  window:
+    width: 1920
+    height: 1080

@@ -1,4 +1,11 @@
 #config_version=5
+slide_player:
+  mode_attract_started:
+    awaiting_player_slide:
+      target: player_up_display
+    default_slide:
+      action: remove
+
 show_player:
   mode_attract_started:
     # LEDs
