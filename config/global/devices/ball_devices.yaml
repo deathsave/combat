@@ -14,6 +14,7 @@ ball_devices:
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
     auto_fire_on_unexpected_ball: false
+    ball_search_order: 3
     debug: true
   bd_gun:
     ball_capacity: 1
@@ -24,6 +25,7 @@ ball_devices:
     eject_timeouts: 1s
     eject_coil: c_kicker_gun
     eject_targets: playfield
+    ball_search_order: 1
     debug: true
   bd_missile:
     ball_capacity: 1
@@ -31,4 +33,5 @@ ball_devices:
     eject_timeouts: 1s
     eject_coil: c_kicker_missile
     eject_targets: playfield
+    ball_search_order: 2
     debug: true
