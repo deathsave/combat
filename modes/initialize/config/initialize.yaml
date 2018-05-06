@@ -45,6 +45,11 @@ counters:
     restart_events: spins_advances_hole
   hole_score:
     persist_state: true
+    # GOTCHA: will not persist player variable AT ALL
+    # without this set... so we always reset on base mode start
+    restart_events:
+      mode_base_started
+      mode_hole_score_stopped
     count_events:
       s_rollover_advance_hole_1_active
       s_rollover_advance_hole_2_active
@@ -54,14 +59,11 @@ counters:
     count_complete_value: 10
     events_when_complete: hole_score_complete
     direction: up
-    restart_events: mode_hole_score_stopped
     reset_on_complete: false
   explosion_bonus:
-    # GOTCHA: will not persist player variable AT ALL
-    # without this set... so we always reset on base mode start
     persist_state: true
+    restart_events: mode_base_started
     count_events:
-      # TODO - add event for top rollover (when lit)
       s_stationary_advance_bonus_active
       cluster_a_advance_bonus_hit
       cluster_b_advance_bonus_hit
@@ -71,7 +73,6 @@ counters:
     count_complete_value: 11
     events_when_complete: explosion_bonus_complete
     direction: up
-    restart_events: mode_base_started
     reset_on_complete: false
 
 extra_balls:
@@ -81,10 +82,10 @@ extra_balls:
 show_player:
   logicblock_explosion_bonus_updated:
     explosion_bonus_advance:
-      start_step: current_player.explosion_bonus_count
+      start_step: current_player.explosion_bonus_state.value
   logicblock_hole_score_updated:
     hole_score_advance:
-      start_step: current_player.hole_score_count
+      start_step: current_player.hole_score_state.value
   # TODO - and remove this after moving collect show
   mode_base_started:
     hole_score_collect:

@@ -77,7 +77,7 @@
 - duration: -1
   lights:
     l_explosion_1: '0029DE'
-    L_explosion_2: '0029DE'
+    l_explosion_2: '0029DE'
     l_explosion_3: '0029DE'
     l_explosion_4: '0029DE'
     l_explosion_5: '0029DE'
