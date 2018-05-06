@@ -38,7 +38,7 @@ sound_player:
   s_rollover_top_5_active: gun_shot_near_sfx
   s_rollover_top_6_active: gun_shot_near_sfx
 
-led_player:
+light_player:
   mode_cluster_bombs_a_started:
     l_rollover_top_1: ff8000
     l_rollover_top_4: ff8000
