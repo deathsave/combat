@@ -3,6 +3,3 @@ mode:
   start_events: s_kicker_missile_active
   priority: 125
   code: hole_score.Custom
-
-sound_player:
-  mode_hole_score_started: missile_collect_sfx

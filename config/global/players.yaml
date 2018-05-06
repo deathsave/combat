@@ -17,6 +17,7 @@ sound_player:
   mode_game_over_stopped:
     high_score_bgm:
       action: stop
+  balldevice_bd_missile_ball_entered: missile_collect_sfx
 
 show_player:
   ball_ending{current_player.extra_balls>0}:
