@@ -27,79 +27,116 @@ lights:
   #l_gi_slingshot_2:
   #  number:
   l_spinner:
+    type: grb
     number: 0-14
   l_special:
+    type: grb
     number: 0-15
   l_bonus_ball_1:
+    type: grb
     number: 0-2
   l_bonus_ball_2:
+    type: grb
     number: 0-3
   l_shoots_again:
+    type: grb
     number: 0-1
   l_bonus_multiplier:
+    type: grb
     number: 0-0
   l_bumper_1:
+    type: grb
     number: 0-34
   l_bumper_2:
+    type: grb
     number: 0-35
   l_bumper_3:
+    type: grb
     number: 0-36
   l_missile:
+    type: grb
     number: 0-33
   l_rollover_top_1:
+    type: grb
     number: 0-29
   l_rollover_top_2:
+    type: grb
     number: 0-26
   l_rollover_top_3:
+    type: grb
     number: 0-30
   l_rollover_top_4:
+    type: grb
     number: 0-27
   l_rollover_top_5:
+    type: grb
     number: 0-31
   l_rollover_top_6:
+    type: grb
     number: 0-28
   l_rollover_top_7:
+    type: grb
     number: 0-32
   l_hole_score_lane_1:
+    type: grb
     number: 0-16
   l_hole_score_lane_2:
+    type: grb
     number: 0-17
   l_hole_score_lane_3:
+    type: grb
     number: 0-18
   l_hole_score_lane_4:
+    type: grb
     number: 0-19
   l_hole_score_lane_5:
+    type: grb
     number: 0-20
   l_hole_score_lane_6:
+    type: grb
     number: 0-21
   l_hole_score_lane_7:
+    type: grb
     number: 0-22
   l_hole_score_lane_8:
+    type: grb
     number: 0-23
   l_hole_score_lane_9:
+    type: grb
     number: 0-24
   l_hole_score_lane_10:
+    type: grb
     number: 0-25
   # Explosion Bonus
   l_explosion_1:
+    type: grb
     number: 0-10
   l_explosion_2:
+    type: grb
     number: 0-9
   l_explosion_3:
+    type: grb
     number: 0-11
   l_explosion_4:
+    type: grb
     number: 0-6
   l_explosion_5:
+    type: grb
     number: 0-5
   l_explosion_6:
+    type: grb
     number: 0-7
   l_explosion_7:
+    type: grb
     number: 0-4
   l_explosion_8:
+    type: grb
     number: 0-8
   l_explosion_9:
+    type: grb
     number: 0-12
   l_explosion_10:
+    type: grb
     number: 0-13
   # Pop Bumper 1 Ring
   l_bumper1_1:

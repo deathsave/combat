@@ -7,7 +7,7 @@ hardware:
 fast:
   watchdog: 5000
   hardware_led_fade_time: 65ms
-  rgb_buffer: 10
+  rgb_buffer: 3
   ports:
     # A = DMD (not on the Nano)
     # B = MAIN
@@ -15,6 +15,9 @@ fast:
     # D = Custom (unused and also not on the Nano)
     /dev/ttyUSB1
     /dev/ttyUSB2
+
+mpf:
+  default_light_hw_update_hz: 30
 
 smartmatrix:
   smartmatrix_1:
