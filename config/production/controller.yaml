@@ -16,9 +16,6 @@ fast:
     /dev/ttyUSB1
     /dev/ttyUSB2
 
-mpf:
-  default_light_hw_update_hz: 30
-
 smartmatrix:
   smartmatrix_1:
     port: /dev/ttyACM0
