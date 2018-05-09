@@ -2,7 +2,6 @@
 slides:
 # see players.yaml for slide changes per events
   default_slide:
-    display: player_up_display
     widgets:
       #  *********************************
       #  ****** BEGIN FAKE DMD *********** // uncomment fake DMD on Dev
@@ -21,6 +20,14 @@ slides:
       #  *********************************
       # this is the top of the LCD where the player
       # scores are for changing the "player up" assets
+      - type: display
+        width: 1920
+        height: 324
+        x: 0
+        y: 0
+        anchor_y: top
+        anchor_x: left
+        source_display: player_up_display
       # default backglass
       - type: image
         image: attract
