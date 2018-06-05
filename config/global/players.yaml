@@ -6,8 +6,12 @@ slide_player:
     default_slide:
       target: window
   # here because initialize mode ends before this
-  # game_over mode begins...
+  # game_over or high_score modes begin...
   mode_game_over_started:
+    awaiting_player_slide:
+      action: play
+      target: player_up_display
+  mode_high_score_started:
     awaiting_player_slide:
       action: play
       target: player_up_display
