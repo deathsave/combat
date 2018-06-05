@@ -61,9 +61,5 @@ widget_player:
       action: remove
     ball_count:
       action: remove
-    player_one_score:
-      action: remove
-    player_two_score:
-      action: remove
     game_over:
       action: remove

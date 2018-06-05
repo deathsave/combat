@@ -25,12 +25,6 @@ timers:
 
 widget_player:
   mode_game_over_started:
-    player_one_score:
-      target: window
-      action: update
-    player_two_score:
-      target: window
-      action: update
     current_score:
       action: remove
     player_up:
