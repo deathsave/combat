@@ -105,9 +105,6 @@ slide_player:
     player_2_up_slide:
       action: play
       target: player_up_display
-  mode_game_over_stopped:
-    attract_post_slide:
-      action: play
 
 # DMD Stuff
 widget_player:

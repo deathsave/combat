@@ -5,6 +5,12 @@ slide_player:
   init_done:
     default_slide:
       target: window
+  # here because initialize mode ends before this
+  # game_over mode begins...
+  mode_game_over_started:
+    awaiting_player_slide:
+      action: play
+      target: player_up_display
 
 sound_player:
   # must be here due to mode_end_action seemingly not able to "bubble up"
