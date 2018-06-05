@@ -6,15 +6,15 @@ slides:
       #  *********************************
       #  ****** BEGIN FAKE DMD *********** // uncomment fake DMD on Dev
       #  *********************************
-      - type: display
-        effects:
-          - type: color_dmd
-            dots_x: 128
-            dots_y: 32
-          # source_display: dmd (default)
-        width: 1024
-        height: 256
-        y: top-85%
+      #- type: display
+      #  effects:
+      #    - type: color_dmd
+      #      dots_x: 128
+      #      dots_y: 32
+      #    # source_display: dmd (default)
+      #  width: 1024
+      #  height: 256
+      #  y: top-85%
       #  *********************************
       #  ****** END FAKE DMD *************
       #  *********************************
