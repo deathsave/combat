@@ -19,8 +19,10 @@ fast:
 smartmatrix:
   smartmatrix_1:
     port: /dev/ttyACM0
-    baud: 3400000
+    baud: 2500000
+    old_cookie: true
 
 rgb_dmds:
   smartmatrix_1:
+    platform: smartmatrix
     hardware_brightness: 0.5
