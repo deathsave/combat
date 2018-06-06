@@ -20,7 +20,6 @@ smartmatrix:
   smartmatrix_1:
     port: /dev/ttyACM0
     baud: 2500000
-    old_cookie: true
 
 rgb_dmds:
   smartmatrix_1:
