@@ -57,6 +57,8 @@ switches:
   s_spinner:
     number: 0-26
     tags: playfield_active
+  s_shooter_lane:
+    number: 0-15
   s_rollover_top_1:
     number: 0-19
     tags: playfield_active
