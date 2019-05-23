@@ -1,31 +1,5 @@
 #config_version=5
 lights:
-  #l_gi_top_1:
-  #  number:
-  #l_gi_top_2:
-  #  number:
-  #l_gi_saucer:
-  #  number:
-  #l_gi_gun_top:
-  #  number:
-  #l_gi_spinner:
-  #  number:
-  #l_gi_gun:
-  #  number:
-  #l_gi_hole_score_lane:
-  #  number:
-  #l_gi_advance_bonus:
-  #  number:
-  #l_gi_advance_hole_score:
-  #  number:
-  #l_gi_inlane_1:
-  #  number:
-  #l_gi_inlane_2:
-  #  number:
-  #l_gi_slingshot_1:
-  #  number:
-  #l_gi_slingshot_2:
-  #  number:
   l_spinner:
     type: grb
     number: 0-14
