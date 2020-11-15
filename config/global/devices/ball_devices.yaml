@@ -2,12 +2,12 @@
 ball_devices:
   bd_trough:
     ball_switches:
-      s_trough_1
-      s_trough_2
+      - s_trough_1
+      - s_trough_2
     tags:
-      trough
-      home
-      drain
+      - trough
+      - home
+      - drain
     eject_timeouts: 1s
     eject_coil: c_trough_eject
     eject_targets: bd_shooter_lane

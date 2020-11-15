@@ -3,10 +3,10 @@ mode:
   start_events:
     timer_cluster_a_complete
   stop_events:
-    timer_cluster_b_complete
-    ball_will_end
-    ball_starting
-    game_ended
+    - timer_cluster_b_complete
+    - ball_will_end
+    - ball_starting
+    - game_ended
   priority: 125
 
 timers:
@@ -25,10 +25,10 @@ timers:
 shots:
   cluster_b_advance_bonus:
     switches:
-      s_rollover_top_2
-      s_rollover_top_3
-      s_rollover_top_5
-      s_rollover_top_6
+      - s_rollover_top_2
+      - s_rollover_top_3
+      - s_rollover_top_5
+      - s_rollover_top_6
 
 # opposite cluster's sounds
 sound_player:

@@ -45,7 +45,7 @@ show_player:
     bumper_flash:
       action: play
 
-led_player:
+light_player:
   mode_multiball_started:
     l_spinner: white
   mode_multiball_stopped:

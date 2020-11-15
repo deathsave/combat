@@ -7,8 +7,8 @@ mode:
   priority: 125
   code: bombs_dropped.Custom
   stop_events:
-    s_stationary_special_active
-    mode_multiball_stopped # after multi, you must hit drops again
+    - s_stationary_special_active
+    - mode_multiball_stopped # after multi, you must hit drops again
 
 sound_player:
   mode_bombs_dropped_started: laser_bombs_sfx
@@ -16,14 +16,14 @@ sound_player:
 extra_balls:
   laser_bombs_outlanes:
     award_events:
-      s_rollover_bonus_ball_1_active
-      s_rollover_bonus_ball_2_active
+      - s_rollover_bonus_ball_1_active
+      - s_rollover_bonus_ball_2_active
     # v0.50 - was erroring due to
     # "mode:bombs_dropped:extra_balls:laser_bombs_outlanes:reset_events"
     # not being a valid setting name"
     # reset_events: extra_ball_awarded # infinite extra balls for now
 
-led_player:
+light_player:
   mode_bombs_dropped_started:
     l_special: FF0000 # red
     l_bonus_ball_1: FF0000
@@ -62,8 +62,8 @@ ball_holds:
       # during multiball
       mode_multiball_started
     enable_events:
-      mode_bombs_dropped_started
-      mode_multiball_stopped
+      - mode_bombs_dropped_started
+      - mode_multiball_stopped
 
 variable_player:
   s_stationary_special_active:

@@ -4,8 +4,8 @@ hardware:
   rgb_dmd: smartmatrix
 
 virtual_platform_start_active_switches:
-  s_trough_1
-  s_trough_2
+  - s_trough_1
+  - s_trough_2
 
 smartmatrix:
   port: /dev/serial/by-id/usb-Teensyduino_USB_Serial_1519290-if00
@@ -13,7 +13,7 @@ smartmatrix:
   old_cookie: true
 
 rgb_dmds:
-  ppp_dmd::
+  ppp_dmd:
     platform: smartmatrix
     brightness: 0.6
     gamma: 2.0

@@ -1,14 +1,14 @@
 #config_version=5
 mode:
   start_events:
-    s_kicker_gun_active
-    s_kicker_missile_active
+    - s_kicker_gun_active
+    - s_kicker_missile_active
   stop_events:
-    timer_flash_score_complete
-    mode_high_score_started
-    mode_attract_started
-    ball_will_end
-    game_ended
+    - timer_flash_score_complete
+    - mode_high_score_started
+    - mode_attract_started
+    - ball_will_end
+    - game_ended
   priority: 125
 
 timers:
@@ -30,7 +30,7 @@ show_player:
     bumper_flash:
       action: play
 
-led_player:
+light_player:
   mode_flash_score_started:
     l_spinner: white
   mode_flash_score_stopped:

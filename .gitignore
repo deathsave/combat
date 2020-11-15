@@ -1,7 +1,10 @@
-# os garbage
-.DS_Store
+# MPF
+screenlog*
 logs
 data
+
+# os garbage
+.DS_Store
 
 # vim
 *.swp

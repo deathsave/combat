@@ -51,60 +51,60 @@ switches:
     number: 0-3
   s_spinner:
     number: 0-26
-    tags: playfield_active
+    #tags: playfield_active
   s_shooter_lane:
     number: 0-15
   s_rollover_top_1:
     number: 0-19
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_top_2:
     number: 0-16
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_top_3:
     number: 0-20
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_top_4:
     number: 0-17
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_top_5:
     number: 0-21
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_top_6:
     number: 0-18
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_top_7:
     number: 0-22
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_bonus_ball_1:
     number: 0-25
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_bonus_ball_2:
     number: 0-5
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_advance_hole_1:
     number: 0-24
-    tags: playfield_active
+    #tags: playfield_active
   s_rollover_advance_hole_2:
     number: 0-31
-    tags: playfield_active
+    #tags: playfield_active
   s_stationary_thousand:
     number: 0-27
-    tags: playfield_active
+    #tags: playfield_active
   s_stationary_special:
     number: 0-14
-    tags: playfield_active
+    #tags: playfield_active
   # same switch hit for each of the "B O M B S" targets
   s_drop_target:
     number: 0-11
-    tags: playfield_active
+    #tags: playfield_active
   s_drop_target_behind:
     number: 0-12
-    tags: playfield_active
+    #tags: playfield_active
   s_drop_target_reset:
     number: 0-13
   s_stationary_advance_bonus:
     number: 0-9
-    tags: playfield_active
+    #tags: playfield_active
   s_stationary_advance_hole_score:
     number: 0-8
-    tags: playfield_active
+    #tags: playfield_active

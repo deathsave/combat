@@ -7,8 +7,8 @@ mode:
   start_events:
     start_game_over
   stop_events:
-    timer_game_over_complete
-    s_start_active
+    - timer_game_over_complete
+    - s_start_active
   # same priority as attract
   priority: 10
 
