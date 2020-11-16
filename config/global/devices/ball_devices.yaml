@@ -19,6 +19,8 @@ ball_devices:
   bd_shooter_lane:
     ball_switches: s_shooter_lane
     mechanical_eject: true
+    player_controlled_eject_event: sw_plunger
+    eject_targets: playfield
   bd_gun:
     ball_capacity: 1
     entrance_switch: s_kicker_gun
