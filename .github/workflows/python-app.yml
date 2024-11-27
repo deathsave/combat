@@ -42,7 +42,7 @@ jobs:
         pyenv install 3.6
         pyenv global 3.6
         pip install --upgrade pip setuptools wheel build coveralls pillow
-        pip install --upgrade Cython==0.25.2
+        pip install --upgrade Cython==0.24.1
         pip install mpf==0.33.49
         pip install mpf-mc==0.33.16
     - name: Test
