@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 # Most "players" should be defined in modes.
 # Only put exceptions here.
 slide_player:

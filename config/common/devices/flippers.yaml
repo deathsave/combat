@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 flippers:
   left_flipper:
     main_coil: c_flipper_main_1

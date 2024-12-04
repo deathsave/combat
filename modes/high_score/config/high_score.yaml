@@ -1,13 +1,13 @@
-#config_version=5
+#config_version=6
 high_score:
   _overwrite: True
   categories: !!omap
   - score:
-      - GRAND CHAMPION
-      - HIGH SCORE 1
-      - HIGH SCORE 2
-      - HIGH SCORE 3
-      - HIGH SCORE 4
+    - GRAND CHAMPION
+    - HIGH SCORE 1
+    - HIGH SCORE 2
+    - HIGH SCORE 3
+    - HIGH SCORE 4
   defaults:
     score:
       - ZAC: 999999

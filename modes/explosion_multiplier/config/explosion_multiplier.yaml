@@ -1,9 +1,9 @@
-#config_version=5
+#config_version=6
 mode:
   start_events: s_kicker_gun_active
   priority: 200
   code: explosion_multiplier.Custom
 
-led_player:
+light_player:
   mode_explosion_multiplier_started:
     l_bonus_multiplier: FF0000

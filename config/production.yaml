@@ -1,28 +1,28 @@
-#config_version=5
+#config_version=6
 #######################
 ## PRODUCTION CONFIG ##
 #######################
 config:
-- global/assets.yaml
-- global/devices/displays.yaml
+- common/assets.yaml
+- common/devices/displays.yaml
 - production/controller.yaml
 - production/display.yaml
-- global/devices/flippers.yaml
-- global/devices/ball_devices.yaml
-- global/devices/switches.yaml
-- global/devices/coils.yaml
-- global/devices/autofire_coils.yaml
-- global/devices/leds.yaml
-- global/devices/ball_devices.yaml
-- global/playfields.yaml
-- global/ball_saves.yaml
-- global/game.yaml
-- global/shots.yaml
-- global/animations.yaml
-- global/widgets.yaml
-- global/slides.yaml
-- global/sounds.yaml
-- global/players.yaml
-- global/queue_relay.yaml
-- global/modes.yaml
-- global/keyboard.yaml
+- common/devices/flippers.yaml
+- common/devices/ball_devices.yaml
+- common/devices/switches.yaml
+- common/devices/coils.yaml
+- common/devices/autofire_coils.yaml
+- common/devices/leds.yaml
+- common/devices/ball_devices.yaml
+- common/playfields.yaml
+- common/ball_saves.yaml
+- common/game.yaml
+- common/shots.yaml
+- common/animations.yaml
+- common/widgets.yaml
+- common/slides.yaml
+- common/sounds.yaml
+- common/players.yaml
+- common/queue_relay.yaml
+- common/modes.yaml
+- common/keyboard.yaml
