@@ -23,6 +23,7 @@ class TestBaseMode(MpfMachineTestCase):
         # base mode activates after 500ms from initialization
         self.advance_time_and_run(1)
         self.assertModeRunning('base')
+        self.hit_and_release_switch("s_shooter_lane")
         self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
