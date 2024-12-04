@@ -3,9 +3,6 @@ from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestGameOverMode(MpfMachineTestCase):
 
-    def getMachinePath(self):
-        return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
-
     def test_game_over(self):
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(2)
@@ -33,6 +30,7 @@ class TestGameOverMode(MpfMachineTestCase):
             for i in range(0, 2):
                 self.hit_switch_and_run('s_trough_1', 2)
 
+        self.advance_time_and_run(2)
         self.assertModeRunning('high_score')
 
         # enter initials as "AAA"

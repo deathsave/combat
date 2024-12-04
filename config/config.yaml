@@ -1,28 +1,6 @@
 #config_version=6
-########################
-## DEVELOPMENT CONFIG ##
-########################
+
+# NOTE: this is needed for the unittests which expect
+#       the main config file to be named config.yaml.
 config:
-- common/assets.yaml
-- common/devices/displays.yaml
-- development/controller.yaml
-- development/display.yaml
-- common/devices/flippers.yaml
-- common/devices/ball_devices.yaml
-- common/devices/switches.yaml
-- common/devices/coils.yaml
-- common/devices/autofire_coils.yaml
-- common/devices/leds.yaml
-- common/devices/ball_devices.yaml
-- common/playfields.yaml
-- common/ball_saves.yaml
-- common/game.yaml
-- common/shots.yaml
-- common/animations.yaml
-- common/widgets.yaml
-- common/slides.yaml
-- common/sounds.yaml
-- common/players.yaml
-- common/queue_relay.yaml
-- common/modes.yaml
-- common/keyboard.yaml
+- development.yaml

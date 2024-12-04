@@ -3,20 +3,36 @@ from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestMultiballMode(MpfMachineTestCase):
 
-    def getMachinePath(self):
-        return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
+    def get_config_file(self):
+        return 'development.yaml'
+
+    def get_machine_path(self):
+        return os.path.abspath(os.path.join(
+            os.path.realpath(__file__),
+            os.pardir,os.pardir
+        ))
 
     def test_scoring(self):
         current_score = 0
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(1)
+        self.assertModeRunning('initialize')
 
         # activate base mode
-        self.hit_and_release_switch("s_rollover_top_2")
-        self.advance_time_and_run(4) # 3+1
-        current_score += 500
-        self.assertEqual(1, self.machine.playfield.balls)
+        self.advance_time_and_run(1)
+        self.assertEqual(0, self.machine.playfield.balls)
+        self.assertEqual(1,
+            self.machine.ball_devices.bd_trough.balls)
+        self.assertEqual(1,
+            self.machine.ball_devices.bd_shooter_lane.balls)
         self.assertEqual(current_score, self.machine.game.player.score)
+        self.hit_and_release_switch("s_shooter_lane")
+        self.assertEqual(0, self.machine.playfield.balls)
+
+        current_score += 500
+        self.hit_and_release_switch("s_rollover_top_1")
+        self.advance_time_and_run(4)
+        self.assertEqual(1, self.machine.playfield.balls)
 
         # activate bombs dropped mode
         for x in range(0, 5):
@@ -30,6 +46,7 @@ class TestMultiballMode(MpfMachineTestCase):
 
         # ball rolls into lock - doesn't score yet...
         self.hit_switch_and_run('s_kicker_gun', 1)
+        self.advance_time_and_run(1)
         self.assertEqual(0, self.machine.playfield.balls)
         self.assertEqual(1, self.machine.ball_devices.bd_gun.balls)
 

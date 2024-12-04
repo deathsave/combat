@@ -12,6 +12,7 @@ class TestExplosionBonusMode(MpfMachineTestCase):
         self.advance_time_and_run(1)
 
         # activate base mode
+        self.hit_and_release_switch("s_shooter_lane")
         self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
@@ -45,6 +46,7 @@ class TestExplosionBonusMode(MpfMachineTestCase):
         self.advance_time_and_run(1)
 
         # activate base mode
+        self.hit_and_release_switch("s_shooter_lane")
         self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500
@@ -84,6 +86,7 @@ class TestExplosionBonusMode(MpfMachineTestCase):
         self.advance_time_and_run(1)
 
         # activate base mode
+        self.hit_and_release_switch("s_shooter_lane")
         self.hit_and_release_switch("s_rollover_top_2")
         self.advance_time_and_run(4) # 3+1
         current_score += 500

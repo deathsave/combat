@@ -2,8 +2,8 @@
 playfields:
   playfield:
     tags: default
+    default_source_device: bd_shooter_lane
     enable_ball_search: true
     ball_search_timeout: 15s
     ball_search_wait_after_iteration: 10s
     ball_search_interval: 250ms
-    default_source_device: bd_shooter_lane

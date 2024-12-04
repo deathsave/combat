@@ -40,13 +40,6 @@ widget_player:
     game_over:
       action: add
 
-show_player:
-  mode_game_over_started:
-    high_scores_scroll_dmd:
-      loops: -1
-    credits_scroll_dmd:
-      loops: 0
-
 event_player:
   s_start_active: stop_game_over
   timer_game_over_complete: stop_game_over

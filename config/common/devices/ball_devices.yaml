@@ -19,6 +19,7 @@ ball_devices:
   bd_shooter_lane:
     ball_switches: s_shooter_lane
     mechanical_eject: true
+    eject_timeouts: 3s
   bd_gun:
     ball_capacity: 1
     entrance_switch: s_kicker_gun
