@@ -1,7 +1,13 @@
 Combat by Zaccaria
 ==================
 
-Brought back from the dead by [Pinball Plaid](http://pinballplaid.com/). Thanks to the guys at [FAST](http://fastpinballdev.gdsocial.com/) and the [Mission Pinball Project](https://github.com/missionpinball) for all the support.
+[![Combat! Pinball](https://github.com/deathsave/combat/actions/workflows/python-app.yml/badge.svg)](https://github.com/deathsave/combat/actions/workflows/python-app.yml)
+
+Brought back from the dead by
+[unrared](https://unrared.com/), Steve and Josiah. Thanks to the
+guys at [FAST](http://fastpinballdev.gdsocial.com/) and the
+[Mission Pinball Project](https://github.com/missionpinball) for
+all the support.
 
 Development
 -----------
@@ -17,8 +23,8 @@ See `./.github/workflows/python-app.yml` to match the CI build.
 1. Install `brew` with:
    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 1. Install system deps and `pyenv`with:
-   `brew install SDL2 SDL2_mixer SDL2_image SDL2_ttf gstreamer pkg-config pyenv` and follow instructions to add `pyenv`
-   to your shell.
+   `brew install SDL2 SDL2_mixer SDL2_image SDL2_ttf gstreamer pkg-config pyenv`
+   and follow instructions to add `pyenv` to your shell.
 1. Install Python 3.11 with:
    `pyenv install 3.11.10`
 1. Install mpf with:
