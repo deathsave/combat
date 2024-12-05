@@ -94,14 +94,16 @@ class TestExplosionBonusMode(MpfMachineTestCase):
         # activate base mode
         self.hit_and_release_switch("s_shooter_lane")
         self.hit_and_release_switch("s_rollover_top_2")
-        self.advance_time_and_run(4) # 3+1
+        # wait for "shoot again" to expire
+        self.advance_time_and_run(12)
+
         current_score += 500
         self.assertEqual(1, self.machine.playfield.balls)
         self.assertEqual(current_score,
             self.machine.game.player.score)
 
         # advance the bonus with target 5 times
-        for x in range(0, 5):
+        for _ in range(5):
             self.hit_and_release_switch(
                 "s_stationary_advance_bonus"
             )
@@ -111,18 +113,23 @@ class TestExplosionBonusMode(MpfMachineTestCase):
         self.assertEqual(current_score,
             self.machine.game.player.score)
 
-        # wait for "shoot again" to expire
-        self.advance_time_and_run(15)
-
         # TILT the fucker!
-        for x in range(0, 3):
+        self.assertPlayerVarEqual(0, "tilt_warnings")
+        for _ in range(2):
             self.hit_and_release_switch("s_tilt")
-            self.advance_time_and_run(1)
+            self.advance_time_and_run(4)
+        self.assertPlayerVarEqual(2, "tilt_warnings")
 
-        # TILT has a 5 second settle time
+        self.hit_and_release_switch("s_tilt")
+        self.assertTrue(self.machine.game.tilted)
+
+        # TILT has a 3 second settle time
+        self.advance_time_and_run(3)
         self.hit_switch_and_run('s_trough_1', 5)
         self.assertEqual(2, self.machine.game.player.ball)
-        # at the end of the ball, the player collects the bonus
+
+        # at the end of the ball, the player
+        # collects no bonus because the game is tilted
         current_score += 0
         self.assertEqual(current_score,
             self.machine.game.player.score)

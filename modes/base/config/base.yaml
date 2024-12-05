@@ -10,7 +10,7 @@ tilt:
   warnings_to_tilt: 3
   reset_warnings_events: ball_ended
   multiple_hit_window: 300ms
-  settle_time: 5s
+  settle_time: 3s
   tilt_warnings_player_var: tilt_warnings
 
 # drop target counter is here
