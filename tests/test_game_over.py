@@ -1,4 +1,3 @@
-import os
 from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestGameOverMode(MpfMachineTestCase):

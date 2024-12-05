@@ -1,18 +1,17 @@
-import os
 from mpfmc.tests.FullMpfMachineTestCase import FullMachineTestCase
 
 class TestDisplays(FullMachineTestCase):
-
-    def getMachinePath(self):
-        return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
     def test_game_loop(self):
         # attract mode
         self.advance_time_and_run(2)
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('Zaccaria “Combat”', [x.text for x in current_widgets])
-        self.assertIn('Reimagined by:', [x.text for x in current_widgets])
-        self.assertIn('Pinball Plaid', [x.text for x in current_widgets])
+        self.assertIn('Zaccaria “Combat”',
+            [x.text for x in current_widgets])
+        self.assertIn('Reimagined by:',
+            [x.text for x in current_widgets])
+        self.assertIn('Pinball Plaid',
+            [x.text for x in current_widgets])
 
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(2)
@@ -21,8 +20,10 @@ class TestDisplays(FullMachineTestCase):
 
         # game begins, player is up
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('Player 1 Up', [x.text for x in current_widgets])
-        self.assertIn('Ball: 1', [x.text for x in current_widgets])
+        self.assertIn('Player 1 Up',
+            [x.text for x in current_widgets])
+        self.assertIn('Ball: 1',
+            [x.text for x in current_widgets])
         self.assertIn('00', [x.text for x in current_widgets])
 
         # scoring is reflected
@@ -35,7 +36,8 @@ class TestDisplays(FullMachineTestCase):
         # draining during ball save reflected
         # self.hit_switch_and_run('s_trough_1', 2)
         # current_widgets = self.get_dmd_text_widgets()
-        # self.assertIn('PLAYER 1 SHOOT AGAIN', [x.text for x in current_widgets])
+        # self.assertIn('PLAYER 1 SHOOT AGAIN',
+        #   [x.text for x in current_widgets])
         # self.hit_switch_and_run('s_trough_1', 2)
 
         # drain other 2 balls
@@ -48,30 +50,39 @@ class TestDisplays(FullMachineTestCase):
         # game over screen 1
         self.assertModeRunning('game_over')
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('GAME OVER', [x.text for x in current_widgets])
-        self.assertIn('Zaccaria Combat reimagined by Pinball Plaid - Steve Prehoda, Josiah Cox & Ryan Richardson', [x.text for x in current_widgets])
+        self.assertIn('GAME OVER',
+            [x.text for x in current_widgets])
+        self.assertIn(
+            'Zaccaria Combat reimagined by Pinball Plaid - Steve Prehoda, Josiah Cox & Ryan Richardson',
+            [x.text for x in current_widgets])
 
         # game over screen 2
         self.advance_time_and_run(15)
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks', [x.text for x in current_widgets])
+        self.assertIn(
+            'Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks',
+            [x.text for x in current_widgets])
 
         # game over screen 3
         self.advance_time_and_run(12)
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('Sound Effects by Raphael Rodriguez', [x.text for x in current_widgets])
+        self.assertIn(
+            'Sound Effects by Raphael Rodriguez',
+            [x.text for x in current_widgets]
+        )
 
         # game over screen 4
         self.advance_time_and_run(12)
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('Subscribe to the Pinball Plaid Podcast from http://pinballplaid.com/show', [x.text for x in current_widgets])
+        self.assertIn(
+            'Subscribe to the Pinball Plaid Podcast from http://pinballplaid.com/show',
+            [x.text for x in current_widgets]
+        )
 
         # back to attract mode
         self.hit_and_release_switch("s_start")
         self.advance_time_and_run(2)
         self.assertModeRunning('attract')
-
-        # TODO ... this is where the score displays are disappearing
 
     #############
     ## Helpers ##
@@ -79,7 +90,7 @@ class TestDisplays(FullMachineTestCase):
 
     def get_dmd_text_widgets(self):
         current_widgets = []
-        for widget_container in self.mc.displays['dmd'].current_slide.widgets:
-            if hasattr(widget_container.widget, 'text'): current_widgets.\
-                append(widget_container.widget)
+        for wgt in self.mc.displays['dmd'].current_slide.widgets:
+            if hasattr(wgt.widget, 'text'):
+                current_widgets.append(wgt.widget)
         return current_widgets

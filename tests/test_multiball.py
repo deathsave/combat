@@ -1,16 +1,6 @@
-import os
 from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestMultiballMode(MpfMachineTestCase):
-
-    def get_config_file(self):
-        return 'development.yaml'
-
-    def get_machine_path(self):
-        return os.path.abspath(os.path.join(
-            os.path.realpath(__file__),
-            os.pardir,os.pardir
-        ))
 
     def test_scoring(self):
         current_score = 0

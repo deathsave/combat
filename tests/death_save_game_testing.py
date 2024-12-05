@@ -1,5 +1,4 @@
 import os
-from mpf.core.rgb_color import RGBColor
 from mpf.tests.MpfGameTestCase import MpfGameTestCase
 
 class DeathSaveGameTesting(MpfGameTestCase):

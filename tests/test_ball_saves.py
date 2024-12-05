@@ -1,10 +1,6 @@
-import os
 from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestBallSaves(MpfMachineTestCase):
-
-    def getMachinePath(self):
-        return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
     def test_timer(self):
         self.hit_and_release_switch("s_start")

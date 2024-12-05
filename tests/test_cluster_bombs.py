@@ -1,10 +1,6 @@
-import os
 from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestClusterBombsMode(MpfMachineTestCase):
-
-    def getMachinePath(self):
-        return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
     def test_timer_scoring(self):
         current_score = 0
@@ -22,7 +18,8 @@ class TestClusterBombsMode(MpfMachineTestCase):
         self.hit_and_release_switch("s_rollover_top_5")
         self.hit_and_release_switch("s_rollover_top_6")
         current_score += 500 * 4
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
         self.assertModeRunning('cluster_bombs_a')
 
         # after 8 seconds, base cluster is 1, 4 and 7
@@ -37,7 +34,8 @@ class TestClusterBombsMode(MpfMachineTestCase):
         self.hit_and_release_switch("s_rollover_top_5")
         self.hit_and_release_switch("s_rollover_top_6")
         current_score += 5000 * 4
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
         self.assertModeRunning('cluster_bombs_b')
 
     def test_advancing_explosion_bonus(self):
@@ -47,5 +45,7 @@ class TestClusterBombsMode(MpfMachineTestCase):
 
         current_bonus_state = player.explosion_bonus_state.value
         self.hit_and_release_switch("s_rollover_top_1")
-        self.assertEqual(current_bonus_state + 1, player.\
-            explosion_bonus_state.value)
+        self.assertEqual(
+            current_bonus_state + 1,
+            player.explosion_bonus_state.value
+        )

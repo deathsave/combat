@@ -14,9 +14,6 @@ See `./.github/workflows/python-app.yml` to match the CI build.
 
 **On MacOS**
 
-Install Homebrew.
-
-### Setup for MacOS
 1. Install `brew` with:
    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 1. Install system deps and `pyenv`with:

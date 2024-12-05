@@ -3,9 +3,6 @@ from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestFlashScoreMode(MpfMachineTestCase):
 
-    def getMachinePath(self):
-        return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
-
     def test_timer_scoring(self):
         current_score = 0
         self.hit_and_release_switch("s_start")
@@ -20,45 +17,52 @@ class TestFlashScoreMode(MpfMachineTestCase):
         self.hit_and_release_switch("s_spinner")
         self.hit_and_release_switch("s_bumper_1")
         current_score += 100 * 2
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
         # activate mode with missile
         self.hit_and_release_switch("s_kicker_missile")
         self.advance_time_and_run(1) # wait for ball hold
         current_score += 50
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
         # during flash score, bumpers pay 10x
         self.assertModeRunning('flash_score')
         self.hit_and_release_switch("s_bumper_1")
         current_score += 1000
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
         # spinner also goes 10x
         self.hit_and_release_switch("s_spinner")
         current_score += 1000
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
         # still the case 12 (10 + 1 from hold) seconds later
         self.advance_time_and_run(10)
         self.assertModeRunning('flash_score')
         self.hit_and_release_switch("s_bumper_2")
         current_score += 1000
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
         # still running at exactly 15 seconds
         self.advance_time_and_run(3)
         self.assertModeRunning('flash_score')
         self.hit_and_release_switch("s_bumper_3")
         current_score += 1000
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
         # mode ends after 15 seconds
         self.advance_time_and_run(1)
         self.assertModeNotRunning('flash_score')
         self.hit_and_release_switch("s_bumper_3")
         current_score += 100
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
     def test_future_duration(self):
         self.hit_and_release_switch("s_start")
@@ -72,7 +76,8 @@ class TestFlashScoreMode(MpfMachineTestCase):
         self.advance_time_and_run(1)
         self.assertModeRunning('flash_score')
 
-        # mode still running 14 (13 + 1 hold) seconds from activation
+        # mode still running 14 (13 + 1 hold)
+        # seconds from activation
         self.advance_time_and_run(13)
         self.assertModeRunning('flash_score')
 
