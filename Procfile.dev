@@ -1,0 +1,4 @@
+# both mpf and mpf-mc, smart virtual,
+# text only UI and force loading / no cache
+mpf: mpf both -Xtav
+monitor: mpf monitor

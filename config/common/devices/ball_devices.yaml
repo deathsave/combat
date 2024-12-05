@@ -1,13 +1,13 @@
-#config_version=5
+#config_version=6
 ball_devices:
   bd_trough:
     ball_switches:
-      s_trough_1
-      s_trough_2
+    - s_trough_1
+    - s_trough_2
     tags:
-      trough
-      home
-      drain
+    - trough
+    - home
+    - drain
     eject_timeouts: 1s
     eject_coil: c_trough_eject
     eject_targets: bd_shooter_lane
@@ -19,6 +19,7 @@ ball_devices:
   bd_shooter_lane:
     ball_switches: s_shooter_lane
     mechanical_eject: true
+    eject_timeouts: 3s
   bd_gun:
     ball_capacity: 1
     entrance_switch: s_kicker_gun

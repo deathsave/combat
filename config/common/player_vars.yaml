@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 player_vars:
   score_level:
     initial_value: 0
@@ -7,3 +7,5 @@ machine_vars:
   is_high_score_set:
     initial_value: False
     value_type: boolean
+  master_volume:
+    initial_value: 0.9

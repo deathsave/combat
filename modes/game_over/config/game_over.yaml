@@ -1,14 +1,14 @@
-#config_version=5
+#config_version=6
 # mode currently prevents starting a new virtual game
 # when it thinks balls are missing. seems to function
 # as expected on production though
 mode:
   game_mode: false
   start_events:
-    start_game_over
+  - start_game_over
   stop_events:
-    timer_game_over_complete
-    s_start_active
+  - timer_game_over_complete
+  - s_start_active
   # same priority as attract
   priority: 10
 
@@ -18,10 +18,10 @@ timers:
     end_value: 46
     direction: up
     control_events:
-      - event: mode_game_over_started
-        action: start
-      - event: timer_game_over_complete
-        action: stop
+    - event: mode_game_over_started
+      action: start
+    - event: timer_game_over_complete
+      action: stop
 
 widget_player:
   mode_game_over_started:
@@ -39,13 +39,6 @@ widget_player:
       action: remove
     game_over:
       action: add
-
-show_player:
-  mode_game_over_started:
-    high_scores_scroll_dmd:
-      loops: -1
-    credits_scroll_dmd:
-      loops: 0
 
 event_player:
   s_start_active: stop_game_over

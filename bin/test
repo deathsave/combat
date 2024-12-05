@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  FILES="tests/test_*.py"
+else
+  FILES="$1"
+fi
+python -m unittest -v $FILES

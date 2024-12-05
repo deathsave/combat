@@ -1,12 +1,10 @@
 #config_version=6
-#######################
-## PRODUCTION CONFIG ##
-#######################
+
 config:
 - common/assets.yaml
 - common/devices/displays.yaml
-- production/controller.yaml
-- production/display.yaml
+- development/controller.yaml
+- development/display.yaml
 - common/devices/flippers.yaml
 - common/devices/ball_devices.yaml
 - common/devices/switches.yaml

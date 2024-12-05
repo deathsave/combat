@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 mode:
   start_events: ball_starting
   priority: 100
@@ -13,8 +13,8 @@ timers:
     # we don't need a full second between
     tick_interval: 500ms
     control_events:
-      - event: timer_start_base_complete
-        action: stop
+    - event: timer_start_base_complete
+      action: stop
 
 ball_holds:
   missile_hold:
@@ -26,11 +26,11 @@ ball_holds:
     balls_to_hold: 1
     hold_devices: bd_gun
     enable_events:
-      mode_bombs_dropped_stopped
-      mode_base_started
+    - mode_bombs_dropped_stopped
+    - mode_base_started
     disable_events:
-      # laser bombs has own hold to multiball
-      mode_bombs_dropped_started
+    # laser bombs has own hold to multiball
+    - mode_bombs_dropped_started
     release_one_events:
       ball_hold_gun_hold_full: 1s
 
@@ -48,13 +48,13 @@ counters:
     # GOTCHA: will not persist player variable AT ALL
     # without this set... so we always reset on base mode start
     restart_events:
-      mode_base_started
-      mode_hole_score_stopped
+    - mode_base_started
+    - mode_hole_score_stopped
     count_events:
-      s_rollover_advance_hole_1_active
-      s_rollover_advance_hole_2_active
-      s_stationary_advance_hole_score_active
-      spins_advances_hole
+    - s_rollover_advance_hole_1_active
+    - s_rollover_advance_hole_2_active
+    - s_stationary_advance_hole_score_active
+    - spins_advances_hole
     starting_count: 1
     count_complete_value: 10
     events_when_complete: hole_score_complete
@@ -64,9 +64,9 @@ counters:
     persist_state: true
     restart_events: mode_base_started
     count_events:
-      s_stationary_advance_bonus_active
-      cluster_a_advance_bonus_hit
-      cluster_b_advance_bonus_hit
+    - s_stationary_advance_bonus_active
+    - cluster_a_advance_bonus_hit
+    - cluster_b_advance_bonus_hit
     # need to start at 1 to sync the led show
     # GOTCHA - 2 == 1000 and 3 == 2000
     starting_count: 1

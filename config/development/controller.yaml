@@ -1,11 +1,11 @@
-#config_version=5
+#config_version=6
 hardware:
   platform: smart_virtual
   rgb_dmd: smartmatrix
 
 virtual_platform_start_active_switches:
-  s_trough_1
-  s_trough_2
+- s_trough_1
+- s_trough_2
 
 smartmatrix:
   port: /dev/serial/by-id/usb-Teensyduino_USB_Serial_1519290-if00

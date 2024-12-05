@@ -1,0 +1,7 @@
+#config_version=6
+
+config:
+- common.yaml
+- development/controller.yaml
+- development/display.yaml
+- development/virtual_platform.yaml

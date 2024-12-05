@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 widgets:
   player_1_up:
     - type: image
@@ -11,27 +11,27 @@ widgets:
       text: "Player (number) Up"
       # water blue from backglass
       color: 99CCFF
-      style: dmd_small
+      style: small
   ball_count:
     - type: text
       text: "Ball: (ball)"
       # water blue from backglass
       color: FF6242
-      style: dmd_small
+      style: small
   current_score:
     - type: text
       text: "(score)"
       number_grouping: true # adds commas to integer value display
       min_digits: 2
       color: F9ED32
-      style: dmd_big
+      style: big
       font_size: 12
       animations:
         add_to_slide: pulsate_fast
   shoot_again:
     - type: text
       text: "PLAYER (number) SHOOT AGAIN"
-      style: dmd_small
+      style: small
       color: FF6242
       anchor_y: top
       y: top-4%
@@ -40,7 +40,7 @@ widgets:
   credits_music:
     - type: text
       text: "Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks"
-      style: dmd_small
+      style: small
       color: 99CCFF
       x: 512
       animations:
@@ -48,7 +48,7 @@ widgets:
   credits_sfx:
     - type: text
       text: "Sound Effects by Raphael Rodriguez"
-      style: dmd_small
+      style: small
       color: 99CCFF
       x: 256
       animations:
@@ -56,7 +56,7 @@ widgets:
   credits_game:
     - type: text
       text: "Zaccaria Combat reimagined by Pinball Plaid - Steve Prehoda, Josiah Cox & Ryan Richardson"
-      style: dmd_small
+      style: small
       color: 99CCFF
       x: 512
       animations:
@@ -64,7 +64,7 @@ widgets:
   credits_podcast:
     - type: text
       text: "Subscribe to the Pinball Plaid Podcast from http://pinballplaid.com/show"
-      style: dmd_small
+      style: small
       color: 99CCFF
       x: 512
       animations:
@@ -74,7 +74,7 @@ widgets:
       text: "(machine|score1_label) (machine|score1_name): (machine|score1_value)"
       number_grouping: true
       min_digits: 2
-      style: dmd_small
+      style: small
       color: F9ED32
       x: 256
       animations:
@@ -84,7 +84,7 @@ widgets:
       text: "1st) (machine|score2_name): (machine|score2_value)"
       number_grouping: true
       min_digits: 2
-      style: dmd_small
+      style: small
       color: F9ED32
       x: 256
       animations:
@@ -94,7 +94,7 @@ widgets:
       text: "2nd) (machine|score3_name): (machine|score3_value)"
       number_grouping: true
       min_digits: 2
-      style: dmd_small
+      style: small
       color: F9ED32
       x: 256
       animations:
@@ -104,7 +104,7 @@ widgets:
       text: "3rd) (machine|score4_name): (machine|score4_value)"
       number_grouping: true
       min_digits: 2
-      style: dmd_small
+      style: small
       color: F9ED32
       x: 256
       animations:
@@ -114,7 +114,7 @@ widgets:
       text: "4th) (machine|score5_name): (machine|score5_value)"
       number_grouping: true
       min_digits: 2
-      style: dmd_small
+      style: small
       color: F9ED32
       x: 256
       animations:
@@ -122,7 +122,7 @@ widgets:
   title:
     - type: text
       text: "Zaccaria “Combat”"
-      style: dmd_big
+      style: big
       color: FF6242
       x: -128
       animations:
@@ -130,20 +130,20 @@ widgets:
   credit:
     - type: text
       text: "Reimagined by:"
-      style: dmd_small
+      style: small
       color: F9ED32
       font_size: 9
   company:
     - type: text
       text: "Pinball Plaid"
       color: 99CCFF
-      style: dmd_med
+      style: medium
       animations:
         add_to_slide: pulsate_slow
   game_over:
     - type: text
       text: "GAME OVER"
-      style: dmd_big
+      style: big
       color: FF6242
       animations:
         add_to_slide: pulsate_slow

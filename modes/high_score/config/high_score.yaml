@@ -1,8 +1,8 @@
-#config_version=5
+#config_version=6
 high_score:
   _overwrite: True
-  categories: !!omap
-  - score:
+  categories:
+    score:
       - GRAND CHAMPION
       - HIGH SCORE 1
       - HIGH SCORE 2
@@ -10,8 +10,8 @@ high_score:
       - HIGH SCORE 4
   defaults:
     score:
-      - ZAC: 999999
-      - CAR: 99999
-      - RIA: 9999
-      - COM: 999
-      - BAT: 99
+      - ZAC: 240000
+      - CAR: 200000
+      - RIA: 150000
+      - COM: 100000
+      - BAT: 50000

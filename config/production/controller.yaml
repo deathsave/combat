@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 hardware:
   platform: fast
   driverboards: fast
@@ -13,8 +13,8 @@ fast:
     # B = MAIN
     # C = RBG LED
     # D = Custom (unused and also not on the Nano)
-    /dev/ttyUSB1
-    /dev/ttyUSB2
+  - /dev/ttyUSB1
+  - /dev/ttyUSB2
 
 smartmatrix:
   smartmatrix_1:

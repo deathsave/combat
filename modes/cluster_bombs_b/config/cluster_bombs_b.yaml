@@ -1,12 +1,12 @@
-#config_version=5
+#config_version=6
 mode:
   start_events:
-    timer_cluster_a_complete
+  - timer_cluster_a_complete
   stop_events:
-    timer_cluster_b_complete
-    ball_will_end
-    ball_starting
-    game_ended
+  - timer_cluster_b_complete
+  - ball_will_end
+  - ball_starting
+  - game_ended
   priority: 125
 
 timers:
@@ -15,20 +15,20 @@ timers:
     end_value: 8
     direction: up
     control_events:
-      - event: mode_cluster_bombs_b_started
-        action: start
-      - event: ball_will_end
-        action: stop
-      - event: high_score_started
-        action: stop
+    - event: mode_cluster_bombs_b_started
+      action: start
+    - event: ball_will_end
+      action: stop
+    - event: high_score_started
+      action: stop
 
 shots:
   cluster_b_advance_bonus:
     switches:
-      s_rollover_top_2
-      s_rollover_top_3
-      s_rollover_top_5
-      s_rollover_top_6
+    - s_rollover_top_2
+    - s_rollover_top_3
+    - s_rollover_top_5
+    - s_rollover_top_6
 
 # opposite cluster's sounds
 sound_player:

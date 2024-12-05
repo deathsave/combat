@@ -3,98 +3,51 @@ Combat by Zaccaria
 
 Brought back from the dead by [Pinball Plaid](http://pinballplaid.com/). Thanks to the guys at [FAST](http://fastpinballdev.gdsocial.com/) and the [Mission Pinball Project](https://github.com/missionpinball) for all the support.
 
-
 Development
 -----------
 
-Most of the work is handled by a YAML config which we have split into smaller
-files contextually in the `./config` directory. The `./monitor` directory
-is the configuration of component positioning on the virtual playfield display.
-
 ### Installing MPF
 
-**On Ubuntu/Debian**
+**On Ubuntu/Debia Linux**
 
-Get system deps
-
-    sudo apt-get -y install git libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libsdl2-mixer-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libgstreamer1.0-dev libxine2-ffmpeg libsmpeg-dev libswscale-dev libavformat-dev libavcodec-dev libjpeg-dev libtiff5-dev libx11-dev libmtdev-dev build-essential libgl1-mesa-dev libgles2-mesa-dev pulseaudio
-
-Install Python w/ Pyenv.
-
-```bash
-  curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-  pyenv install 3.5.3
-  pyenv global 3.5.3
-  echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
-  source ~/.bashrc
-```
-
-Install kivy, Cython and mpf
-
-```bash
-  pip install kivy
-  pip install setuptools cython==0.25.2 --upgrade
-  pip install mpf mpf-mc mpf-monitor --pre
-```
-
+See `./.github/workflows/python-app.yml` to match the CI build.
 
 **On MacOS**
 
-Install Homebrew.
+1. Install `brew` with:
+   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+1. Install system deps and `pyenv`with:
+   `brew install SDL2 SDL2_mixer SDL2_image SDL2_ttf gstreamer pkg-config pyenv` and follow instructions to add `pyenv`
+   to your shell.
+1. Install Python 3.11 with:
+   `pyenv install 3.11.10`
+1. Install mpf with:
+   `pip install mpf==0.57`
+1. Install mpf-mc with:
+   `pip install mpf-mc==0.57`
+1. Install mpf-monitor with:
+   `pip install mpf-monitor==0.57`
+1. Install foreman with:
+   `gem install foreman` - this makes it possible to run all 3
+   processes in single terminal window for local development.
 
-```bash
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+### Running
 
-Then, install pyenv (and Python 3.5.3).
-
-```bash
-  brew install pyenv
-  pyenv install 3.5.3
-  pyenv global 3.5.3
-  echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
-  source ~/.bashrc
-```
-
-...and the mac-specific deps.
-
-```bash
-  wget https://mpf.kantert.net/mpf_mac_frameworks.zip
-  unzip mpf_mac_frameworks.zip
-  sudo mv Frameworks/* /Library/Frameworks/
-  rm -Rf Frameworks
-  rm -Rf __MACOSX
-  rm -Rf ReadMe.txt
-  rm -Rf License.txt
-  rm -Rf mpf_mac_frameworks.zip
-```
-
-Finally, install mpf-recommended `cython` version and "dev" mpf.
-
-```bash
-  pip install pip setuptools cython==0.24.1 --upgrade
-  pip install mpf mpf-mc mpf-monitor --pre
-```
-
-
-Testing
--------
-
-Run the test suite with `python -m unittest tests/*.py`.
-
+- **Development** - `bin/dev` will run both `mpf` and `mpf-mc`
+  without the console GUI. It will also run `mpf monitor` so
+  you can interact with it.
+- **Production** - `bin/run` will run for production using
+  the real hardware devices and the console GUI.
+- **Test** - Run a test with `bin/test tests/test_something.py` or
+  simply `bin/test` to run all tests from the `./tests` folder.
 
 Tinkering
 ---------
 
-It's ideal to run 2 separate terminal sessions.
+Run `bin/dev` to start the game in development mode. Then use
+the keyboard for simulating switch hits.
 
-* In the first, run `mpf both -X` which will launch the MPF engine 
-and the media controller.
-* In the other, run `mpf monitor` which will launch the virtual 
-playfield and state monitor.
-
-There is also a virtual keyboard for simulating the switch hits. Here 
-is what we have mapped thus far:
+Here is what we have mapped thus far:
 
 **Primary Switches**
 

@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 # Most "players" should be defined in modes.
 # Only put exceptions here.
 slide_player:
@@ -28,11 +28,3 @@ sound_player:
     high_score_bgm:
       action: stop
   balldevice_bd_missile_ball_entered: missile_collect_sfx
-
-show_player:
-  ball_ending{current_player.extra_balls>0}:
-    shoot_again_dmd:
-      loops: 0
-  ball_save_default_saving_ball:
-    shoot_again_dmd:
-      loops: 0

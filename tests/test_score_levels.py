@@ -1,10 +1,6 @@
-import os
 from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
 
 class TestScoreLevels(MpfMachineTestCase):
-
-    def getMachinePath(self):
-        return os.path.abspath(os.path.join(os.path.realpath(__file__), os.pardir, os.pardir))
 
     def test_score_level_1(self):
         current_score=0
@@ -14,7 +10,8 @@ class TestScoreLevels(MpfMachineTestCase):
         # begin gameplay
         self.hit_and_release_switch("s_rollover_top_2")
         current_score += 500
-        self.assertEqual(current_score, self.machine.game.player.score)
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
 
         for i in range(0,249):
             self.hit_and_release_switch("s_stationary_thousand")

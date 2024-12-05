@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 # actived when all 5 drop targets have dropped
 # user wants to continue hitting those
 # hitting the special kills the mode
@@ -18,7 +18,7 @@ multiballs:
     # begin when new ball
     # is manually plunged
     start_events:
-      mode_multiball_started
+    - mode_multiball_started
     # setting these probably breaks 'shoot_again'
     # let's see if MPF auto-handles the drain...
     #disable_events:
@@ -45,7 +45,7 @@ show_player:
     bumper_flash:
       action: play
 
-led_player:
+light_player:
   mode_multiball_started:
     l_spinner: white
   mode_multiball_stopped:
