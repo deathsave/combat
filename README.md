@@ -20,20 +20,32 @@ See `./.github/workflows/python-app.yml` to match the CI build.
 
 **On MacOS**
 
-1. Install `brew` with:
+1. Install `brew`:
    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-1. Install system deps and `pyenv`with:
-   `brew install SDL2 SDL2_mixer SDL2_image SDL2_ttf gstreamer pkg-config pyenv`
+1. Install system deps:
+   `brew install SDL2 SDL2_mixer SDL2_image SDL2_ttf gstreamer pkg-config`
    and follow instructions to add `pyenv` to your shell.
-1. Install Python 3.11 with:
+1. Install `pyenv`:
+   `curl https://pyenv.run | bash`
+1. Setup shell to run `pyenv` on load:
+   `echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile`
+   `echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile`
+   `echo 'eval "$(pyenv init -)"' >> ~/.bash_profile`
+1. Now reload your bash profile:
+   `source ~/.bash_profile` # this will make `pyenv` available
+1. Install Python 3.11:
    `pyenv install 3.11.10`
-1. Install mpf with:
+1. And make it the default python version:
+   `pyenv global 3.11.10`
+1. Install Cython:
+   `pip install --upgrade Cython==0.29.36`
+1. Install mpf:
    `pip install mpf==0.57`
-1. Install mpf-mc with:
+1. Install mpf-mc:
    `pip install mpf-mc==0.57`
-1. Install mpf-monitor with:
+1. Install mpf-monitor:
    `pip install mpf-monitor==0.57`
-1. Install foreman with:
+1. Install foreman:
    `gem install foreman` - this makes it possible to run all 3
    processes in single terminal window for local development.
 
