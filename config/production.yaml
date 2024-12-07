@@ -5,8 +5,9 @@
 config:
 - common/assets.yaml
 - common/devices/displays.yaml
-- production/controller.yaml
-- production/display.yaml
+- production/fast.yaml
+- production/hardware.yaml
+- production/window.yaml
 - common/devices/flippers.yaml
 - common/devices/ball_devices.yaml
 - common/devices/switches.yaml

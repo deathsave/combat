@@ -8,4 +8,3 @@ window:
   borderless: true
   exit_on_escape: true
   source_display: window
-

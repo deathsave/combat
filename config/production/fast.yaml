@@ -1,0 +1,13 @@
+#config_version=6
+
+fast:
+  watchdog: 5000
+  hardware_led_fade_time: 65ms
+  rgb_buffer: 3
+  ports:
+    # A = DMD (not on the Nano)
+    # B = MAIN
+    # C = RBG LED
+    # D = Custom (unused and also not on the Nano)
+  - /dev/ttyUSB1
+  - /dev/ttyUSB2

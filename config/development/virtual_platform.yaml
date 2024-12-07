@@ -1,5 +1,8 @@
 #config_version=6
 
+hardware:
+  platform: smart_virtual
+
 # So a dev/test game starts with balls in the trough
 virtual_platform_start_active_switches:
 - s_trough_1

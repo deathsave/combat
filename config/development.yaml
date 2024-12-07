@@ -2,6 +2,5 @@
 
 config:
 - common.yaml
-- development/controller.yaml
-- development/display.yaml
+- development/window.yaml
 - development/virtual_platform.yaml
