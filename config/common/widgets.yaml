@@ -55,7 +55,7 @@ widgets:
         add_to_slide: scroll_left_medium
   credits_game:
     - type: text
-      text: "Zaccaria Combat reimagined by Pinball Plaid - Steve Prehoda, Josiah Cox & Ryan Richardson"
+      text: "Zaccaria Combat reimagined by Death Save Pinball Cult"
       style: small
       color: 99CCFF
       x: 512
@@ -135,7 +135,7 @@ widgets:
       font_size: 9
   company:
     - type: text
-      text: "Pinball Plaid"
+      text: "Death Save Pinball Cult"
       color: 99CCFF
       style: medium
       animations:
