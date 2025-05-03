@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO: production config once machine is ready for it
-#xterm -e "sleep 5 && cd /home/unrared/grand-prix && mpf both -c production"
-
-# temporary solution to use dev config
-# and smart vitual platform
-CMD="mpf both -Xtav -c development"
-xterm -hold -e "source ~/.bash_profile && cd ~/grand-prix && bash -c '$CMD'"
+echo "Booting MPF using production config."
+CMD="source ~/.bash_profile && mpf both -v -c production"
+xterm -hold -e "cd ~/combat && bash -c '$CMD'"
