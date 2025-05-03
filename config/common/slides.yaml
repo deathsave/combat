@@ -9,29 +9,29 @@ slides:
       - type: display
         effects:
           - type: color_dmd
-            dots_x: 128
-            dots_y: 32
+            dots_x: 1920
+            dots_y: 720
           # source_display: dmd (default)
-        width: 1024
-        height: 256
-        y: top-85%
+        width: 1920
+        height: 720
+        # y: top-85%
       #  *********************************
       #  ****** END FAKE DMD *************
       #  *********************************
       # this is the top of the LCD where the player
       # scores are for changing the "player up" assets
-      - type: display
-        width: 1920
-        height: 324
-        z: 1
-        x: left
-        y: top
-        anchor_y: top
-        anchor_x: left
-        source_display: player_up_display
-      # default backglass
-      - type: image
-        image: attract
+      # - type: display
+      #   width: 1920
+      #   height: 324
+      #   z: 1
+      #   x: left
+      #   y: top
+      #   anchor_y: top
+      #   anchor_x: left
+      #   source_display: player_up_display
+      # # default backglass
+      # - type: image
+      #   image: attract
   attract_post_slide:
     widgets:
       - type: image
@@ -109,9 +109,9 @@ slides:
         y: top-68%
         x: right-6%
         z: 2
-  awaiting_player_slide:
-    widgets:
-      - type: image
-        image: backglass-awaiting-player
-        anchor_y: top
-        y: top
+  # awaiting_player_slide:
+  #   widgets:
+  #     - type: image
+  #       image: backglass-awaiting-player
+  #       anchor_y: top
+  #       y: top

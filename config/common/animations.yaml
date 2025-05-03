@@ -2,34 +2,34 @@
 animations:
   scroll_right:
     - property: x
-      value: -128
+      value: -1920
       duration: 1ms
     - property: x
-      value: 196
+      value: 2768
       duration: 4s
       repeat: true
   scroll_left:
     - property: x
-      value: 128
+      value: 1920
       duration: 1ms
     - property: x
-      value: -128
+      value: -2768
       duration: 4s
       repeat: true
   scroll_left_medium:
     - property: x
-      value: 256
+      value: 1920
       duration: 1ms
     - property: x
-      value: -256
+      value: -2768
       duration: 8s
       repeat: true
   scroll_left_long:
     - property: x
-      value: 448
+      value: 1920
       duration: 1ms
     - property: x
-      value: -448
+      value: -2768
       duration: 12s
       repeat: true
   pulsate_fast:

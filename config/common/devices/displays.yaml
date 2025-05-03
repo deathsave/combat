@@ -1,12 +1,12 @@
 #config_version=6
 displays:
   dmd:
-    width: 128
-    height: 32
-    default: true
-  player_up_display:
     width: 1920
-    height: 324
+    height: 720
+    default: true
+  # player_up_display:
+  #   width: 1920
+  #   height: 324
   window:
     width: 1920
-    height: 1080
+    height: 720

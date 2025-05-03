@@ -11,13 +11,15 @@ widgets:
       text: "Player (number) Up"
       # water blue from backglass
       color: 99CCFF
-      style: small
+      style: medium
+      font_size: 128
   ball_count:
     - type: text
       text: "Ball: (ball)"
       # water blue from backglass
       color: FF6242
-      style: small
+      style: medium
+      font_size: 128
   current_score:
     - type: text
       text: "(score)"
@@ -25,22 +27,23 @@ widgets:
       min_digits: 2
       color: F9ED32
       style: big
-      font_size: 12
+      font_size: 192
       animations:
         add_to_slide: pulsate_fast
   shoot_again:
     - type: text
       text: "PLAYER (number) SHOOT AGAIN"
-      style: small
+      style: medium
+      font_size: 128
       color: FF6242
       anchor_y: top
-      y: top-4%
+      y: top+5%
       animations:
         add_to_slide: pulsate_slow
   credits_music:
     - type: text
       text: "Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks"
-      style: small
+      style: medium
       color: 99CCFF
       x: 512
       animations:
@@ -48,7 +51,7 @@ widgets:
   credits_sfx:
     - type: text
       text: "Sound Effects by Raphael Rodriguez"
-      style: small
+      style: medium
       color: 99CCFF
       x: 256
       animations:
@@ -56,7 +59,7 @@ widgets:
   credits_game:
     - type: text
       text: "Zaccaria Combat reimagined by Death Save Pinball Cult"
-      style: small
+      style: medium
       color: 99CCFF
       x: 512
       animations:
@@ -64,7 +67,7 @@ widgets:
   credits_podcast:
     - type: text
       text: "Subscribe to the Pinball Plaid Podcast from http://pinballplaid.com/show"
-      style: small
+      style: medium
       color: 99CCFF
       x: 512
       animations:
@@ -74,7 +77,7 @@ widgets:
       text: "(machine|score1_label) (machine|score1_name): (machine|score1_value)"
       number_grouping: true
       min_digits: 2
-      style: small
+      style: medium
       color: F9ED32
       x: 256
       animations:
@@ -84,7 +87,7 @@ widgets:
       text: "1st) (machine|score2_name): (machine|score2_value)"
       number_grouping: true
       min_digits: 2
-      style: small
+      style: medium
       color: F9ED32
       x: 256
       animations:
@@ -94,7 +97,7 @@ widgets:
       text: "2nd) (machine|score3_name): (machine|score3_value)"
       number_grouping: true
       min_digits: 2
-      style: small
+      style: medium
       color: F9ED32
       x: 256
       animations:
@@ -104,7 +107,7 @@ widgets:
       text: "3rd) (machine|score4_name): (machine|score4_value)"
       number_grouping: true
       min_digits: 2
-      style: small
+      style: medium
       color: F9ED32
       x: 256
       animations:
@@ -114,7 +117,7 @@ widgets:
       text: "4th) (machine|score5_name): (machine|score5_value)"
       number_grouping: true
       min_digits: 2
-      style: small
+      style: medium
       color: F9ED32
       x: 256
       animations:
@@ -124,20 +127,22 @@ widgets:
       text: "Zaccaria “Combat”"
       style: big
       color: FF6242
-      x: -128
+      x: -1920
+      font_size: 180
       animations:
         add_to_slide: scroll_right
   credit:
     - type: text
       text: "Reimagined by:"
-      style: small
+      style: medium
       color: F9ED32
-      font_size: 9
+      font_size: 120
   company:
     - type: text
       text: "Death Save Pinball Cult"
       color: 99CCFF
       style: medium
+      font_size: 100
       animations:
         add_to_slide: pulsate_slow
   game_over:
@@ -145,5 +150,6 @@ widgets:
       text: "GAME OVER"
       style: big
       color: FF6242
+      font_size: 120
       animations:
         add_to_slide: pulsate_slow
