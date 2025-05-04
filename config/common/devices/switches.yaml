@@ -2,109 +2,109 @@
 # all switches left to right
 switches:
   s_tilt:
-    number: 2-1
+    number: bb0804-1
     tags:
       tilt_warning
   s_slingshot_1:
-    number: 1-3
+    number: pf0804-3
   s_slingshot_2:
-    number: 2-0
+    number: bb0804-0
   s_start:
-    number: 2-2
+    number: bb0804-2
     tags: start
   # Trough Switches (max 2 balls, "duo-multi" and "extra")
   s_trough_1:
-    number: 0-0
+    number: pf3208-0
     type: NC
   s_trough_2:
-    number: 0-1
+    number: pf3208-1
     type: NC
   s_trough_jam:
-    number: 0-2
+    number: pf3208-2
     type: NC
   s_kicker_missile:
-    number: 2-7
+    number: bb0804-7
     # v0.50 - "Ball device 'bd_missile' uses switch 's_kicker_missile' which has a
     #         'playfield_active' tag" error
     # tags: playfield_active
   s_kicker_gun:
-    number: 0-10
+    number: pf3208-10
     # v0.50 - "Ball device 'bd_gun' uses switch 's_kicker_gun' which has a
     #         'playfield_active' tag" error
     # tags: playfield_active
   # Pop Bumpers
   s_bumper_1:
-    number: 1-0
+    number: pf0804-0
   s_bumper_2:
-    number: 1-1
+    number: pf0804-1
   s_bumper_3:
-    number: 1-2
+    number: pf0804-2
   s_flipper_1:
-    number: 0-7
+    number: pf3208-7
     tags: left_flipper
   s_flipper_1_eos:
-    number: 0-4
+    number: pf3208-4
   s_flipper_2:
-    number: 0-6
+    number: pf3208-6
     tags: right_flipper
   s_flipper_2_eos:
-    number: 0-3
+    number: pf3208-3
   s_spinner:
-    number: 0-26
+    number: pf3208-26
     tags: playfield_active
   s_shooter_lane:
-    number: 0-15
+    number: pf3208-15
   s_rollover_top_1:
-    number: 0-19
+    number: pf3208-19
     tags: playfield_active
   s_rollover_top_2:
-    number: 0-16
+    number: pf3208-16
     tags: playfield_active
   s_rollover_top_3:
-    number: 0-20
+    number: pf3208-20
     tags: playfield_active
   s_rollover_top_4:
-    number: 0-17
+    number: pf3208-17
     tags: playfield_active
   s_rollover_top_5:
-    number: 0-21
+    number: pf3208-21
     tags: playfield_active
   s_rollover_top_6:
-    number: 0-18
+    number: pf3208-18
     tags: playfield_active
   s_rollover_top_7:
-    number: 0-22
+    number: pf3208-22
     tags: playfield_active
   s_rollover_bonus_ball_1:
-    number: 0-25
+    number: pf3208-25
     tags: playfield_active
   s_rollover_bonus_ball_2:
-    number: 0-5
+    number: pf3208-5
     tags: playfield_active
   s_rollover_advance_hole_1:
-    number: 0-24
+    number: pf3208-24
     tags: playfield_active
   s_rollover_advance_hole_2:
-    number: 0-31
+    number: pf3208-31
     tags: playfield_active
   s_stationary_thousand:
-    number: 0-27
+    number: pf3208-27
     tags: playfield_active
   s_stationary_special:
-    number: 0-14
+    number: pf3208-14
     tags: playfield_active
   # same switch hit for each of the "B O M B S" targets
   s_drop_target:
-    number: 0-11
+    number: pf3208-11
     tags: playfield_active
   s_drop_target_behind:
-    number: 0-12
+    number: pf3208-12
     tags: playfield_active
   s_drop_target_reset:
-    number: 0-13
+    number: pf3208-13
   s_stationary_advance_bonus:
-    number: 0-9
+    number: pf3208-9
     tags: playfield_active
   s_stationary_advance_hole_score:
-    number: 0-8
+    number: pf3208-8
     tags: playfield_active
