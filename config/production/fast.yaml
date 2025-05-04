@@ -10,19 +10,19 @@ fast:
     port: auto
     controller: nano
     io_loop:
-      # nano and ____ in backbox
-      "bb0804": # (old-number: 2)
-        model: FP-I/O-3208
-        # short black cable from nano
-        order: 1
       # io boards 3280 and 0804 under playfield
       "pf3208": # trough (old-number: 0)
         model: FP-I/O-3208
         # white cable from bb0804
-        order: 2
+        order: 1
       "pf0804": # left-side slingshot (old-number: 1)
         model: FP-I/O-0804
         # short black cable from pf3208
+        order: 2
+      # nano and ____ in backbox
+      "bb0804": # (old-number: 2)
+        model: FP-I/O-0804
+        # short black cable from nano
         order: 3
   rgb:
     port: auto
