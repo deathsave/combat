@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
 echo "Booting MPF using production config."
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  echo "Running on macOS\n"
+else
+  echo "Disabling screen blanking.\n"
+  xset -dpms
+  xset s noblank
+  xset s off
+fi
 CMD="source ~/.bash_profile && mpf both -v -c production"
 xterm -hold -e "cd ~/combat && bash -c '$CMD'"
