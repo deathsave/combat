@@ -2,14 +2,14 @@
 hardware:
   platform: fast
   driverboards: fast
-  rgb_dmd: smartmatrix
+  # rgb_dmd: smartmatrix
 
-smartmatrix:
-  smartmatrix_1:
-    port: /dev/ttyACM0
-    baud: 2500000
+# smartmatrix:
+#   smartmatrix_1:
+#     port: /dev/ttyACM0
+#     baud: 2500000
 
-rgb_dmds:
-  smartmatrix_1:
-    platform: smartmatrix
-    hardware_brightness: 0.5
+# rgb_dmds:
+#   smartmatrix_1:
+#     platform: smartmatrix
+#     hardware_brightness: 0.5
