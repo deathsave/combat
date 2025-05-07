@@ -24,7 +24,7 @@ class TestDisplays(FullMachineTestCase):
 
         # game begins, player is up
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('Player 1 Up',
+        self.assertIn('Soldier 1 Up',
             [x.text for x in current_widgets])
         self.assertIn('Ball: 1',
             [x.text for x in current_widgets])

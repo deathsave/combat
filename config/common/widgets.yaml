@@ -1,43 +1,97 @@
 #config_version=6
 widgets:
-  player_1_up:
-    - type: image
-      image: backglass-player1-up
-  player_2_up:
-    - type: image
-      image: backglass-player2-up
   player_up:
     - type: text
-      text: "Player (number) Up"
+      text: "Soldier (number) Up"
+      anchor_y: bottom
+      anchor_x: left
+      y: bottom+20%
+      x: left+3%
       # water blue from backglass
       color: 99CCFF
       style: medium
-      font_size: 128
+      font_size: 72
   ball_count:
     - type: text
       text: "Ball: (ball)"
+      anchor_y: bottom
+      anchor_x: right
+      y: bottom+20%
+      x: right-3%
       # water blue from backglass
       color: FF6242
       style: medium
-      font_size: 128
+      font_size: 72
   current_score:
     - type: text
       text: "(score)"
       number_grouping: true # adds commas to integer value display
       min_digits: 2
+      anchor_y: middle
+      anchor_x: center
+      y: middle+15%
       color: F9ED32
       style: big
-      font_size: 192
+      font_size: 180
       animations:
         add_to_slide: pulsate_fast
+  p1_score:
+    - type: text
+      text: "(player1|score)"
+      number_grouping: true # adds commas to integer value display
+      anchor_y: top
+      anchor_x: left
+      y: top-3%
+      x: left+3%
+      min_digits: 2
+      color: F9ED32
+      style: big
+      font_size: 72
+  p2_score:
+    - type: text
+      text: "(player2|score)"
+      number_grouping: true # adds commas to integer value display
+      anchor_y: top
+      anchor_x: right
+      y: top-3%
+      x: right-3%
+      min_digits: 2
+      color: F9ED32
+      style: big
+      font_size: 72
+  p3_score:
+    - type: text
+      text: "(player3|score)"
+      number_grouping: true # adds commas to integer value display
+      anchor_y: bottom
+      anchor_x: left
+      y: bottom+3%
+      x: left+3%
+      min_digits: 2
+      color: F9ED32
+      style: big
+      font_size: 72
+  p4_score:
+    - type: text
+      text: "(player4|score)"
+      number_grouping: true # adds commas to integer value display
+      anchor_y: bottom
+      anchor_x: right
+      y: bottom+3%
+      x: right-3%
+      min_digits: 2
+      color: F9ED32
+      style: big
+      font_size: 72
   shoot_again:
     - type: text
-      text: "PLAYER (number) SHOOT AGAIN"
+      text: "Get back into battle, Soldier!"
       style: medium
-      font_size: 128
+      font_size: 72
       color: FF6242
-      anchor_y: top
-      y: top+5%
+      anchor_y: middle
+      anchor_x: center
+      y: middle-10%
       animations:
         add_to_slide: pulsate_slow
   credits_music:
@@ -139,9 +193,9 @@ widgets:
       font_size: 120
   company:
     - type: text
-      text: "Death Save Pinball Cult"
+      text: "Pinball Plaid and the\nDeath Save Pinball Cult"
       color: 99CCFF
-      style: medium
+      style: small
       font_size: 100
       animations:
         add_to_slide: pulsate_slow

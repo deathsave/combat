@@ -3,115 +3,17 @@ slides:
   # see players.yaml for slide changes per events
   default_slide:
     widgets:
-      #  *********************************
-      #  ****** BEGIN FAKE DMD *********** // uncomment fake DMD on Dev
-      #  *********************************
+      #  ****** BEGIN FAKE DMD ***********
       - type: display
         effects:
           - type: color_dmd
             dots_x: 1920
             dots_y: 720
-          # source_display: dmd (default)
         width: 1920
         height: 720
-        # y: top-85%
-      #  *********************************
       #  ****** END FAKE DMD *************
-      #  *********************************
-      # this is the top of the LCD where the player
-      # scores are for changing the "player up" assets
-      # - type: display
-      #   width: 1920
-      #   height: 324
-      #   z: 1
-      #   x: left
-      #   y: top
-      #   anchor_y: top
-      #   anchor_x: left
-      #   source_display: player_up_display
-      # # default backglass
-      # - type: image
-      #   image: attract
-  attract_post_slide:
-    widgets:
-      - type: image
-        image: attract-post
   loading_slide:
     widgets:
       - type: text
         text: Loading...
         z: 0
-  single_player_up_slide:
-    widgets:
-      - type: image
-        image: backglass-single-player
-        anchor_y: top
-        y: top
-      - type: text
-        text: "(player1|score)"
-        number_grouping: true # adds commas to integer value display
-        min_digits: 2
-        color: 333333
-        font_size: 110
-        anchor_x: right
-        y: top-68%
-        x: center-10%
-        z: 2
-  player_1_up_slide:
-    widgets:
-      - type: image
-        image: backglass-player1-up
-        anchor_y: top
-        y: top
-      - type: text
-        text: "(player1|score)"
-        number_grouping: true # adds commas to integer value display
-        min_digits: 2
-        color: 333333
-        font_size: 110
-        anchor_x: right
-        y: top-68%
-        x: center-10%
-        z: 2
-      - type: text
-        text: "(player2|score)"
-        number_grouping: true
-        min_digits: 2
-        color: 333333
-        font_size: 110
-        anchor_x: right
-        y: top-68%
-        x: right-6%
-        z: 2
-  player_2_up_slide:
-    widgets:
-      - type: image
-        image: backglass-player2-up
-        anchor_y: top
-        y: top
-      - type: text
-        text: "(player1|score)"
-        number_grouping: true # adds commas to integer value display
-        min_digits: 2
-        color: 333333
-        font_size: 110
-        anchor_x: right
-        y: top-68%
-        x: center-10%
-        z: 2
-      - type: text
-        text: "(player2|score)"
-        number_grouping: true
-        min_digits: 2
-        color: 333333
-        font_size: 110
-        anchor_x: right
-        y: top-68%
-        x: right-6%
-        z: 2
-  # awaiting_player_slide:
-  #   widgets:
-  #     - type: image
-  #       image: backglass-awaiting-player
-  #       anchor_y: top
-  #       y: top

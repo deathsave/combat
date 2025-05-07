@@ -111,31 +111,30 @@ widget_player:
   mode_base_started:
     current_score:
       action: add
-      widget_settings:
-        anchor_y: middle
-        anchor_x: center
-        y: middle+6%
     player_up:
       action: add
-      widget_settings:
-        anchor_y: bottom+3%
-        anchor_x: left
-        y: bottom+4%
-        x: left+3%
+    p1_score:
+      action: add
+    p2_score:
+      action: add
+    p3_score:
+      action: add
+    p4_score:
+      action: add
     ball_count:
       action: add
-      widget_settings:
-        anchor_y: bottom+3%
-        anchor_x: right
-        y: bottom+4%
-        x: right-1%
     title:
       action: remove
     credit:
       action: remove
     company:
       action: remove
-
+  ball_save_default_saving_ball:
+    shoot_again:
+      action: add
+  playfield_active:
+    shoot_again:
+      action: remove
 
 show_player:
   logicblock_explosion_bonus_updated:

@@ -16,6 +16,10 @@ keyboard:
   1:
     switch: s_trough_1
     toggle: true
+    # event: ball_drain
+    # params:
+    #   balls: 1
+    #   device: s_trough_1
   2:
     switch: s_trough_2
     toggle: true
