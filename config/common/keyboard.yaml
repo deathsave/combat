@@ -1,5 +1,11 @@
 #config_version=6
 # For external control / debugging
+#
+# Press p->d to simulate beginning play
+# (plunge -> switch hit)
+#
+# To expire ball save, press 1
+# (trough drain) then p->d again
 keyboard:
   # Left Flipper
   z:
@@ -46,3 +52,5 @@ keyboard:
     switch: s_spinner
   t:
     switch: s_tilt
+  q:
+    event: start_high_score

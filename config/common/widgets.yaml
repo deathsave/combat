@@ -99,7 +99,7 @@ widgets:
       text: "Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks"
       style: medium
       color: 99CCFF
-      x: 512
+      x: -1920
       animations:
         add_to_slide: scroll_left_long
   credits_sfx:
@@ -107,7 +107,7 @@ widgets:
       text: "Sound Effects by Raphael Rodriguez"
       style: medium
       color: 99CCFF
-      x: 256
+      x: -1920
       animations:
         add_to_slide: scroll_left_medium
   credits_game:
@@ -115,7 +115,7 @@ widgets:
       text: "Zaccaria Combat reimagined by Death Save Pinball Cult"
       style: medium
       color: 99CCFF
-      x: 512
+      x: -1920
       animations:
         add_to_slide: scroll_left_long
   credits_podcast:
@@ -123,7 +123,7 @@ widgets:
       text: "Subscribe to the Pinball Plaid Podcast from http://pinballplaid.com/show"
       style: medium
       color: 99CCFF
-      x: 512
+      x: -1920
       animations:
         add_to_slide: scroll_left_long
   high_score_1:
@@ -133,7 +133,8 @@ widgets:
       min_digits: 2
       style: medium
       color: F9ED32
-      x: 256
+      x: -1920
+      font_size: 120
       animations:
         add_to_slide: scroll_left
   high_score_2:
@@ -143,7 +144,8 @@ widgets:
       min_digits: 2
       style: medium
       color: F9ED32
-      x: 256
+      x: -1920
+      font_size: 120
       animations:
         add_to_slide: scroll_left
   high_score_3:
@@ -153,7 +155,8 @@ widgets:
       min_digits: 2
       style: medium
       color: F9ED32
-      x: 256
+      x: -1920
+      font_size: 120
       animations:
         add_to_slide: scroll_left
   high_score_4:
@@ -163,7 +166,8 @@ widgets:
       min_digits: 2
       style: medium
       color: F9ED32
-      x: 256
+      x: -1920
+      font_size: 120
       animations:
         add_to_slide: scroll_left
   high_score_5:
@@ -173,7 +177,8 @@ widgets:
       min_digits: 2
       style: medium
       color: F9ED32
-      x: 256
+      x: -1920
+      font_size: 120
       animations:
         add_to_slide: scroll_left
   title:

@@ -2,6 +2,11 @@
 
 hardware:
   platform: smart_virtual
+  #platform: virtual
+
+# smart_virtual:
+#   simulate_manual_plunger: true
+  #simulate_manual_plunger_timeout: ??
 
 # So a dev/test game starts with balls in the trough
 virtual_platform_start_active_switches:
