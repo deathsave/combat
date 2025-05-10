@@ -79,33 +79,6 @@ extra_balls:
   score_level_1:
     label: 'Score Level 1'
 
-slide_player:
-  # mode_base_started:
-  #   awaiting_player_slide:
-  #     action: remove
-  # single_player_ball_started:
-  #   attract_post_slide:
-  #     action: remove
-  #   single_player_up_slide:
-  #     action: play
-  #     target: player_up_display
-  # multiplayer_game:
-  #   player_1_up_slide:
-  #     action: play
-  #     target: player_up_display
-  #   single_player_up_slide:
-  #     action: remove
-  # player_1_ball_started:
-  #   attract_post_slide:
-  #     action: remove
-  #   player_1_up_slide:
-  #     action: play
-  #     target: player_up_display
-  # player_2_ball_started:
-  #   player_2_up_slide:
-  #     action: play
-  #     target: player_up_display
-
 # DMD Stuff
 widget_player:
   mode_base_started:
