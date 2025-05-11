@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=MPF
+Comment=Mission Pinball
+Exec=/home/unrared/combat/bin/run
+Path=/home/unrared/combat
+Terminal=false
+Type=Application

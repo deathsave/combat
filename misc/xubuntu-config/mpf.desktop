@@ -1,9 +1,0 @@
-# Save as .config/autostart/mpf.desktop
-[Desktop Entry]
-Version=1.0
-Name=MPF
-Comment=Mission Pinball
-Exec=/home/pinballplaid/combat/run.sh
-Path=/home/pinballplaid/combat/
-Terminal=false
-Type=Application
