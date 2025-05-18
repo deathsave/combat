@@ -65,8 +65,6 @@ slides:
       max_chars: 3
       x: middle
       y: middle
-      shift_left_event: sw_lower_left_flipper
-      shift_right_event: sw_lower_right_flipper
       select_event: sw_start
       color: ff0000
       anchor_y: middle
