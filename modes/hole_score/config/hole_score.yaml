@@ -1,5 +1,6 @@
 #config_version=6
 mode:
   start_events: s_kicker_missile_active
+  stop_events: ball_hold_missle_hold_balls_released
   priority: 125
   code: hole_score.Custom

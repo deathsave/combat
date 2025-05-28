@@ -32,5 +32,5 @@ class Custom(Mode):
 
         #for i in range(player.hole_score_state.value):
         #    player.score += int(awarded_part) # rounding errors...
-        self.machine.modes.hole_score.stop()
+        # self.machine.modes.hole_score.stop()
         del kwargs

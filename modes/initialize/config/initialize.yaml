@@ -18,10 +18,11 @@ timers:
 
 ball_holds:
   missile_hold:
+    enable_events: ball_starting
     balls_to_hold: 1
     hold_devices: bd_missile
     release_one_events:
-      mode_hole_score_stopped: 1s
+      s_kicker_missile_active: 1s
   gun_hold:
     balls_to_hold: 1
     hold_devices: bd_gun
