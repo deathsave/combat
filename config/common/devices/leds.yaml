@@ -54,33 +54,53 @@ lights:
   l_hole_score_lane_1:
     type: grb
     number: 1-17
+    tags:
+    - tag_hole_score
   l_hole_score_lane_2:
     type: grb
     number: 1-18
+    tags:
+    - tag_hole_score
   l_hole_score_lane_3:
     type: grb
     number: 1-19
+    tags:
+    - tag_hole_score
   l_hole_score_lane_4:
     type: grb
     number: 1-20
+    tags:
+    - tag_hole_score
   l_hole_score_lane_5:
     type: grb
     number: 1-21
+    tags:
+    - tag_hole_score
   l_hole_score_lane_6:
     type: grb
     number: 1-22
+    tags:
+    - tag_hole_score
   l_hole_score_lane_7:
     type: grb
     number: 1-23
+    tags:
+    - tag_hole_score
   l_hole_score_lane_8:
     type: grb
     number: 1-24
+    tags:
+    - tag_hole_score
   l_hole_score_lane_9:
     type: grb
     number: 1-25
+    tags:
+    - tag_hole_score
   l_hole_score_lane_10:
     type: grb
     number: 1-26
+    tags:
+    - tag_hole_score
   # Explosion Bonus
   l_explosion_1:
     type: grb

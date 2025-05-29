@@ -4,10 +4,17 @@ class TestHoleScoreMode(MpfMachineTestCase):
 
     def test_default(self):
         current_score = self._init_game_and_get_score()
+        self.assertModeNotRunning("hole_score")
         # wah, wah... only 50 points collected
         # if you don't advance the hole
         self.hit_and_release_switch("s_kicker_missile")
+        self.assertModeRunning("hole_score")
         current_score += 50
+        # no lights should be on, yet
+        self.assertLightColor("l_hole_score_lane_1", "off")
+        self.assertLightColor('l_hole_score_lane_2', "off")
+        self.assertLightColor('l_hole_score_lane_5', "off")
+        self.assertLightColor('l_hole_score_lane_10', "off")
         self.assertEqual(current_score,
             self.machine.game.player.score)
 
@@ -20,7 +27,10 @@ class TestHoleScoreMode(MpfMachineTestCase):
                 "s_stationary_advance_hole_score"
             )
             current_score += 100
+            self.assertLightColor("l_hole_score_lane_{}". \
+                format(i+1), '56A20A')
         self.hit_and_release_switch("s_kicker_missile")
+        self.assertLightColor("l_hole_score_lane_1", "black")
         current_score += 50
         self.assertEqual(current_score,
             self.machine.game.player.score)
@@ -56,12 +66,14 @@ class TestHoleScoreMode(MpfMachineTestCase):
     def test_max_value(self):
         current_score = self._init_game_and_get_score()
         # 10 advancements for max value...
-        for i in range(1,10):
+        for i in range(10):
+            current_score += 100
             self.hit_and_release_switch(
                 "s_stationary_advance_hole_score"
             )
-            current_score += 100
+            self.advance_time_and_run(1)
         self.hit_and_release_switch("s_kicker_missile")
+        self.advance_time_and_run(4)
         current_score += 50000
         self.assertEqual(current_score,
             self.machine.game.player.score)

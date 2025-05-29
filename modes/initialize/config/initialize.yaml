@@ -45,22 +45,22 @@ counters:
     events_when_complete: spins_advances_hole
     restart_events: spins_advances_hole
   hole_score:
-    persist_state: true
-    # GOTCHA: will not persist player variable AT ALL
-    # without this set... so we always reset on base mode start
     restart_events:
-    - mode_base_started
+    - ball_starting
     - mode_hole_score_stopped
+    - ball_hold_middle_hold_balls_released
     count_events:
     - s_rollover_advance_hole_1_active
     - s_rollover_advance_hole_2_active
     - s_stationary_advance_hole_score_active
     - spins_advances_hole
-    starting_count: 1
+    starting_count: 0
     count_complete_value: 10
     events_when_complete: hole_score_complete
     direction: up
+    # should stay at 10 until it's collected
     reset_on_complete: false
+    disable_on_complete: false
   explosion_bonus:
     persist_state: true
     restart_events: mode_base_started
@@ -114,10 +114,6 @@ show_player:
   logicblock_explosion_bonus_updated:
     explosion_bonus_advance:
       start_step: current_player.explosion_bonus_state.value
-  logicblock_hole_score_updated:
-    hole_score_advance:
-      start_step: current_player.hole_score_state.value
-  # TODO - and remove this after moving collect show
   mode_base_started:
     hole_score_collect:
       action: play
@@ -135,3 +131,82 @@ show_player:
       action: stop
     shoot_again_hurry:
       action: stop
+
+variable_player:
+  logicblock_hole_score_updated:
+    hole_score_count:
+      action: set
+      int: value
+
+light_player:
+  mode_initialize_started:
+    tag_hole_score: '000000'
+  mode_hole_score_stopped:
+    tag_hole_score: '000000'
+  player_hole_score_count{current_player.hole_score_count == 0}:
+    tag_hole_score: '000000'
+  player_hole_score_count{current_player.hole_score_count == 1}:
+    l_hole_score_lane_1: '56A20A'
+  player_hole_score_count{current_player.hole_score_count == 2}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+  player_hole_score_count{current_player.hole_score_count == 3}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+  player_hole_score_count{current_player.hole_score_count == 4}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+    l_hole_score_lane_4: 'FF69B4'
+  player_hole_score_count{current_player.hole_score_count == 5}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+    l_hole_score_lane_4: 'FF69B4'
+    l_hole_score_lane_5: 'FF69B4'
+  player_hole_score_count{current_player.hole_score_count == 6}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+    l_hole_score_lane_4: 'FF69B4'
+    l_hole_score_lane_5: 'FF69B4'
+    l_hole_score_lane_6: 'FF69B4'
+  player_hole_score_count{current_player.hole_score_count == 7}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+    l_hole_score_lane_4: 'FF69B4'
+    l_hole_score_lane_5: 'FF69B4'
+    l_hole_score_lane_6: 'FF69B4'
+    l_hole_score_lane_7: 'FFFF00'
+  player_hole_score_count{current_player.hole_score_count == 8}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+    l_hole_score_lane_4: 'FF69B4'
+    l_hole_score_lane_5: 'FF69B4'
+    l_hole_score_lane_6: 'FF69B4'
+    l_hole_score_lane_7: 'FFFF00'
+    l_hole_score_lane_8: 'FFFF00'
+  player_hole_score_count{current_player.hole_score_count == 9}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+    l_hole_score_lane_4: 'FF69B4'
+    l_hole_score_lane_5: 'FF69B4'
+    l_hole_score_lane_6: 'FF69B4'
+    l_hole_score_lane_7: 'FFFF00'
+    l_hole_score_lane_8: 'FFFF00'
+    l_hole_score_lane_9: 'FFFF00'
+  player_hole_score_count{current_player.hole_score_count == 10}:
+    l_hole_score_lane_1: '56A20A'
+    l_hole_score_lane_2: '56A20A'
+    l_hole_score_lane_3: '56A20A'
+    l_hole_score_lane_4: 'FF69B4'
+    l_hole_score_lane_5: 'FF69B4'
+    l_hole_score_lane_6: 'FF69B4'
+    l_hole_score_lane_7: 'FFFF00'
+    l_hole_score_lane_8: 'FFFF00'
+    l_hole_score_lane_9: 'FFFF00'
+    l_hole_score_lane_10: 'FF8000'

@@ -2,6 +2,8 @@
 player_vars:
   score_level:
     initial_value: 0
+  hole_score_count:
+    initial_value: 0
 
 machine_vars:
   is_high_score_set:
