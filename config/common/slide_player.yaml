@@ -1,4 +1,5 @@
 #config_version=6
+
 # Most "players" should be defined in modes.
 # Only put exceptions here.
 slide_player:
@@ -15,16 +16,3 @@ slide_player:
   #   awaiting_player_slide:
   #     action: play
   #     target: player_up_display
-
-sound_player:
-  # must be here due to mode_end_action seemingly not able to "bubble up"
-  # meaning, only be defined in the sound_player for game_over so music
-  # doesn't restart if setting high score
-  mode_high_score_started:
-    high_score_bgm:
-      action: play
-  # carry song through both modes
-  mode_game_over_stopped:
-    high_score_bgm:
-      action: stop
-  balldevice_bd_missile_ball_entered: missile_collect_sfx

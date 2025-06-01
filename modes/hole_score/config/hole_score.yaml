@@ -1,6 +1,19 @@
 #config_version=6
+
 mode:
   start_events: s_kicker_missile_active
-  stop_events: ball_hold_missle_hold_balls_released
+  stop_events: balldevice_bd_missile_ball_eject_attempt
   priority: 125
   code: hole_score.Custom
+
+# variable_player:
+#   balldevice_bd_missile_ball_entered{0 <= current_player.hole_score_count and current_player.hole_score_count <= 3}:
+#     score: 50|block
+#   balldevice_bd_missile_ball_entered{4 <= current_player.hole_score_count and current_player.hole_score_count <= 6}:
+#     score: 500|block
+#   balldevice_bd_missile_ball_entered{7 <= current_player.hole_score_count and current_player.hole_score_count <= 9}:
+#     score: 5000|block
+#   balldevice_bd_missile_ball_entered{current_player.hole_score_count >= 10}:
+#     score: 50000|block
+#   mode_hole_score_stopped:
+#     hole_score_count: 0

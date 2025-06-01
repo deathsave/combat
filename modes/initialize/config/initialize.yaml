@@ -47,13 +47,17 @@ counters:
   hole_score:
     restart_events:
     - ball_starting
-    - mode_hole_score_stopped
-    - ball_hold_middle_hold_balls_released
+    - mode_hole_score_will_stop
+    # - ball_hold_middle_hold_balls_released
     count_events:
     - s_rollover_advance_hole_1_active
     - s_rollover_advance_hole_2_active
     - s_stationary_advance_hole_score_active
     - spins_advances_hole
+    # control_events:
+    # - event: s_kicker_missile_inactive
+    #   action: jump
+    #   value: 0
     starting_count: 0
     count_complete_value: 10
     events_when_complete: hole_score_complete
@@ -137,6 +141,10 @@ variable_player:
     hole_score_count:
       action: set
       int: value
+  mode_hole_score_stopped:
+    hole_score_count:
+      action: set
+      int: 0
 
 light_player:
   mode_initialize_started:

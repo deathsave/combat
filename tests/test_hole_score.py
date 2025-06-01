@@ -5,25 +5,36 @@ class TestHoleScoreMode(MpfMachineTestCase):
     def test_default(self):
         current_score = self._init_game_and_get_score()
         self.assertModeNotRunning("hole_score")
+
+        self.assertEqual(0,
+            self.machine.game.player.hole_score_count)
         # wah, wah... only 50 points collected
         # if you don't advance the hole
         self.hit_and_release_switch("s_kicker_missile")
         self.assertModeRunning("hole_score")
+        self.advance_time_and_run(1)
+
+        self.assertModeNotRunning("hole_score")
         current_score += 50
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
+
         # no lights should be on, yet
         self.assertLightColor("l_hole_score_lane_1", "off")
         self.assertLightColor('l_hole_score_lane_2', "off")
         self.assertLightColor('l_hole_score_lane_5', "off")
         self.assertLightColor('l_hole_score_lane_10', "off")
+        # hole score count resets
         self.assertEqual(0,
             self.machine.game.player.hole_score_count)
-        self.assertEqual(current_score,
-            self.machine.game.player.score)
 
     def test_low_block(self):
         current_score = self._init_game_and_get_score()
-        # begin at 1, in low throughin first
-        # block for up to two advancements
+        self.assertModeNotRunning("hole_score")
+        self.assertEqual(0,
+            self.machine.game.player.hole_score_count)
+
+        # advance the hole score to "2"
         for i in range(2):
             self.hit_and_release_switch(
                 "s_stationary_advance_hole_score"
@@ -34,6 +45,9 @@ class TestHoleScoreMode(MpfMachineTestCase):
         self.assertEqual(2,
             self.machine.game.player.hole_score_count)
         self.hit_and_release_switch("s_kicker_missile")
+        self.advance_time_and_run(1)
+
+        self.assertModeNotRunning("hole_score")
         self.assertLightColor("l_hole_score_lane_1", "black")
         current_score += 50
         self.assertEqual(current_score,
@@ -43,17 +57,18 @@ class TestHoleScoreMode(MpfMachineTestCase):
 
     def test_mid_block(self):
         current_score = self._init_game_and_get_score()
-        # begin at 1, in mid through 6
+        # advance the hole score to "5"
         for i in range(5):
             self.hit_and_release_switch(
                 "s_stationary_advance_hole_score"
             )
             current_score += 100
-        self.assertEqual(current_score,
-            self.machine.game.player.score)
         self.assertEqual(5,
             self.machine.game.player.hole_score_count)
         self.hit_and_release_switch("s_kicker_missile")
+        self.advance_time_and_run(1)
+
+        self.assertModeNotRunning("hole_score")
         current_score += 500
         self.assertEqual(current_score,
             self.machine.game.player.score)
@@ -71,6 +86,9 @@ class TestHoleScoreMode(MpfMachineTestCase):
         self.assertEqual(8,
             self.machine.game.player.hole_score_count)
         self.hit_and_release_switch("s_kicker_missile")
+        self.advance_time_and_run(1)
+
+        self.assertModeNotRunning("hole_score")
         current_score += 5000
         self.assertEqual(current_score,
             self.machine.game.player.score)
@@ -89,7 +107,9 @@ class TestHoleScoreMode(MpfMachineTestCase):
         self.assertEqual(10,
             self.machine.game.player.hole_score_count)
         self.hit_and_release_switch("s_kicker_missile")
-        self.advance_time_and_run(4)
+        self.advance_time_and_run(1)
+
+        self.assertModeNotRunning("hole_score")
         current_score += 50000
         self.assertEqual(current_score,
             self.machine.game.player.score)
@@ -103,7 +123,12 @@ class TestHoleScoreMode(MpfMachineTestCase):
                 "s_stationary_advance_hole_score"
             )
             current_score += 100
+        self.assertEqual(5,
+            self.machine.game.player.hole_score_count)
         self.hit_and_release_switch("s_kicker_missile")
+        self.advance_time_and_run(1)
+
+        self.assertModeNotRunning("hole_score")
         current_score += 500
         self.assertEqual(current_score,
             self.machine.game.player.score)
@@ -115,16 +140,17 @@ class TestHoleScoreMode(MpfMachineTestCase):
                 "s_stationary_advance_hole_score"
             )
             self.advance_time_and_run(1)
-        # TODO: fix this test
-        # self.assertEqual(10,
-        #     self.machine.game.player.hole_score_count)
-        # self.hit_and_release_switch("s_kicker_missile")
-        # self.advance_time_and_run(4)
-        # current_score += 50000
-        # self.assertEqual(current_score,
-        #     self.machine.game.player.score)
-        # self.assertEqual(0,
-        #     self.machine.game.player.hole_score_count)
+        self.assertEqual(10,
+            self.machine.game.player.hole_score_count)
+        self.hit_and_release_switch("s_kicker_missile")
+        self.advance_time_and_run(1)
+
+        self.assertModeNotRunning("hole_score")
+        current_score += 50000
+        self.assertEqual(current_score,
+            self.machine.game.player.score)
+        self.assertEqual(0,
+            self.machine.game.player.hole_score_count)
 
     def _init_game_and_get_score(self):
         current_score = 0
@@ -138,4 +164,6 @@ class TestHoleScoreMode(MpfMachineTestCase):
         self.assertEqual(1, self.machine.playfield.balls)
         self.assertEqual(current_score,
             self.machine.game.player.score)
+        self.assertEqual(0,
+            self.machine.game.player.hole_score_count)
         return current_score
