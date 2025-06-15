@@ -5,10 +5,9 @@ player_vars:
     initial_value: 0
   hole_score_count:
     initial_value: 0
+  multiball_score:
+    initial_value: 0
 
 machine_vars:
-  # is_high_score_set:
-  #   initial_value: False
-  #   value_type: boolean
   master_volume:
     initial_value: 0.9

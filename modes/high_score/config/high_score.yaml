@@ -9,29 +9,26 @@ high_score:
   _overwrite: true
   enter_initials_timeout: 45s
   award_slide_display_time: 4s
-  # define your high score categories and the awards
   categories: !!omap
-    - score:
-      - GRAND CHAMPION
-      - HIGH SCORE 1
-      - HIGH SCORE 2
-      - HIGH SCORE 3
-      - HIGH SCORE 4
-    # - loops:
-    #     - LOOP CHAMP
-  # set the defaults
+  - score:
+    - AMMIRAGLIO
+    - PUNTEGGIO ELEVATO 1
+    - PUNTEGGIO ELEVATO 2
+    - PUNTEGGIO ELEVATO 3
+    - PUNTEGGIO ELEVATO 4
+  - multiball_score:
+    - DUE PALLE CAMPIONE
+    - SECONDO DUE PALLE
   defaults:
     score:
-      - ZAC: 240000
-      - CAR: 200000
-      - RIA: 150000
-      - COM: 100000
-      - BAT: 50000
-    # loops:
-    #   - JAN: 42
-  # vars:
-  #   loops:
-  #     - player: character
+    - ZAC: 240000
+    - CAR: 200000
+    - RIA: 150000
+    - COM: 100000
+    - BAT: 50000
+    multiball_score:
+    - ZAC: 1000
+    - CAR: 500
 slide_player:
   _overwrite: true
   high_score_enter_initials: high_score_enter_initials
@@ -39,144 +36,102 @@ slide_player:
 slides:
   _overwrite: true
   high_score_enter_initials:
-    - type: text
-      style: big
-      font_size: 72
-      text: SOLDIER (player_num)
-      color: ffff00
-      anchor_y: middle
-      anchor_x: center
-      x: middle
-      y: middle+40%
-    - type: text
-      style: big
-      font_size: 72
-      text: (award)
-      color: f0f0f0
-      anchor_y: middle
-      anchor_x: center
-      x: middle
-      y: middle+20%
-    - type: text_input
-      initial_char: A
-      dynamic_x: false
-      key: high_score
-      style: big
-      font_size: 72
-      max_chars: 3
-      x: middle
-      y: middle
-      select_event: sw_start
-      color: ff0000
-      anchor_y: middle
-      anchor_x: center
-    - type: text
-      style: big
-      text: '<       >'
-      font_size: 72
-      x: middle
-      y: middle
-      color: ff0000
-      anchor_y: middle
-      anchor_x: center
-    - type: text
-      text: ''
-      key: high_score
-      font_size: 72
-      style: big
-      anchor_y: middle
-      anchor_x: center
-      x: middle
-      y: middle-30%
-      color: ff00ff
-      animations:
-        show_slide:
-          - property: opacity
-            value: 1
-            duration: 0.3s
-            easing: in_out_quint
-          - property: opacity
-            value: 0
-            duration: 0.3s
-            repeat: true
-            easing: in_out_quint
+  - type: text
+    style: big
+    font_size: 72
+    text: SOLDIER (player_num)
+    color: ffff00
+    anchor_y: middle
+    anchor_x: center
+    x: middle
+    y: middle+40%
+  - type: text
+    style: big
+    font_size: 72
+    text: (award)
+    color: f0f0f0
+    anchor_y: middle
+    anchor_x: center
+    x: middle
+    y: middle+20%
+  - type: text_input
+    initial_char: A
+    dynamic_x: false
+    key: high_score
+    style: big
+    font_size: 72
+    max_chars: 3
+    x: middle
+    y: middle
+    select_event: sw_start
+    color: ff0000
+    anchor_y: middle
+    anchor_x: center
+  - type: text
+    style: big
+    text: '<       >'
+    font_size: 72
+    x: middle
+    y: middle
+    color: ff0000
+    anchor_y: middle
+    anchor_x: center
+  - type: text
+    text: ''
+    key: high_score
+    font_size: 72
+    style: big
+    anchor_y: middle
+    anchor_x: center
+    x: middle
+    y: middle-30%
+    color: ff00ff
+    animations:
+      show_slide:
+        - property: opacity
+          value: 1
+          duration: 0.3s
+          easing: in_out_quint
+        - property: opacity
+          value: 0
+          duration: 0.3s
+          repeat: true
+          easing: in_out_quint
   high_score_award_display:
-    - type: text
-      text: (player_name)
-      font_size: 140
-      style: big
-      anchor_y: middle
-      anchor_x: middle
-      x: middle
-      y: middle+30%
-      color: 00ff00
-      animations:
-        show_slide:
-          - property: opacity
-            value: 1
-            duration: 0.05s
-          - property: opacity
-            value: 0
-            duration: 0.05s
-            repeat: true
-    - type: text
-      text: (award)
-      font_size: 140
-      style: big
-      x: middle
-      y: middle-30%
-      color: 0000ff
-      anchor_y: middle
-      anchor_x: center
-    - type: text
-      text: (value)
-      font_size: 140
-      style: big
-      x: middle
-      color: 4040FF
-      anchor_y: middle
-      anchor_x: center
-      number_grouping: true
-      min_digits: 2
-# loops_award_display:
-#     - type: text
-#       text: (player_name)
-#       font_size: 72
-#       style: big
-#       anchor_y: middle
-#       anchor_x: middle
-#       x: middle
-#       y: middle
-#       color: 00ff00
-#       animations:
-#         show_slide:
-#           - property: opacity
-#             value: 1
-#             duration: 0.05s
-#           - property: opacity
-#             value: 0
-#             duration: 0.05s
-#             repeat: true
-#     - type: text
-#       text: (award)
-#       font_size: 72
-#       style: big
-#       x: middle
-#       y: 110
-#       color: 0000ff
-#     - type: text
-#       text: (value)
-#       style: big
-#       x: middle
-#       y: 30
-#       color: 4040FF
-#       font_size: 20
-#       number_grouping: true
-#       min_digits: 2
-#     - type: text
-#       text: (player(player_num)|character)
-#       style: big
-#       x: middle
-#       y: 10
-#       color: 4040FF
-#       font_size: 20
+  - type: text
+    text: (player_name)
+    font_size: 140
+    style: big
+    anchor_y: middle
+    anchor_x: middle
+    x: middle
+    y: middle+30%
+    color: 00ff00
+    animations:
+      show_slide:
+        - property: opacity
+          value: 1
+          duration: 0.05s
+        - property: opacity
+          value: 0
+          duration: 0.05s
+          repeat: true
+  - type: text
+    text: (award)
+    font_size: 140
+    style: big
+    x: middle
+    y: middle-30%
+    color: 0000ff
+    anchor_y: middle
+    anchor_x: center
+  - type: text
+    text: (value)
+    font_size: 140
+    style: big
+    x: middle
+    color: 4040FF
+    anchor_y: middle
+    anchor_x: center
+    number_grouping: true
+    min_digits: 2

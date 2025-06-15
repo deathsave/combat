@@ -54,35 +54,52 @@ light_player:
 variable_player:
   s_bumper_1_active:
     score: 1000|block # bumpers 10x all day during multi
+    multiball_score: 1000
   s_bumper_2_active:
     score: 1000|block
+    multiball_score: 1000
   s_bumper_3_active:
     score: 1000|block
+    multiball_score: 1000
   s_kicker_gun_active:
     score: 10000|block
+    multiball_score: 10000
   s_slingshot_1_active:
     score: 20|block
+    multiball_score: 20
   s_slingshot_2_active:
     score: 20|block
+    multiball_score: 20
   s_spinner_active:
     score: 1000|block
+    multiball_score: 1000
   s_rollover_bonus_ball_1_active:
     score: 2000|block
+    multiball_score: 2000
   s_rollover_bonus_ball_2_active:
     score: 2000|block
+    multiball_score: 2000
   s_rollover_advance_hole_1_active:
     score: 2000|block
+    multiball_score: 2000
   s_rollover_advance_hole_2_active:
     score: 2000|block
+    multiball_score: 2000
   s_stationary_thousand_active:
     score: 2000|block
+    multiball_score: 2000
   s_stationary_special_active:
     score: 1000|block
+    multiball_score: 1000
   s_drop_target_active:
     score: 2000|block
+    multiball_score: 2000
   s_drop_target_behind_active:
     score: 1000|block
+    multiball_score: 1000
   s_stationary_advance_bonus_active:
     score: 200|block
+    multiball_score: 200
   s_stationary_advance_hole_score_active:
     score: 200|block
+    multiball_score: 200

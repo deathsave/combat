@@ -1,6 +1,6 @@
-from mpf.tests.MpfMachineTestCase import MpfMachineTestCase
+from mpfmc.tests.FullMpfMachineTestCase import FullMachineTestCase
 
-class TestGameOverMode(MpfMachineTestCase):
+class TestGameOverMode(FullMachineTestCase):
 
     def test_game_over(self):
         self.hit_and_release_switch("s_start")
@@ -38,9 +38,16 @@ class TestGameOverMode(MpfMachineTestCase):
         self.assertModeRunning('high_score')
 
         # enter initials as "AAA"
-        for x in range(0, 3):
+        for x in range(0, 4):
             self.hit_and_release_switch("s_start")
             self.advance_time_and_run(4)
 
         self.advance_time_and_run(5)
         self.assertModeRunning('game_over')
+
+    def get_dmd_text_widgets(self):
+        current_widgets = []
+        for wgt in self.mc.displays['dmd'].current_slide.widgets:
+            if hasattr(wgt.widget, 'text'):
+                current_widgets.append(wgt.widget)
+        return current_widgets
