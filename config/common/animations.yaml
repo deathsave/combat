@@ -32,6 +32,14 @@ animations:
       value: -2768
       duration: 12s
       repeat: true
+  wide_scroll_left:
+    - property: x
+      value: 4200
+      duration: 1ms
+    - property: x
+      value: -4200
+      duration: 10s
+      repeat: false
   pulsate_fast:
     - property: opacity
       value: 0.0

@@ -54,3 +54,5 @@ keyboard:
     switch: s_tilt
   q:
     event: start_high_score
+  o:
+    event: start_game_over

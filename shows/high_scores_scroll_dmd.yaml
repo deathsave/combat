@@ -1,0 +1,34 @@
+#show_version=6
+
+- duration: 8s
+  widgets:
+    grand_champion:
+      action: add
+- duration: 2s
+  widgets:
+    grand_champion:
+      action: remove
+- duration: 8s
+  widgets:
+    high_scores:
+      action: add
+- duration: 2s
+  widgets:
+    high_scores:
+      action: remove
+- duration: 8s
+  widgets:
+    multiball_champions:
+      action: add
+- duration: 2s
+  widgets:
+    multiball_champions:
+      action: remove
+- duration: 8s
+  widgets:
+    credits:
+      action: add
+- duration: 2s
+  widgets:
+    credits:
+      action: remove

@@ -8,7 +8,7 @@ class TestDisplays(FullMachineTestCase):
         current_widgets = self.get_dmd_text_widgets()
         self.assertIn('Zaccaria “Combat”',
             [x.text for x in current_widgets])
-        self.assertIn('Reimagined by:',
+        self.assertIn('Saved by:',
             [x.text for x in current_widgets])
         # self.assertIn('Death Save Pinball Cult',
         #     [x.text for x in current_widgets])
@@ -24,9 +24,9 @@ class TestDisplays(FullMachineTestCase):
 
         # game begins, player is up
         current_widgets = self.get_dmd_text_widgets()
-        self.assertIn('Soldier 1 Up',
+        self.assertIn('Marinaio 1 Avanti',
             [x.text for x in current_widgets])
-        self.assertIn('Ball: 1',
+        self.assertIn('Boccia: 1',
             [x.text for x in current_widgets])
         self.assertIn('00', [x.text for x in current_widgets])
 

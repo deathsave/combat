@@ -39,6 +39,19 @@ widget_player:
       action: remove
     game_over:
       action: add
+    p1_score:
+      action: add
+    p2_score:
+      action: add
+    p3_score:
+      action: add
+    p4_score:
+      action: add
+
+show_player:
+  mode_game_over_started:
+    high_scores_scroll_dmd:
+      loops: 0
 
 event_player:
   s_start_active: stop_game_over

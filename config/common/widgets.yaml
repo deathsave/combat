@@ -1,8 +1,9 @@
 #config_version=6
+
 widgets:
   player_up:
   - type: text
-    text: "Soldier (number) Up"
+    text: "Marinaio (number) Avanti"
     anchor_y: bottom
     anchor_x: left
     y: bottom+23%
@@ -13,7 +14,7 @@ widgets:
     font_size: 72
   ball_count:
   - type: text
-    text: "Ball: (ball)"
+    text: "Boccia: (ball)"
     anchor_y: bottom
     anchor_x: right
     y: bottom+23%
@@ -85,7 +86,7 @@ widgets:
     font_size: 72
   shoot_again:
   - type: text
-    text: "Get back into battle, Soldier!"
+    text: "Rientra in battaglia, marinaio!"
     style: medium
     font_size: 72
     color: red
@@ -94,93 +95,51 @@ widgets:
     y: middle-8%
     animations:
       add_to_slide: pulsate_slow
-  credits_music:
+  credits:
   - type: text
-    text: "Music by Josiah Cox, Ryan Richardson, Terence Klein & Elliot Starks"
+    text: "Saved by Pinball Plaid & Death Save Pinball Cult. Music by Flannel. SFX by Raphael."
+    style: medium
+    font_size: 90
+    color: red
+    x: -4200
+    animations:
+      add_to_slide: wide_scroll_left
+  grand_champion:
+  - type: text
+    text: "(machine|score1_label)    (machine|score1_name): (machine|score1_value)"
+    number_grouping: true
+    min_digits: 2
     style: medium
     color: blue
-    x: -1920
+    x: -4200
+    y: middle-8%
+    font_size: 140
     animations:
-      add_to_slide: scroll_left_long
-  credits_sfx:
+      add_to_slide: wide_scroll_left
+  high_scores:
   - type: text
-    text: "Sound Effects by Raphael Rodriguez"
+    text: "(machine|score2_name): (machine|score2_value)   (machine|score3_name): (machine|score3_value)   (machine|score4_name): (machine|score4_value)   (machine|score5_name): (machine|score5_value)"
+    number_grouping: true
+    min_digits: 2
     style: medium
     color: blue
-    x: -1920
+    x: -4200
+    y: middle-10%
+    font_size: 100
     animations:
-      add_to_slide: scroll_left_medium
-  credits_game:
+      add_to_slide: wide_scroll_left
+  multiball_champions:
   - type: text
-    text: "Zaccaria Combat reimagined by Death Save Pinball Cult"
+    text: "(machine|multiball_score1_label) (machine|multiball_score1_name): (machine|multiball_score1_value)      (machine|multiball_score2_label) (machine|multiball_score2_name): (machine|multiball_score2_value)"
+    number_grouping: true
+    min_digits: 2
     style: medium
     color: blue
-    x: -1920
+    x: -4200
+    y: middle-10%
+    font_size: 110
     animations:
-      add_to_slide: scroll_left_long
-  credits_podcast:
-  - type: text
-    text: "Subscribe to the Pinball Plaid Podcast from http://pinballplaid.com/show"
-    style: medium
-    color: blue
-    x: -1920
-    animations:
-      add_to_slide: scroll_left_long
-  high_score_1:
-  - type: text
-    text: "(machine|score1_label) (machine|score1_name): (machine|score1_value)"
-    number_grouping: true
-    min_digits: 2
-    style: medium
-    color: yellow
-    x: -1920
-    font_size: 120
-    animations:
-      add_to_slide: scroll_left
-  high_score_2:
-  - type: text
-    text: "1st) (machine|score2_name): (machine|score2_value)"
-    number_grouping: true
-    min_digits: 2
-    style: medium
-    color: yellow
-    x: -1920
-    font_size: 120
-    animations:
-      add_to_slide: scroll_left
-  high_score_3:
-  - type: text
-    text: "2nd) (machine|score3_name): (machine|score3_value)"
-    number_grouping: true
-    min_digits: 2
-    style: medium
-    color: yellow
-    x: -1920
-    font_size: 120
-    animations:
-      add_to_slide: scroll_left
-  high_score_4:
-  - type: text
-    text: "3rd) (machine|score4_name): (machine|score4_value)"
-    number_grouping: true
-    min_digits: 2
-    style: medium
-    color: yellow
-    x: -1920
-    font_size: 120
-    animations:
-      add_to_slide: scroll_left
-  high_score_5:
-  - type: text
-    text: "4th) (machine|score5_name): (machine|score5_value)"
-    number_grouping: true
-    min_digits: 2
-    style: medium
-    color: yellow
-    x: -1920
-    font_size: 120
-    animations:
-      add_to_slide: scroll_left
+      add_to_slide: wide_scroll_left
   title:
   - type: text
     text: "Zaccaria “Combat”"
@@ -192,7 +151,7 @@ widgets:
       add_to_slide: scroll_right
   credit:
   - type: text
-    text: "Reimagined by:"
+    text: "Saved by:"
     style: medium
     color: yellow
     font_size: 120
@@ -207,6 +166,7 @@ widgets:
   game_over:
   - type: text
     text: "GAME OVER"
+    y: middle+15%
     style: big
     color: red
     font_size: 120
