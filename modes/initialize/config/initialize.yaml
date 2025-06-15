@@ -110,6 +110,9 @@ widget_player:
   ball_save_default_saving_ball:
     shoot_again:
       action: add
+  s_shooter_lane_inactive:
+    shoot_again:
+      action: remove
   playfield_active:
     shoot_again:
       action: remove

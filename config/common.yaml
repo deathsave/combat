@@ -26,3 +26,4 @@ config:
 - common/sound_pools.yaml
 - common/sound_player.yaml
 - common/variables.yaml
+- common/named_colors.yaml

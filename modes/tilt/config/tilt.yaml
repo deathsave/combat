@@ -1,0 +1,42 @@
+#config_version=6
+
+tilt:
+  warnings_to_tilt: 3
+  multiple_hit_window: 500ms
+  settle_time: 5s
+
+slides:
+  _overwrite: true
+  tilt_warning_1:
+    widgets:
+    - type: text
+      style: medium
+      font_size: 180
+      text: "DANGER"
+      color: red
+      anchor_y: middle
+      anchor_x: center
+    expire: 2s
+  tilt_warning_2:
+    widgets:
+    - type: text
+      style: medium
+      font_size: 180
+      text: "DANGER, DANGER"
+      color: red
+      anchor_y: middle
+      anchor_x: center
+      animations:
+        add_to_slide: pulsate_fast
+    expire: 4s
+  tilt:
+    widgets:
+    - type: text
+      style: medium
+      text: "TILT"
+      font_size: 240
+      color: blue
+      anchor_y: middle
+      anchor_x: center
+      animations:
+        add_to_slide: pulsate_slow
