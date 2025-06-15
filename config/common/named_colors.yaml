@@ -1,0 +1,6 @@
+#config_version=6
+
+named_colors:
+  red: FF6242
+  yellow: F9ED32
+  blue: 99CCFF
