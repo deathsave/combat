@@ -12,7 +12,7 @@ slides:
     - type: text
       style: medium
       font_size: 180
-      text: "DANGER"
+      text: "Pericolo!"
       color: red
       anchor_y: middle
       anchor_x: center
@@ -22,7 +22,7 @@ slides:
     - type: text
       style: medium
       font_size: 180
-      text: "DANGER, DANGER"
+      text: "Attenzione,\npericolo!"
       color: red
       anchor_y: middle
       anchor_x: center
