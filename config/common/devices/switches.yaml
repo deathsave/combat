@@ -4,14 +4,15 @@ switches:
   s_tilt:
     number: bb0804-1
     tags:
-      tilt_warning
+    - tilt_warning
   s_slingshot_1:
     number: pf0804-3
   s_slingshot_2:
     number: bb0804-0
   s_start:
     number: bb0804-2
-    tags: start
+    tags:
+    - start
   # Trough Switches (max 2 balls, "duo-multi" and "extra")
   s_trough_1:
     number: pf3208-0
@@ -41,70 +42,90 @@ switches:
     number: pf0804-2
   s_flipper_1:
     number: pf3208-7
-    tags: left_flipper
+    tags:
+    - left_flipper
   s_flipper_1_eos:
     number: pf3208-4
   s_flipper_2:
     number: pf3208-6
-    tags: right_flipper
+    tags:
+    - right_flipper
   s_flipper_2_eos:
     number: pf3208-3
   s_spinner:
     number: pf3208-26
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_shooter_lane:
     number: pf3208-15
   s_rollover_top_1:
     number: pf3208-19
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_top_2:
     number: pf3208-16
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_top_3:
     number: pf3208-20
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_top_4:
     number: pf3208-17
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_top_5:
     number: pf3208-21
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_top_6:
     number: pf3208-18
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_top_7:
     number: pf3208-22
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_bonus_ball_1:
     number: pf3208-25
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_bonus_ball_2:
     number: pf3208-5
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_advance_hole_1:
     number: pf3208-24
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_rollover_advance_hole_2:
     number: pf3208-31
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_stationary_thousand:
     number: pf3208-27
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_stationary_special:
     number: pf3208-14
-    tags: playfield_active
+    tags:
+    - playfield_active
   # same switch hit for each of the "B O M B S" targets
   s_drop_target:
     number: pf3208-11
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_drop_target_behind:
     number: pf3208-12
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_drop_target_reset:
     number: pf3208-13
   s_stationary_advance_bonus:
     number: pf3208-9
-    tags: playfield_active
+    tags:
+    - playfield_active
   s_stationary_advance_hole_score:
     number: pf3208-8
-    tags: playfield_active
+    tags:
+    - playfield_active
