@@ -4,9 +4,10 @@ mode:
   priority: 500
   start_events: game_ending, start_high_score
   use_wait_queue: true
+
 high_score:
   _overwrite: true
-  # enter_initials_timeout: 60
+  enter_initials_timeout: 45s
   award_slide_display_time: 4s
   # define your high score categories and the awards
   categories: !!omap
