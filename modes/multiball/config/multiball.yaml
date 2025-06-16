@@ -12,9 +12,9 @@ multiballs:
   multi_bombs:
     ball_count: 2
     ball_count_type: total
-    # if ball drains within 15 seconds
-    # player should get another one
-    shoot_again: 15s
+    # No shoot again for multi since you
+    # can camp in the shooter lane
+    shoot_again: 0
     # begin when new ball
     # is manually plunged
     start_events:
