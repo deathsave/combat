@@ -4,6 +4,7 @@ sudo groupadd -r autologin
 sudo gpasswd -a unrared autologin
 
 # To autologin to the Xubuntu Desktop X Server
+sudo rm -f /etc/lightdm/lightdm.conf
 sudo ln -s $HOME/combat/.xubuntu/lightdm.conf \
   /etc/lightdm/lightdm.conf
 
