@@ -1,31 +1,39 @@
-Game Rules
-==========
+Zaccaria Combat!
+================
 
-It's [this game](http://www.ipdb.org/machine.cgi?id=3609) and stuff.
+[![Combat! Pinball](https://github.com/deathsave/combat/actions/workflows/python-app.yml/badge.svg)](https://github.com/deathsave/combat/actions/workflows/python-app.yml)
 
-Flash Score
------------
+![DMD Splash](https://github.com/deathsave/combat/raw/main/splash.png)
 
-How:
+Brought back from the dead by [unrared](https://unrared.com/),
+Steve and Josiah. Rescued from the basement by Death Save Pinball Cult. Thanks to the guys at [FAST](http://fastpinballdev.gdsocial.com/) and the [Mission Pinball Project](https://github.com/missionpinball) for all the support.
 
-* Launch a missle (northwest kicker) or
+Learn more about this game [here on IPDB](http://www.ipdb.org/machine.cgi?id=3609).
+
+Modes
+-----
+
+### Flash Score Hurry Up
+
+**How to activate:**
+
+* Launch a missle (northwest saucer) OR
 * Fire the gun (northeast kicker)
 
-What: 
+**What it does:**
 
 * Pop Bumpers score 1,000
-* Spinner lights and scores 1,000 as well
-* Active for 15 seconds only
+* Spinner lights and also scores 1,000
 
+*Note: Mode is only active for 15 seconds*
 
-Laser-guided Bombs
-------------------
+### Laser-guided Bombs
 
-How:
+**How to activate:**
 
 * Drop all five B.O.M.B.S. targets
 
-What:
+**What it does:**
 
 * Drop 'Laser-guided' bombs to score 10k
 * Fire 'Laser-guided' Torpedo (special) which:
@@ -33,64 +41,50 @@ What:
   * Gives up our position (forfeit 10x bombs multiplier)
 * Rolling over outlanes award extra ball
 
-
-Missile Launch (Hole Score Bonus)
----------------------------------
+### Missile Launch (Hole Score Bonus)
 
 Fuel up the missile and launch it!
 
-How to advance:
+**How to advance:**
 
-* Shoot the battleship (spinner) or
-* Shoot the right-side 'Advance Hole Score' target or
-* Roll over in-lanes
+* Shoot the battleship (spinner) OR
+* Shoot the right-side 'Advance Hole Score' target OR
+* Roll over either inlane
 
-How to collect:
+**How to collect:**
 
-* Roll into the hole at the peak of the missile lane.
+* Roll into the saucer at the peak of the missile lane.
 
-Points:
+**Points:**
 
-* 50 points to 30% lit
-* 500 points to 60% lit
-* 5,000 points to 90% lit
-* 50,000 points fully lit
+* 50 points when up to 30% lit
+* 500 points when up to 60% lit
+* 5,000 points when up to 90% lit
+* 50,000 points when **fully** lit
 
+### Explosion (End of Ball) Bonus
 
-Explosion Bonus
----------------
+**How to advance:**
 
-How:
-
-* Roll over Cluster Bombs (when lit) or
+* Roll over Cluster Bombs (when lit) OR
 * Hit right-side 'Explosion Bonus' target
 
-What:
+Collected at end of ball.
 
-* Collected at end of ball.
-* Fire the gun for x10 Multiplier:
+### Extra Ball
 
+**How to get it:**
 
-### Same Player Shoots Again
+* Exceed 250k points **for the first time**
 
-How:
+### Multiball
 
-* Exceed 150k points for the first time
-* Roll over outlanes during 'Laser Bombs'
+**How to activate:**
 
-What:
+1. Activate Laser Bombs (full drop target)
+2. Load the gun (northeast kicker)
 
-* Extra ball awarded
-
-
-Multiball
----------
-
-How:
-
-* After activating Laser Bombs, load the gun
-
-What:
+**What is it:**
 
 * 2-ball Multiball
 * Flash score all day (Pop Bumpers score 1,000)
