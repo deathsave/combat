@@ -49,12 +49,21 @@ light_player:
     l_shoots_again: orange
 
 sound_player:
-  mode_base_started:
+  mode_base_started{current_player.ball == 1}:
     base_bgm:
       action: play
+  mode_base_started{current_player.ball == 2}:
+    base_bgm:
+      action: play
+      start_at: 50
+  mode_base_started{current_player.ball == 3}:
+    base_bgm:
+      action: play
+      start_at: 160
   mode_multiball_stopped:
     base_bgm:
       action: play
+      start_at: 16
   mode_base_stopped:
     base_bgm:
       action: stop
