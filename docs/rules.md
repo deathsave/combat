@@ -1,19 +1,17 @@
 Zaccaria Combat!
 ================
 
-[![Combat! Pinball](https://github.com/deathsave/combat/actions/workflows/python-app.yml/badge.svg)](https://github.com/deathsave/combat/actions/workflows/python-app.yml)
+[![Combat! Pinball](https://github.com/deathsave/combat/actions/workflows/python-app.yml/badge.svg)](https://github.com/deathsave/combat)
 
 ![DMD Splash](https://github.com/deathsave/combat/raw/main/splash.png)
 
-Brought back from the dead by [unrared](https://unrared.com/),
-Steve and Josiah. Rescued from the basement by Death Save Pinball Cult. Thanks to the guys at [FAST](http://fastpinballdev.gdsocial.com/) and the [Mission Pinball Project](https://github.com/missionpinball) for all the support.
+Brought back from the dead by [unrared](https://unrared.com/), Steve and Josiah. Rescued from the basement by Death Save Pinball Cult. Thanks to the guys at [FAST](http://fastpinballdev.gdsocial.com/) and the [Mission Pinball Project](https://github.com/missionpinball) for all the support.
 
 Learn more about this game [here on IPDB](http://www.ipdb.org/machine.cgi?id=3609).
 
-Modes
------
-
 ### Flash Score Hurry Up
+
+![Flash Score Hurry Up](https://github.com/deathsave/combat/raw/main/docs/flash-score.png)
 
 **How to activate:**
 
@@ -29,6 +27,8 @@ Modes
 
 ### Laser-guided Bombs
 
+![Bombs Drop Target](https://github.com/deathsave/combat/raw/main/docs/drop-target.png)
+
 **How to activate:**
 
 * Drop all five B.O.M.B.S. targets
@@ -43,13 +43,23 @@ Modes
 
 ### Missile Launch (Hole Score Bonus)
 
+![Missile Saucer](https://github.com/deathsave/combat/raw/main/docs/missile.png)
+
 Fuel up the missile and launch it!
 
 **How to advance:**
 
-* Shoot the battleship (spinner) OR
-* Shoot the right-side 'Advance Hole Score' target OR
-* Roll over either inlane
+* Shoot the battleship (spinner)
+
+![Spinner Advance](https://github.com/deathsave/combat/raw/main/docs/spinner-advance.png)
+
+* Or shoot the right-side 'Advance Hole Score' target
+
+![Advance Targets](https://github.com/deathsave/combat/raw/main/docs/advance-targets.png)
+
+* Or roll over either inlane
+
+![Inlane Advance](https://github.com/deathsave/combat/raw/main/docs/inlane-hole-advance.png)
 
 **How to collect:**
 
@@ -64,6 +74,8 @@ Fuel up the missile and launch it!
 
 ### Explosion (End of Ball) Bonus
 
+![Explosion Bonus](https://github.com/deathsave/combat/raw/main/docs/explosion-bonus.png)
+
 **How to advance:**
 
 * Roll over Cluster Bombs (when lit) OR
@@ -71,11 +83,14 @@ Fuel up the missile and launch it!
 
 Collected at end of ball.
 
-### Extra Ball
+### Extra Ball / Ball Save
+
+![Ball Saves](https://github.com/deathsave/combat/raw/main/docs/outlane-save.png)
 
 **How to get it:**
 
-* Exceed 250k points **for the first time**
+* Extra Ball: Exceed 250k points **for the first time**
+* Ball Saves: Roll over outlanes (when lit)
 
 ### Multiball
 
