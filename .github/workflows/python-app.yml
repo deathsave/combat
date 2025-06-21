@@ -1,7 +1,10 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+# This workflow will install Python dependencies, run tests
+# and lint with a single version of Python
+# For more information see:
+#   https://docs.github.com/en/actions/ \
+#     automating-builds-and-tests/building-and-testing-python
 
-name: Combat! Pinball
+name: Zaccaria Combat! Pinball
 
 on:
   push:
@@ -15,34 +18,50 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+
+    env:
+      CI: true
 
     steps:
     - uses: actions/checkout@v4
+    - name: Update system
+      run: |
+        sudo apt-get update
+        set -xeo pipefail
     - name: Install system dependencies
       run: |
-        sudo apt-get install \
-          build-essential git \
-          python3-pip python3-venv \
-          zlib1g-dev libjpeg-dev libtiff5-dev libtiff5-dev \
-          libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev \
-          libsdl2-mixer-dev gstreamer1.0-plugins-base \
-          gstreamer1.0-plugins-base gstreamer1.0-plugins-bad \
-          gstreamer1.0-plugins-ugly libgstreamer1.0-dev \
-          libxine2-ffmpeg libsmpeg-dev libswscale-dev \
-          libavformat-dev libavcodec-dev libjpeg-dev libtiff5-dev \
-          libx11-dev libmtdev-dev build-essential libgl1-mesa-dev \
-          libgles2-mesa-dev pulseaudio lsb-release \
-          libgl1-mesa-dri libavfilter-dev libavdevice-dev libunwind-dev -y
+        sudo apt-get install build-essential git curl \
+          libsqlite3-dev zlib1g-dev libjpeg-dev libtiff5-dev \
+          libtiff5-dev libsdl2-dev libsdl2-ttf-dev \
+          libsdl2-image-dev libsdl2-mixer-dev \
+          gstreamer1.0-plugins-base gstreamer1.0-plugins-base \
+          gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly \
+          libgstreamer1.0-dev libxine2-ffmpeg libsmpeg-dev \
+          libswscale-dev libavformat-dev libavcodec-dev \
+          libjpeg-dev libtiff5-dev libx11-dev libmtdev-dev \
+          build-essential libgl1-mesa-dev libgles2-mesa-dev \
+          pulseaudio libportaudio2 dbus-x11 libasound-dev \
+          lsb-release libgl1-mesa-dri libavfilter-dev \
+          libunwind-dev libavdevice-dev -y
+        systemctl --user restart pulseaudio.service
+        systemctl --user restart pulseaudio.socket
+        pactl list
     - name: Install app dependencies
       run: |
+        curl https://pyenv.run | bash
+        echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+        echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+        echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+        source ~/.bash_profile
+        pyenv install 3.10.15
+        pyenv global 3.10.15
         pip install --upgrade \
           pip setuptools wheel build coveralls pillow
         pip install --upgrade Cython==0.29.36
-
-        # Install MPF
-        pip install mpf==0.57.0
-        pip install mpf-mc==0.57.0
+        pip install mpf==0.57.3
+        pip install mpf-mc==0.57.1
     - name: Test
       run: |
+        source ~/.bash_profile
         bin/test
