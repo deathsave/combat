@@ -39,7 +39,7 @@ slides:
   - type: text
     style: big
     font_size: 72
-    text: SOLDIER (player_num)
+    text: MARINAIO (player_num)
     color: ffff00
     anchor_y: middle
     anchor_x: center

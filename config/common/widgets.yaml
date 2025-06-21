@@ -102,6 +102,9 @@ widgets:
     font_size: 90
     color: red
     x: -4200
+    anchor_y: middle
+    anchor_x: center
+    y: middle-10%
     animations:
       add_to_slide: wide_scroll_left
   grand_champion:
