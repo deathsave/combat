@@ -1,7 +1,7 @@
 #config_version=6
 
 sound_system:
-  buffer: 1024
+  buffer: 384
   frequency: 44100
   channels: 2
   tracks:
