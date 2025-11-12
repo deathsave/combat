@@ -36,3 +36,15 @@ sound_pools:
     sounds:
     - machine_gun_near_sfx
     - machine_gun_distant_sfx
+  game_ending_pool:
+    track: voice
+    type: random
+    sounds:
+    - game_ending_1
+    - game_ending_2
+  ball_ending_pool:
+    track: voice
+    type: random
+    sounds:
+    - ball_ending_1
+    - ball_ending_2

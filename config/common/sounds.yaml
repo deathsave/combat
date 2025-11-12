@@ -1,6 +1,9 @@
 #config_version=6
 
 sounds:
+  ###########
+  ## Music ##
+  ###########
   attract_bgm:
     # TODO: either add a delay or silence to end of file
     priority: 100
@@ -30,6 +33,10 @@ sounds:
     track: music
     volume: 0.6
     loops: 1
+
+  ###########
+  ##  SFX  ##
+  ###########
   explosion_1_sfx:
     max_queue_time: 0.5s
     priority: 100
@@ -124,3 +131,55 @@ sounds:
     file: bullet_ping_3.ogg
     track: sfx
     volume: 0.8
+
+  ############
+  ## Voices ##
+  ############
+  flash_score:
+    file: flash-score-steve-it.ogg
+    track: voice
+  multiball_ready:
+    file: multiball-ready-steve-it.ogg
+    track: voice
+  multiball_begins:
+    file: multiball-begins-jasmine-it.ogg
+    track: voice
+  ball_ending_1:
+    file: ball-ending-1-jeremyr-it.ogg
+    track: voice
+  ball_ending_2:
+    file: ball-ending-2-jeremyf-it.ogg
+    track: voice
+  game_ending_1:
+    file: game-ending-1-jeremyf-it.ogg
+    track: voice
+  game_ending_2:
+    file: game-ending-2-christian-it.ogg
+    track: voice
+  ball_saved:
+    file: ball-saved-mari-it.ogg
+    track: voice
+  playfield_active_ball_1:
+    file: playfield-active-ball-1-mike-it.ogg
+    track: voice
+  bonus-full:
+    file: bombs-full-jeremyr-it.ogg
+    track: voice
+  special_bombs:
+    file: special-bombs-spencer-it.ogg
+    track: voice
+  bonus-max:
+    file: bonus-max-mike-it.ogg
+    track: voice
+  hole_score_redeem:
+    file: hole-score-redeem-mari-it.ogg
+    track: voice
+  hole_score_full:
+    file: hole-score-full-spencer-it.ogg
+    track: voice
+  hole_score_redeem_max:
+    file: hole-score-redeem-max-jasmine-it.ogg
+    track: voice
+  extra_ball:
+    file: extra-ball-christian-it.ogg
+    track: voice
