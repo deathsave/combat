@@ -86,7 +86,7 @@ widgets:
     font_size: 72
   shoot_again:
   - type: text
-    text: "Rientra in battaglia, marinaio!"
+    text: "Torna in battaglia sailor!"
     style: medium
     font_size: 72
     color: red

@@ -11,7 +11,11 @@ mode:
   - mode_multiball_stopped # after multi, you must hit drops again
 
 sound_player:
-  mode_bombs_dropped_started: laser_bombs_sfx
+  mode_bombs_dropped_started:
+    laser_bombs_sfx: play
+    special_bombs:
+      delay: 2.0s
+      action: play
 
 extra_balls:
   laser_bombs_outlanes:

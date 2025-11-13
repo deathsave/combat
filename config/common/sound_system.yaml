@@ -6,16 +6,16 @@ sound_system:
   channels: 2
   tracks:
     music:
-      volume: 0.5
+      volume: 0.4
       simultaneous_sounds: 1
       events_when_stopped: music_track_stopped
       events_when_played: music_track_played, keep_going
       events_when_paused: music_track_paused
     sfx:
-      volume: 0.7
+      volume: 0.6
       simultaneous_sounds: 6
       preload: yes
     voice:
-      volume: 0.7
+      volume: 0.8
       simultaneous_sounds: 1
       preload: yes

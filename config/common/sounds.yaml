@@ -159,15 +159,33 @@ sounds:
   ball_saved:
     file: ball-saved-mari-it.ogg
     track: voice
+    ducking:
+      target: music
+      attack: 0
+      attenuation: -5db
+      release_point: 1s
+      release: 6s
   playfield_active_ball_1:
     file: playfield-active-ball-1-mike-it.ogg
     track: voice
+    ducking:
+      target: music
+      attack: 0
+      attenuation: -5db
+      release_point: 1s
+      release: 6s
   bonus-full:
     file: bombs-full-jeremyr-it.ogg
     track: voice
   special_bombs:
     file: special-bombs-spencer-it.ogg
     track: voice
+    ducking:
+      target: music
+      attack: 0
+      attenuation: -5db
+      release_point: 1s
+      release: 6s
   bonus-max:
     file: bonus-max-mike-it.ogg
     track: voice
