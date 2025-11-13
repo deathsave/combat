@@ -16,6 +16,6 @@ sound_system:
       simultaneous_sounds: 6
       preload: yes
     voice:
-      volume: 0.9
+      volume: 0.7
       simultaneous_sounds: 1
       preload: yes

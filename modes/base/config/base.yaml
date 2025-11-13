@@ -92,6 +92,10 @@ sound_player:
   s_drop_target_active: explosion_pool
   s_drop_target_behind_active: explosion_pool
   extra_ball_awarded: missile_advance_3_sfx
+  # Note: this will need to change when we
+  #       add the extra ball achievement
+  ball_will_end{current_player.ball < 3}: ball_ending_pool
+  ball_will_end{current_player.ball == 3}: game_ending_pool
 
 variable_player:
   s_bumper_1_active:
