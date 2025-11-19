@@ -25,6 +25,12 @@ timers:
       - event: ball_will_end
         action: stop
 
+sound_player:
+  mode_flash_score_started:
+    flash_score:
+      delay: 1.0s
+      action: play
+
 show_player:
   mode_flash_score_started:
     bumper_flash:

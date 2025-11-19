@@ -138,6 +138,12 @@ sounds:
   flash_score:
     file: flash-score-steve-it.ogg
     track: voice
+    ducking:
+      target: music
+      attack: 0
+      attenuation: -5db
+      release_point: 1s
+      release: 6s
   multiball_ready:
     file: multiball-ready-steve-it.ogg
     track: voice
