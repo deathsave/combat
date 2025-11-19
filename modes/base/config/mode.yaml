@@ -1,0 +1,5 @@
+#config_version=6
+
+mode:
+  start_events: timer_start_base_complete
+  priority: 100

@@ -1,0 +1,5 @@
+#config_version=6
+
+light_player:
+  extra_ball_awarded:
+    l_shoots_again: orange

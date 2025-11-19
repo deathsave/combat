@@ -1,0 +1,20 @@
+#config_version=6
+
+# drop target counter is here
+# so we can ignore the 'reset' and 'hit'
+# during the initialization mode
+counters:
+  bombs:
+    count_events: s_drop_target_active
+    starting_count: 5
+    count_complete_value: 0
+    direction: down
+    # the reset switch starts laser bombs,
+    # either pragmatically or mechanically
+    events_when_complete: bombs_complete
+    enable_events:
+    - mode_base_started
+    - mode_bombs_dropped_stopped
+    disable_events: mode_bombs_dropped_started
+    restart_events:
+    - mode_bombs_dropped_stopped

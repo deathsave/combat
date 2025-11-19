@@ -1,0 +1,8 @@
+#config_version=6
+
+event_player:
+  # cause the drop target to reset
+  # when mode ends event if only
+  # partially activated
+  s_drop_target_reset_active: bombs_complete
+

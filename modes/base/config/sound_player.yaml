@@ -1,0 +1,58 @@
+#config_version=6
+
+sound_player:
+  mode_base_started{current_player.ball == 1}:
+    base_bgm:
+      action: play
+  mode_base_started{current_player.ball == 2}:
+    base_bgm:
+      action: play
+      start_at: 50
+  mode_base_started{current_player.ball == 3}:
+    base_bgm:
+      action: play
+      start_at: 160
+  mode_multiball_stopped:
+    base_bgm:
+      action: play
+      start_at: 16
+  mode_base_stopped:
+    base_bgm:
+      action: stop
+  # unique targets
+  s_kicker_gun_active: gun_explosion_sfx
+  s_bumper_1_active: bullet_ping_pool
+  s_bumper_2_active: bullet_ping_pool
+  s_bumper_3_active: bullet_ping_pool
+  s_spinner_active: shot_and_ping_pool
+  # quick gun sound for sounds that may be concurrent
+  s_rollover_advance_hole_score_1_active: gun_shot_distant_sfx
+  s_rollover_advance_hole_score_2_active: gun_shot_distant_sfx
+  s_stationary_advance_hole_score_active: gun_shot_distant_sfx
+  # unique pools for 2 main logic blocks
+  logicblock_hole_score_updated{value > 0}: missile_advance_pool
+  cluster_a_advance_bonus_hit: machine_gun_pool
+  cluster_b_advance_bonus_hit: machine_gun_pool
+  s_stationary_advance_bonus_active: machine_gun_pool
+  # basic explosion sound for everything else
+  s_slingshot_1_active: explosion_pool
+  s_slingshot_2_active: explosion_pool
+  s_rollover_bonus_ball_1_active: explosion_pool
+  s_rollover_bonus_ball_2_active: explosion_pool
+  s_stationary_thousand_active: explosion_pool
+  s_stationary_special_active: explosion_pool
+  s_drop_target_active: explosion_pool
+  s_drop_target_behind_active: explosion_pool
+  extra_ball_awarded: missile_advance_3_sfx
+
+  ##############
+  ## Callouts ##
+  ##############
+  s_shooter_lane_inactive{current_player.ball == 1 and current_player.score == 0}:
+    playfield_active_ball_1: play
+  # Note: this will need to change when we
+  #       add the extra ball achievement
+  ball_will_end{current_player.ball < 3}: ball_ending_pool
+  ball_will_end{current_player.ball == 3}: game_ending_pool
+  ball_save_default_saving_ball: ball_saved
+
