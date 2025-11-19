@@ -6,6 +6,16 @@ mode:
   priority: 125
   code: hole_score.Custom
 
+sound_player:
+  hole_score_redeem_max:
+    hole_score_redeem_max:
+      delay: 0.5s
+      action: play
+  hole_score_redeem:
+    hole_score_redeem:
+      delay: 0.5s
+      action: play
+
 # variable_player:
 #   balldevice_bd_missile_ball_entered{0 <= current_player.hole_score_count and current_player.hole_score_count <= 3}:
 #     score: 50|block
