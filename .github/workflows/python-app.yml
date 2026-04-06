@@ -4,7 +4,7 @@
 #   https://docs.github.com/en/actions/ \
 #     automating-builds-and-tests/building-and-testing-python
 
-name: Zaccaria Combat! Pinball
+name: COMBAT!
 
 on:
   push:
@@ -57,9 +57,9 @@ jobs:
         pyenv install 3.10.15
         pyenv global 3.10.15
         pip install --upgrade \
-          pip setuptools wheel build coveralls pillow
+          pip 'setuptools<73' wheel build coveralls 'pillow<10' 'packaging<24'
         pip install --upgrade Cython==0.29.36
-        pip install mpf==0.57.3
+        pip install mpf==0.57.4
         pip install mpf-mc==0.57.1
     - name: Test
       run: |
